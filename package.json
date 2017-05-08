@@ -1,0 +1,12 @@
+{
+  "name": "js",
+  "version": "1.0",
+  "description": "Online Editor",
+  "main": "index",
+  "repository": "abc",
+  "author": "Ashwani Kumar",
+  "license": "GPL",
+  "dependencies": {
+    "fontawesome": "^4.7.2"
+  }
+}
