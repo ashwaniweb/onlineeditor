@@ -345,4 +345,14 @@ pre#console {
   z-index: 10040;
   overflow: auto;
   overflow-y: auto;
+} 
+#assets{
+  position:fixed;
+  width: 200px;
+  height: 100%;
+  overflow-y:auto;
+  overflow-x: hidden; 
+  top: 0;
+  background:#fff;
+  z-index: 555;
 }

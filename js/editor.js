@@ -1,7 +1,7 @@
 var htmEditor,
-    cssEditor,
-    jsEditor,
-    jqconsole;
+  cssEditor,
+  jsEditor,
+  jqconsole;
 (function cloudEdit() {
   "use strict";
   // Globals
@@ -21,7 +21,7 @@ var htmEditor,
   // ---
   // End Globals
 
-   // Check if a new appcache is available on page load. If so, ask to load it.
+  // Check if a new appcache is available on page load. If so, ask to load it.
   window.addEventListener("load", function(e) {
     window.applicationCache.addEventListener("updateready", function(e) {
       if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
@@ -45,8 +45,8 @@ var htmEditor,
       aceTheme = "ace/theme/chrome";
     }
 
-   //////////////////////////////////////// Editor Start //////////////////////////////////////
-    $('.inner').css('font-size','16px');
+    //////////////////////////////////////// Editor Start //////////////////////////////////////
+    $('.inner').css('font-size', '16px');
     /*HTMl Editor*/
     htmEditor = ace.edit("htmEditor");
     htmEditor.$blockScrolling = Infinity;
@@ -57,7 +57,7 @@ var htmEditor,
       enableBasicAutocompletion: true,
       enableSnippets: true,
       tabSize: 1,
-      useSoftTabs: true      
+      useSoftTabs: true
     });
     htmEditor.commands.on("afterExec", function(e) {
       if (e.command.name == "insertstring" && /^[\<.]$/.test(e.args)) {
@@ -76,7 +76,7 @@ var htmEditor,
       enableBasicAutocompletion: true,
       enableSnippets: true,
       tabSize: 1,
-      useSoftTabs: true   
+      useSoftTabs: true
     });
     cssEditor.commands.on("afterExec", function(e) {
       if (e.command.name == "insertstring" && /^[\w\:.]$/.test(e.args)) {
@@ -96,7 +96,7 @@ var htmEditor,
       enableBasicAutocompletion: true,
       enableSnippets: true,
       tabSize: 1,
-      useSoftTabs: true   
+      useSoftTabs: true
     });
     jsEditor.commands.on("afterExec", function(e) {
       // activate autocomplete when paren or .(dot) is typed
@@ -107,7 +107,7 @@ var htmEditor,
     jsEditor.setShowPrintMargin(false);
     jsEditor.setDisplayIndentGuides(false);
     jsEditor.setHighlightActiveLine(false);
-  
+
     // Retrieve values from sessionStorage if set
     (function sessionStorageGet() {
       if (sessionStorage.getItem("html")) {
@@ -141,7 +141,7 @@ var htmEditor,
 
   })();
   // END ACE Editor
-  
+
   // Toggle Text Areas from Displaying
   $(".togglePane").on("click", function() {
     panes.close(this);
@@ -173,7 +173,7 @@ var htmEditor,
       var count = this.count();
       if (count > 1 || $(el).hasClass("active")) {
         $(el).parent().toggleClass("active");
-        $("#" + name+"Pane").toggle();
+        $("#" + name + "Pane").toggle();
       } else {
         alert("You Must Have at least one Editor open");
       }
@@ -196,7 +196,7 @@ var htmEditor,
         xmlHttp.open("GET", "http://rawgit.com/ai/autoprefixer-rails/master/vendor/autoprefixer.js", false);
         xmlHttp.send(null);
         var ap = document.createElement("script");
-        ap.type ="text/javascript";
+        ap.type = "text/javascript";
         ap.text = xmlHttp.responseText;
         document.getElementsByTagName("head")[0].appendChild(ap);
       })();
@@ -242,7 +242,7 @@ var htmEditor,
 
   // Toggle live edit/preview mode. It's sometimes slow or doesn't react well.
   $("#liveEdit").on("click", function() {
-    use.liveEdit ? use.liveEdit = false:use.liveEdit = true;
+    use.liveEdit ? use.liveEdit = false : use.liveEdit = true;
     $(this).parent().toggleClass("active");
   });
 
@@ -289,7 +289,7 @@ var htmEditor,
 
     // pass false as we don't want the pseudo console.js script
     var textToWrite = buildOutput(false);
-    var textFileAsBlob = new Blob([textToWrite], {type: "text/plain"});
+    var textFileAsBlob = new Blob([textToWrite], { type: "text/plain" });
     var fileNameToSaveAs = "index.html";
 
     $download.download = fileNameToSaveAs;
@@ -302,8 +302,8 @@ var htmEditor,
       $download.href = window.URL.createObjectURL(textFileAsBlob);
     }
     $download.onclick = destroyClickedElement;
-		$download.style.display = "none";
-		document.body.appendChild($download);
+    $download.style.display = "none";
+    document.body.appendChild($download);
     $download.click();
   });
 
@@ -342,28 +342,28 @@ var htmEditor,
       alert("No previous session found...");
     }
   });
-  
+
   /* Panel Option */
   var panSet = $('.pane-settings');
-  panSet.on('click',function(){  
-    if($(this).hasClass('active')){
-     // Hide Current active
-     $(this).next().hide();
-     $(this).removeClass('active');
-    }else{
-     // Hide All
-     panSet.removeClass('active');
-     panSet.next().hide();
-     // Show Current
-     $(this).next().show();
-     $(this).addClass('active'); 
+  panSet.on('click', function() {
+      if ($(this).hasClass('active')) {
+        // Hide Current active
+        $(this).next().hide();
+        $(this).removeClass('active');
+      } else {
+        // Hide All
+        panSet.removeClass('active');
+        panSet.next().hide();
+        // Show Current
+        $(this).next().show();
+        $(this).addClass('active');
 
-    }
-  })
-  /* Panel Option End */
-  
+      }
+    })
+    /* Panel Option End */
+
   // Detect a user leaving a page and display a message
-  window.onbeforeunload = function (e) {
+  window.onbeforeunload = function(e) {
 
     // Save current buffers into sessionStorage
     sessionStorage.setItem("html", htmEditor.getValue());
