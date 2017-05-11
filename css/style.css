@@ -6,7 +6,9 @@
   font-weight: normal;
   font-style: normal;
 }
-html, body, section {
+html,
+body,
+section {
   height: auto;
 }
 
@@ -157,7 +159,8 @@ body {
   border: none;
 }
 
-#descBar > div, #infoBar > div {
+#descBar > div,
+#infoBar > div {
   text-overflow: ellipsis;
   white-space: nowrap;
   line-height: 1.1;
@@ -229,7 +232,8 @@ pre#console {
   background: rgba(100, 100, 100, 0.7);
 }
 
-::-webkit-scrollbar-corner, ::-webkit-scrollbar-thumb:window-inactive {
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-thumb:window-inactive {
   background: rgba(100, 100, 100, 0.4);
 }
 
@@ -348,13 +352,29 @@ pre#console {
   overflow-y: auto;
 }
 
-#assets {
+#wrapper {
+  position: relative;
+}
+
+.assets {
   position: fixed;
-  width: 200px;
+  width: 300px;
   height: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
   top: 0;
-  background: #fff;
+  left: -300px;
   z-index: 555;
+  -moz-box-shadow: 0px 0px 3px 1px #000;
+  -webkit-box-shadow: 0px 0px 3px 1px #000;
+  box-shadow: 0px 0px 3px 1px #000;
+}
+.assets .col-sm-12 {
+  margin: 15px 0;
+  overflow-y: auto;
+  position: absolute;
+  width: 300px;
+  height: 100%;
+}
+
+.navbar-inverse {
+  color: #fff;
 }

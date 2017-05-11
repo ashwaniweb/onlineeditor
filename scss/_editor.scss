@@ -6,7 +6,9 @@
   font-style: normal;
 }
 
-html, body, section {
+html,
+body,
+section {
   height: auto;
 }
 
@@ -24,6 +26,7 @@ body {
   height: 100%;
   overflow: hidden;
 }
+
 .navbar {
   border-radius: 0;
   margin: 0;
@@ -33,12 +36,14 @@ body {
   background-color: #fafafa;
   min-height: 40px;
   border-width: 0;
+
   a.navbar-brand {
     color: #FC1298;
     font-size: 22px;
     font-weight: 800;
     text-shadow: 0 0 1px rgba(255, 0, 210, 0.4);
   }
+
   li > a {
     padding-top: 11px;
     padding-bottom: 11px;
@@ -58,6 +63,7 @@ body {
 
 .icon-codepen-box {
   float: left;
+
   + span {
     margin-top: 6px;
     float: left;
@@ -73,6 +79,7 @@ body {
   border-bottom: 1px solid transparent;
   flex: 1;
   position: relative;
+
   &.toolbar {
     padding-bottom: 30px;
     height: 240px;
@@ -98,7 +105,8 @@ body {
   min-width: 80px;
   padding: 5px 10px;
   text-align: right;
-  cursor:pointer;
+  cursor: pointer;
+
   @include user-select(none);
 }
 
@@ -139,6 +147,7 @@ body {
     height: calc(50vh - 60px);
     display: flex;
   }
+
   .preview {
     position: relative;
     appearance: none;
@@ -155,7 +164,8 @@ body {
   border: none;
 }
 
-#descBar > div, #infoBar > div {
+#descBar > div,
+#infoBar > div {
   text-overflow: ellipsis;
   white-space: nowrap;
   line-height: 1.1;
@@ -166,6 +176,7 @@ body {
   > div {
     overflow: hidden;
   }
+
   border: 0 #eee solid;
   border-bottom-width: 0px;
   padding-bottom: 3px;
@@ -177,6 +188,7 @@ body {
   border-bottom-width: 0px;
   padding-bottom: 3px;
   font-size: 12px;
+
   small {
     font-size: 8px;
     text-transform: uppercase;
@@ -227,7 +239,8 @@ pre#console {
   background: rgba(100, 100, 100, 0.7);
 }
 
-::-webkit-scrollbar-corner, ::-webkit-scrollbar-thumb:window-inactive {
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-thumb:window-inactive {
   background: rgba(100, 100, 100, 0.4);
 }
 
@@ -266,6 +279,7 @@ pre#console {
 .btn-editor {
   color: #fff;
   background-color: #3b5998;
+
   &:hover {
     color: #fff;
     background-color: #496ebc;
@@ -276,7 +290,10 @@ pre#console {
   color: #fff;
   background-color: #333;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  &:hover, &:focus, &.active {
+
+  &:hover,
+  &:focus,
+  &.active {
     color: #fff;
     background-color: #000;
   }
@@ -287,21 +304,26 @@ pre#console {
   padding: 14px 14px 0;
   overflow: hidden;
   background-color: rgba(255, 255, 255, 1);
+
   .help-block {
     font-size: 12px;
   }
+
   .bottom {
     background-color: rgba(255, 255, 255, 0.8);
     border-top: 1px solid #ddd;
     clear: both;
     padding: 14px;
   }
+
   .social-buttons {
     margin: 12px 0;
+
     a {
       width: 49%;
     }
   }
+
   .form-group {
     margin-bottom: 10px;
   }
@@ -310,6 +332,7 @@ pre#console {
 .btn-fb {
   color: #fff;
   background-color: #3b5998;
+
   &:hover {
     color: #fff;
     background-color: #496ebc;
@@ -319,6 +342,7 @@ pre#console {
 .btn-tw {
   color: #fff;
   background-color: #55acee;
+
   &:hover {
     color: #fff;
     background-color: #59b5fa;
@@ -329,9 +353,10 @@ pre#console {
   #login-dp {
     background-color: inherit;
     color: #fff;
+
     .bottom {
       background-color: inherit;
-      border-top: 0 none; 
+      border-top: 0 none;
     }
   }
 }
@@ -345,14 +370,31 @@ pre#console {
   z-index: 10040;
   overflow: auto;
   overflow-y: auto;
-} 
-#assets{
-  position:fixed;
-  width: 200px;
+}
+
+#wrapper {
+  position: relative;
+}
+
+.assets {
+  position: fixed;
+  width: 300px;
   height: 100%;
-  overflow-y:auto;
-  overflow-x: hidden; 
   top: 0;
-  background:#fff;
+  left: -300px;
   z-index: 555;
+
+  @include box-shadow(0px 0px 3px 1px #000);
+
+  .col-sm-12 {
+    margin: 15px 0;
+    overflow-y: auto;
+    position: absolute;
+    width: 300px;
+    height: 100%;
+  }
+}
+
+.navbar-inverse {
+  color: #fff;
 }

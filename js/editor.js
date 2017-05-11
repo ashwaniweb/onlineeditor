@@ -383,4 +383,21 @@ var htmEditor,
     // // For Chrome, Safari, IE8+ and Opera 12+
     return message;
   };
+  var menuSlector = '.assets';
+  var toggler = '#assets';
+  var pagewrapper = '#wrapper,footer';
+  var menuwidth = '300px';
+  var menuneg = '-300px';
+  $("footer").on("click", toggler, function(e) {
+    var selected = $(this).hasClass('slide-active');    
+    $(menuSlector).stop().animate({
+      left: selected ? menuneg : '0px'
+    });
+    $(pagewrapper).stop().animate({
+      left: selected ? '0px' : menuwidth
+    });
+    $(this).toggleClass('slide-active');
+    $(menuSlector).toggleClass('slide-active');
+    $('#wrapper, body').toggleClass('slide-active');
+  });  
 })();
