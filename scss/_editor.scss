@@ -6,7 +6,9 @@
   font-style: normal;
 }
 
-html, body, section {
+html,
+body,
+section {
   height: auto;
 }
 
@@ -24,6 +26,7 @@ body {
   height: 100%;
   overflow: hidden;
 }
+
 .navbar {
   border-radius: 0;
   margin: 0;
@@ -98,7 +101,7 @@ body {
   min-width: 80px;
   padding: 5px 10px;
   text-align: right;
-  cursor:pointer;
+  cursor: pointer;
   @include user-select(none);
 }
 
@@ -155,7 +158,8 @@ body {
   border: none;
 }
 
-#descBar > div, #infoBar > div {
+#descBar > div,
+#infoBar > div {
   text-overflow: ellipsis;
   white-space: nowrap;
   line-height: 1.1;
@@ -227,7 +231,8 @@ pre#console {
   background: rgba(100, 100, 100, 0.7);
 }
 
-::-webkit-scrollbar-corner, ::-webkit-scrollbar-thumb:window-inactive {
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-thumb:window-inactive {
   background: rgba(100, 100, 100, 0.4);
 }
 
@@ -276,7 +281,9 @@ pre#console {
   color: #fff;
   background-color: #333;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  &:hover, &:focus, &.active {
+  &:hover,
+  &:focus,
+  &.active {
     color: #fff;
     background-color: #000;
   }
@@ -331,7 +338,7 @@ pre#console {
     color: #fff;
     .bottom {
       background-color: inherit;
-      border-top: 0 none; 
+      border-top: 0 none;
     }
   }
 }
@@ -345,4 +352,26 @@ pre#console {
   z-index: 10040;
   overflow: auto;
   overflow-y: auto;
+}
+#wrapper{
+  position:relative;
+}
+.assets {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  top:0;
+  left:-300px;
+  z-index: 555;
+  @include box-shadow(0px 0px 3px 1px #000);
+  .col-sm-12 {
+    margin:15px 0;
+    overflow-y: auto;
+    position: absolute;
+    width: 300px;
+    height: 100%;
+  }
+}
+.navbar-inverse{
+  color:#fff;
 }

@@ -7,6 +7,12 @@
   "author": "Ashwani Kumar",
   "license": "GPL",
   "dependencies": {
-    "fontawesome": "^4.7.2"
+    "ace-builds": "^1.2.6",
+    "angular": "^1.6.4",
+    "angular-ui-ace": "^0.2.3",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "jquery.scrollbar": "^0.2.11"
   }
 }

@@ -1,294 +1,298 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
   <title>CloudEdit: HTML Live Editor</title>
-  <link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="./vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
 </head>
+
 <body>
-<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" display="none">
-<symbol id="codepen" viewbox="0 0 100 100">
-<path d="M100 34.2c-.4-2.6-3.3-4-5.3-5.3-3.6-2.4-7.1-4.7-10.7-7.1-8.5-5.7-17.1-11.4-25.6-17.1-2-1.3-4-2.7-6-4-1.4-1-3.3-1-4.8 0-5.7 3.8-11.5 7.7-17.2 11.5L5.2 29C3 30.4.1 31.8 0 34.8c-.1 3.3 0 6.7 0 10v16c0 2.9-.6 6.3 2.1 8.1 6.4 4.4 12.9 8.6 19.4 12.9 8 5.3 16 10.7 24 16 2.2 1.5 4.4 3.1 7.1 1.3 2.3-1.5 4.5-3 6.8-4.5 8.9-5.9 17.8-11.9 26.7-17.8l9.9-6.6c.6-.4 1.3-.8 1.9-1.3 1.4-1 2-2.4 2-4.1V37.3c.1-1.1.2-2.1.1-3.1 0-.1 0 .2 0 0zM54.3 12.3L88 34.8 73 44.9 54.3 32.4V12.3zm-8.6 0v20L27.1 44.8 12 34.8l33.7-22.5zM8.6 42.8L19.3 50 8.6 57.2V42.8zm37.1 44.9L12 65.2l15-10.1 18.6 12.5v20.1zM50 60.2L34.8 50 50 39.8 65.2 50 50 60.2zm4.3 27.5v-20l18.6-12.5 15 10.1-33.6 22.4zm37.1-30.5L80.7 50l10.8-7.2-.1 14.4z" />
-</symbol>
-<symbol id="layout-icon" viewbox="0 0 20 20">
-<path d="M0 9.002C0 8.45.455 8 .992 8h18.016c.548 0 .992.456.992 1.002v9.996c0 .553-.455 1.002-.992 1.002H.992C.444 20 0 19.544 0 18.998V9.002zm0-8C0 .45.451 0 .99 0h4.02A.99.99 0 0 1 6 1.003v4.994C6 6.551 5.549 7 5.01 7H.99A.99.99 0 0 1 0 5.997V1.003zm7 0C7 .45 7.451 0 7.99 0h4.02A.99.99 0 0 1 13 1.003v4.994C13 6.551 12.549 7 12.01 7H7.99A.99.99 0 0 1 7 5.997V1.003zm7 0C14 .45 14.451 0 14.99 0h4.02A.99.99 0 0 1 20 1.003v4.994C20 6.551 19.549 7 19.01 7h-4.02A.99.99 0 0 1 14 5.997V1.003z"/>
-</symbol>
-</svg>
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-        </button>      
-        <a class="navbar-brand" href="#">
-          <svg class="icon-codepen-box" width="25px" height="25px" fill="#fff">
-            <use xlink:href="#codepen"></use>
-          </svg>
-          <span>WebSiteName</span>
-        </a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a href="javascript:void(0);" id="run" title="Run...">
-            <span class="fa-play-circle"></span> Run
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0);" id="save" title="Save to Cloud">
-            <span class="fa-cloud"></span> Save
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0);" id="load" title="Run...">
-            <span class="fa-refresh"></span> Load
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0);" id="download" title="Download to computer">
-            <span class="fa-download"></span> Download
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0);" id="clear" title="Click to clear all panes">
-            <span class="fa-trash"></span> Reset
-            </a>
-          </li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Change View
+  <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" display="none">
+    <symbol id="codepen" viewbox="0 0 100 100">
+      <path d="M100 34.2c-.4-2.6-3.3-4-5.3-5.3-3.6-2.4-7.1-4.7-10.7-7.1-8.5-5.7-17.1-11.4-25.6-17.1-2-1.3-4-2.7-6-4-1.4-1-3.3-1-4.8 0-5.7 3.8-11.5 7.7-17.2 11.5L5.2 29C3 30.4.1 31.8 0 34.8c-.1 3.3 0 6.7 0 10v16c0 2.9-.6 6.3 2.1 8.1 6.4 4.4 12.9 8.6 19.4 12.9 8 5.3 16 10.7 24 16 2.2 1.5 4.4 3.1 7.1 1.3 2.3-1.5 4.5-3 6.8-4.5 8.9-5.9 17.8-11.9 26.7-17.8l9.9-6.6c.6-.4 1.3-.8 1.9-1.3 1.4-1 2-2.4 2-4.1V37.3c.1-1.1.2-2.1.1-3.1 0-.1 0 .2 0 0zM54.3 12.3L88 34.8 73 44.9 54.3 32.4V12.3zm-8.6 0v20L27.1 44.8 12 34.8l33.7-22.5zM8.6 42.8L19.3 50 8.6 57.2V42.8zm37.1 44.9L12 65.2l15-10.1 18.6 12.5v20.1zM50 60.2L34.8 50 50 39.8 65.2 50 50 60.2zm4.3 27.5v-20l18.6-12.5 15 10.1-33.6 22.4zm37.1-30.5L80.7 50l10.8-7.2-.1 14.4z" />
+    </symbol>
+    <symbol id="layout-icon" viewbox="0 0 20 20">
+      <path d="M0 9.002C0 8.45.455 8 .992 8h18.016c.548 0 .992.456.992 1.002v9.996c0 .553-.455 1.002-.992 1.002H.992C.444 20 0 19.544 0 18.998V9.002zm0-8C0 .45.451 0 .99 0h4.02A.99.99 0 0 1 6 1.003v4.994C6 6.551 5.549 7 5.01 7H.99A.99.99 0 0 1 0 5.997V1.003zm7 0C7 .45 7.451 0 7.99 0h4.02A.99.99 0 0 1 13 1.003v4.994C13 6.551 12.549 7 12.01 7H7.99A.99.99 0 0 1 7 5.997V1.003zm7 0C14 .45 14.451 0 14.99 0h4.02A.99.99 0 0 1 20 1.003v4.994C20 6.551 19.549 7 19.01 7h-4.02A.99.99 0 0 1 14 5.997V1.003z" />
+    </symbol>
+  </svg>
+  <div id="wrapper">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <svg class="icon-codepen-box" width="25px" height="25px" fill="#fff">
+              <use xlink:href="#codepen"></use>
+            </svg>
+            <span>WebSiteName</span>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="javascript:void(0);" id="run" title="Run...">
+                <span class="fa-play-circle"></span> Run
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" id="save" title="Save to Cloud">
+                <span class="fa-cloud"></span> Save
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" id="load" title="Run...">
+                <span class="fa-refresh"></span> Load
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" id="download" title="Download to computer">
+                <span class="fa-download"></span> Download
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" id="clear" title="Click to clear all panes">
+                <span class="fa-trash"></span> Reset
+              </a>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Change View
             <span class="caret"></span></a>
-            <ul class="dropdown-menu toggleGroup">
-              <li class="dropdown-header">Open this Pen in:</li>
-              <li>
-                <a href="javascript:void(0);" id="previewToggle" title="Enlarge Preview"><span class="fa-eye-open"></span> Full Page View</a>
-              </li>
-              <li class="divider "></li>
-              <li class="dropdown-header">Editor Layout:</li>
-              <li>
-                <div class="col-md-12">
-                  <div class="btn-group btn-group-justified" style="width:350px;">
-                    <a href="javascript:void(0);" class="btn btn-info togglePane" id="htmlToggle" data-editor="html" title="Toggle  HTML">
-                      <svg class="icon icon-editor-left rotate-270" width="20px" height="20px">
-                        <use xlink:href="#layout-icon"></use>
-                      </svg>
-                    </a>
-                    <a href="javascript:void(0);" class="btn btn-info togglePane" id="htmlToggle" data-editor="html" title="Toggle  HTML">
-                      <svg class="icon icon-editor-left rotate-90" width="20px" height="20px">
-                        <use xlink:href="#layout-icon"></use>
-                      </svg>
-                    </a>
-                    <a href="javascript:void(0);" class="btn btn-info togglePane" id="htmlToggle" data-editor="html" title="Toggle  HTML">
-                      <svg class="icon icon-editor-left rotate-180" width="20px" height="20px">
-                        <use xlink:href="#layout-icon"></use>
-                      </svg>
-                    </a>
-                    <a href="javascript:void(0);" class="btn btn-info togglePane" id="htmlToggle" data-editor="html" title="Toggle  HTML">
-                      <svg class="icon icon-editor-left" width="20px" height="20px">
-                        <use xlink:href="#layout-icon"></use>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li class="hidden">
-                <a href="javascript:void(0);" class="togglePane  fa-css3" id="cssToggle" data-editor="css" title="Toggle CSS"> CSS</a>
-              </li>
-              <li class="hidden"><a href="javascript:void(0);" class="togglePane fa-code" id="jsToggle" data-editor="js" title="Toggle JS"> JavaScript</a></li>
-              <li class="hidden"><a href="javascript:void(0);" class="togglePane" id="liveEdit" title="Toggle Live Edit Mode">LiveEdit</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-            <span class="fa-sign-in"></span> Login <span class="caret"></span>
-            </a>
-            <ul id="login-dp" class="dropdown-menu">
-              <li>
-                <div class="row">
+              <ul class="dropdown-menu toggleGroup">
+                <li class="dropdown-header">Open this Pen in:</li>
+                <li>
+                  <a href="javascript:void(0);" id="previewToggle" title="Enlarge Preview"><span class="fa-eye-open"></span> Full Page View</a>
+                </li>
+                <li class="divider "></li>
+                <li class="dropdown-header">Editor Layout:</li>
+                <li>
                   <div class="col-md-12">
-                    Login via
-                    <div class="social-buttons">
-                      <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
-                      <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                    <div class="btn-group btn-group-justified" style="width:350px;">
+                      <a href="javascript:void(0);" class="btn btn-info togglePane" id="htmlToggle" data-editor="html" title="Toggle  HTML">
+                        <svg class="icon icon-editor-left rotate-270" width="20px" height="20px">
+                          <use xlink:href="#layout-icon"></use>
+                        </svg>
+                      </a>
+                      <a href="javascript:void(0);" class="btn btn-info togglePane" id="htmlToggle" data-editor="html" title="Toggle  HTML">
+                        <svg class="icon icon-editor-left rotate-90" width="20px" height="20px">
+                          <use xlink:href="#layout-icon"></use>
+                        </svg>
+                      </a>
+                      <a href="javascript:void(0);" class="btn btn-info togglePane" id="htmlToggle" data-editor="html" title="Toggle  HTML">
+                        <svg class="icon icon-editor-left rotate-180" width="20px" height="20px">
+                          <use xlink:href="#layout-icon"></use>
+                        </svg>
+                      </a>
+                      <a href="javascript:void(0);" class="btn btn-info togglePane" id="htmlToggle" data-editor="html" title="Toggle  HTML">
+                        <svg class="icon icon-editor-left" width="20px" height="20px">
+                          <use xlink:href="#layout-icon"></use>
+                        </svg>
+                      </a>
                     </div>
-                    <div class="text-center lead">or</div>
-                    <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
-                      <div class="form-group">
-                        <label for="exampleInputEmail2">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleInputPassword2">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
-                        <div class="help-block text-right"><a href="">Forget the password ?</a></div>
-                      </div>
-                      <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-block">Sign in</button>
-                      </div>
-                      <div class="checkbox">
-                        <label>
-                        <input type="checkbox"> keep me logged-in
-                        </label>
-                      </div>
-                    </form>
                   </div>
-                  <div class="bottom text-center">
-                    New here ? <a href="#"><b>Join Us</b></a>
+                </li>
+                <li class="hidden">
+                  <a href="javascript:void(0);" class="togglePane  fa-css3" id="cssToggle" data-editor="css" title="Toggle CSS"> CSS</a>
+                </li>
+                <li class="hidden"><a href="javascript:void(0);" class="togglePane fa-code" id="jsToggle" data-editor="js" title="Toggle JS"> JavaScript</a></li>
+                <li class="hidden"><a href="javascript:void(0);" class="togglePane" id="liveEdit" title="Toggle Live Edit Mode">LiveEdit</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="fa-sign-in"></span> Login <span class="caret"></span>
+              </a>
+              <ul id="login-dp" class="dropdown-menu">
+                <li>
+                  <div class="row">
+                    <div class="col-md-12">
+                      Login via
+                      <div class="social-buttons">
+                        <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                        <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                      </div>
+                      <div class="text-center lead">or</div>
+                      <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                        <div class="form-group">
+                          <label for="exampleInputEmail2">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword2">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                          <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+                        </div>
+                        <div class="form-group">
+                          <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> keep me logged-in
+                          </label>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="bottom text-center">
+                      New here ? <a href="#"><b>Join Us</b></a>
+                    </div>
                   </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="editorSection">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-4 sp resize tab-pane" id="htmPane">
+            <div class="pane-settings">HTML <i class="fa-cog"></i></div>
+            <div class="pane-panel">
+              <form class="form" role="form" method="post" action="login" id="login-nav">
+                <div class="form-group">
+                  <label for="less">LESS</label>
+                  <select class="form-control">
+                    <option value="css" selected>CSS</option>
+                    <option value="less">LESS</option>
+                    <option value="scss">SCSS</option>
+                    <option value="sass">SASS</option>
+                  </select>
                 </div>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <section class="editorSection">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-4 sp resize tab-pane" id="htmPane">
-          <div class="pane-settings">HTML <i class="fa-cog"></i></div>
-          <div class="pane-panel">
-            <form class="form" role="form" method="post" action="login" id="login-nav">
-              <div class="form-group">
-                <label for="less">LESS</label>
-                <select class="form-control">
-                  <option value="css" selected>CSS</option>
-                  <option value="less" >LESS</option>
-                  <option value="scss" >SCSS</option>
-                  <option value="sass" >SASS</option>
-                </select>            
-              </div>            
-              <div class="checkbox">
-                <label for="less"><input type="checkbox"  id="less"> LESS</label>                
-              </div>
-              <div class="checkbox">
-                <label for="scss"><input type="checkbox"  id="scss"> SCSS</label>
-              </div>
-              <div class="checkbox">
-                <label for="scss"><input type="checkbox"  id="sass"> SCSS</label>
-              </div>
-            </form>
-          </div>
-          <div class="inner" id="htmEditor"></div>
-        </div>
-        <div class="col-sm-4 sp resize tab-pane" id="cssPane">
-          <div class="pane-settings">CSS <i title="CSS Settings" class="fa-cog"></i></div>
-          <div class="pane-panel">
-            <form class="form" role="form" method="post" action="login" id="login-nav">
-              <div class="form-group">
-                <label for="less">LESS</label>
-                <select class="form-control">
-                  <option value="css" selected>CSS</option>
-                  <option value="less" >LESS</option>
-                  <option value="scss" >SCSS</option>
-                  <option value="sass" >SASS</option>
-                </select>            
-              </div>            
-              <div class="checkbox">
-                <label for="normalize"><input type="checkbox"  id="normalize"> Normalize</label>                
-              </div>
-              <div class="checkbox">
-                <label for="resetCss"><input type="checkbox"  id="resetCss"> RESET</label>
-              </div>
-              <div class="checkbox">
-                <label for="defaultCss"><input type="checkbox"  id="defaultCss"> Neither</label>
-              </div>
-            </form>
-          </div>
-          <div class="inner" id="cssEditor"></div>
-        </div>
-        <div class="col-sm-4 sp tab-pane" id="jsPane">
-          <div class="pane-settings">JS <i title="JavaScript Settings" class="fa-cog"></i></div>
-          <div class="pane-panel">
-            <form class="form" role="form" method="post" action="login" id="login-nav">
-              <div class="form-group">
-                <label for="less">LESS</label>
-                <select class="form-control">
-                  <option value="css" selected>CSS</option>
-                  <option value="less" >LESS</option>
-                  <option value="scss" >SCSS</option>
-                  <option value="sass" >SASS</option>
-                </select>            
-              </div>            
-              <div class="checkbox">
-                <label for="normalize"><input type="checkbox"  id="normalize"> Normalize</label>                
-              </div>
-              <div class="checkbox">
-                <label for="resetCss"><input type="checkbox"  id="resetCss"> RESET</label>
-              </div>
-              <div class="checkbox">
-                <label for="defaultCss"><input type="checkbox"  id="defaultCss"> Neither</label>
-              </div>
-            </form>
-          </div>
-          <div class="inner" id="jsEditor"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="previewSection">
-    <div class="container-fluid">
-      <div class="row preview">    
-        <iframe id="iframe" name="CloudEdit"
-          sandbox="allow-scripts allow-pointer-lock allow-same-origin allow-popups allow-forms"
-          allowtransparency="true">
-        </iframe>
-        <span class="windowLabel" id="iframeLabel">Preview</span>
-        <span id="iframeClose">x</span>
-      </div>
-    </div>
-  </section>
-  <section class="consoleSection">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="console">
-          <pre id="console"></pre>
-          <span class="windowLabel" id="consoleLabel">Console</span>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer class="footer navbar-fixed-bottom navbar-inverse">
-    <div class="container-fluid" style="padding:15px">
-      <button class="btn btn-inverse btn-xs" id="consoleToggle">Console</button>
-      <button class="btn btn-inverse btn-xs" data-toggle="modal" data-target="#assets">Assets</button>
-      <button class="btn btn-inverse btn-xs" id="assets1">Console</button>
-    </div>
-  </footer>
-  <div id="assets" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Add Assets (CSS/JSS)</h4>
-        </div>
-        <div class="modal-body">
-          <form class="navbar-form" role="search">
-            <div class="input-group add-on">
-              <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
-              <div class="input-group-btn">
-                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-              </div>
+                <div class="checkbox">
+                  <label for="less">
+                    <input type="checkbox" id="less"> LESS</label>
+                </div>
+                <div class="checkbox">
+                  <label for="scss">
+                    <input type="checkbox" id="scss"> SCSS</label>
+                </div>
+                <div class="checkbox">
+                  <label for="scss">
+                    <input type="checkbox" id="sass"> SCSS</label>
+                </div>
+              </form>
             </div>
-          </form>
+            <div class="inner" id="htmEditor"></div>
+          </div>
+          <div class="col-sm-4 sp resize tab-pane" id="cssPane">
+            <div class="pane-settings">CSS <i title="CSS Settings" class="fa-cog"></i></div>
+            <div class="pane-panel">
+              <form class="form" role="form" method="post" action="login" id="login-nav">
+                <div class="form-group">
+                  <label for="less">LESS</label>
+                  <select class="form-control">
+                    <option value="css" selected>CSS</option>
+                    <option value="less">LESS</option>
+                    <option value="scss">SCSS</option>
+                    <option value="sass">SASS</option>
+                  </select>
+                </div>
+                <div class="checkbox">
+                  <label for="normalize">
+                    <input type="checkbox" id="normalize"> Normalize</label>
+                </div>
+                <div class="checkbox">
+                  <label for="resetCss">
+                    <input type="checkbox" id="resetCss"> RESET</label>
+                </div>
+                <div class="checkbox">
+                  <label for="defaultCss">
+                    <input type="checkbox" id="defaultCss"> Neither</label>
+                </div>
+              </form>
+            </div>
+            <div class="inner" id="cssEditor"></div>
+          </div>
+          <div class="col-sm-4 sp tab-pane" id="jsPane">
+            <div class="pane-settings">JS <i title="JavaScript Settings" class="fa-cog"></i></div>
+            <div class="pane-panel">
+              <form class="form" role="form" method="post" action="login" id="login-nav">
+                <div class="form-group">
+                  <label for="less">LESS</label>
+                  <select class="form-control">
+                    <option value="css" selected>CSS</option>
+                    <option value="less">LESS</option>
+                    <option value="scss">SCSS</option>
+                    <option value="sass">SASS</option>
+                  </select>
+                </div>
+                <div class="checkbox">
+                  <label for="normalize">
+                    <input type="checkbox" id="normalize"> Normalize</label>
+                </div>
+                <div class="checkbox">
+                  <label for="resetCss">
+                    <input type="checkbox" id="resetCss"> RESET</label>
+                </div>
+                <div class="checkbox">
+                  <label for="defaultCss">
+                    <input type="checkbox" id="defaultCss"> Neither</label>
+                </div>
+              </form>
+            </div>
+            <div class="inner" id="jsEditor"></div>
+          </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </section>
+    <section class="previewSection">
+      <div class="container-fluid">
+        <div class="row preview">
+          <iframe id="iframe" name="CloudEdit" sandbox="allow-scripts allow-pointer-lock allow-same-origin allow-popups allow-forms" allowtransparency="true">
+          </iframe>
+          <span class="windowLabel" id="iframeLabel">Preview</span>
+          <span id="iframeClose">x</span>
         </div>
+      </div>
+    </section>
+    <section class="consoleSection">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="console">
+            <pre id="console"></pre>
+            <span class="windowLabel" id="consoleLabel">Console</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer navbar-fixed-bottom navbar-inverse">
+      <div class="container-fluid" style="padding:15px">
+        <button class="btn btn-inverse btn-xs" id="consoleToggle">Console</button>
+        <button class="btn btn-inverse btn-xs" id="assets">Assets</button>
+        <button class="btn btn-inverse btn-xs" id="assets1">Console</button>
+      </div>
+    </footer>
+  </div>
+  <div class="assets nav navbar-inverse">
+    <div class="col-sm-12">
+      <h4 class="modal-title">Add Assets (CSS/JSS)</h4>
+      <hr/>
+      <div class="row">
+        <form class="navbar-form" role="search">
+          <div class="input-group add-on">
+            <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>
-  <script type="text/javascript" src="vendors/jquery/jquery.min.js"></script>
-  <script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="vendors/ace/ace.js"></script>
-  <script type="text/javascript" src="vendors/ace/ext-LANGUAGE_TOOLS.js"></script>
+  <script type="text/javascript" src="./vendors/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="./vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./vendors/ace/ace.js"></script>
+  <script type="text/javascript" src="./vendors/ace/ext-LANGUAGE_TOOLS.js"></script>
   <script type="text/javascript" src="https://rawgit.com/tlindig/position-calculator/master/dist/position-calculator.min.js"></script>
   <script type="text/javascript" src="js/editor.js"></script>
 </body>
+
 </html>
