@@ -1,0 +1,2257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Asergis Property</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet"> 
+    <link href="css/bootstrap-multiselect.css" rel="stylesheet">
+    <!-- Owl crowsel -->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/datepicker.css" rel="stylesheet">
+    <link href="css/bootstrap-slider.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-select.css">
+    <!-- Our Own Custom Stylesheet -->
+    <link href="css/bharat.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="wrapper">
+    <div class="overlay"></div>
+    <!-- Sidebar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+      <ul class="nav sidebar-nav">
+        <li class="sidebar-brand">
+          <ul>
+            <li>
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <span>Favourites</span>
+            </li>
+            <li>
+              <button class="hamburger innerClose"><img src="images/menu-close.png" alt=""/><!-- <i class="fa fa-close" aria-hidden="true"></i> --></button>
+            </li>
+          </ul>
+          
+        </li>
+        <li> <a href="index.html"><span class="icon-home"></span> Home</a> </li>
+        <li> <a href="about-malta.html"><span class="icon-about-malta"></span> About Malta</a> </li>
+        <li> <a href="about-us.html"><span class="icon-aboutUs-icon"></span> About Us</a> </li>
+        <li> <a href="faq.html"><span class="icon-faq"></span> FAQ</a> </li>
+        <li> <a href="contact-us.html"><span class="icon-contactus"></span> Contact Us</a> </li>
+      </ul>
+    </nav>
+    <!-- /#sidebar-wrapper --> 
+    <!-- Header Section -->
+    <div id="page-content-wrapper">
+    <header class="innerHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3 col-md-3">
+            <a href="index.html" class="logo">
+              <img class="img-responsive" src="images/logo.png" alt=""/>
+            </a>
+          </div>
+          <div class="col-sm-9 col-md-9 pull-right">
+            <ul class="header-contact">
+              <li><span><i class="fa fa-phone" aria-hidden="true"></i> +356 21 252 252 </span></li>
+              <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:support@asergis.com">support@asergis.com</a></li>
+            </ul>
+            <div class="btn-group" role="group" aria-label="...">
+              <a href="list-your-property.html" class="btn btn-default btn-orange">Rent/Sell your property</a>
+              <div class="btn-group user_menu" role="group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Hello Abdur Rehman
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="manage-property.html">Manage My Properties</a></li>
+                    <li><a href="manage-property.html">My Profile</a></li>
+                    <li><a href="login.html">Sign Out</a></li>
+                </ul>
+              </div>
+              <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
+              <img src="images/menu-toggle-icon.png" alt=""/>
+               <!-- <span class="hamb-top"></span> <span class="hamb-middle"></span> <span class="hamb-bottom"></span> --> 
+               </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section End Here -->
+
+    <!-- Top Search Bar Section -->
+    <section class="TopSearchBar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <form>
+              <div class="ShortLetSelect">
+                <select id="SearchSelectBox" class="selectpicker">
+                  <option value="Shortlet">Short Let</option>
+                  <option value="Longlet">Long Let</option>
+                  <option value="Forsale">For Sale</option>
+                </select>
+              </div>
+              <ul class="MoreFilterSearch1">
+                <li class="LocationSelect">
+                  <select class="selectpicker">
+                    <option>Select Regions</option>
+                    <option>Malta</option>
+                    <option>India</option>
+                  </select>
+                </li>
+                <li class="location">
+                  <input id="name" placeholder="Enter Locality" type="text">
+                </li>
+                <li class="CheckinSelect">
+                  <input class="span2" value="" id="dpd1" type="text" placeholder="Check In" />
+                </li>
+                <li class="CheckinSelect">
+                  <input class="span2" value="" id="dpd2" type="text" placeholder="Check Out" />
+                </li>
+                <li class="MinPriceSelect">
+                  <select class="selectpicker">
+                    <option>Min Price</option>
+                    <option>Malta</option>
+                    <option>India</option>
+                  </select>
+                </li>
+                <li class="MinPriceSelect">
+                  <select class="selectpicker">
+                    <option>Max Price</option>
+                    <option>Malta</option>
+                    <option>India</option>
+                  </select>
+                </li>
+                <li class="MoreFiltersSelect">
+                  <button class="MrFilter moreFilter">More Filters <span class="bs-caret"><span class="caret"></span></span></button>
+                </li>
+                <li class="SearchBtn">
+                  <button type="submit" class="btn">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </li>
+              </ul>
+              <ul class="MoreFilterSearch2">
+                <li class="LocationSelect">
+                  <select class="selectpicker">
+                    <option>Select Regions</option>
+                    <option>Malta</option>
+                    <option>India</option>
+                  </select>
+                </li>
+                <li class="location">
+                  <input id="name" placeholder="Enter Locality" type="text">
+                </li>
+                <li class="showAll">
+                  <select class="home-icon selectpicker">
+                    <option>Show All</option>
+                    <option>Malta</option>
+                    <option>India</option>
+                  </select>
+                </li>
+                <li class="MinPriceSelect">
+                  <select class="selectpicker">
+                    <option>Min Price</option>
+                    <option>Malta</option>
+                    <option>India</option>
+                  </select>
+                </li>
+                <li class="MinPriceSelect">
+                  <select class="selectpicker">
+                    <option>Max Price</option>
+                    <option>Malta</option>
+                    <option>India</option>
+                  </select>
+                </li>
+                <li class="MoreFiltersSelect">
+                  <button class="SaleMoreFilter">More Filters <span class="bs-caret"><span class="caret"></span></span></button>
+                </li>
+                <li class="SearchBtn">
+                  <button type="submit" class="btn">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </li>
+              </ul>
+              <div class="MoreFilterBox">
+                <div class="row">
+                  <div class="col-md-12">
+                    <ul>
+                    <li>
+                    <label>Property Type</label>
+                    <select class="home-icon selectpicker">
+                      <option>Show All</option>
+                      <option>Malta</option>
+                      <option>India</option>
+                    </select>
+                    </li>
+                    <li>
+                    <label>Bedroom</label>
+                    <select class="bed-icon selectpicker">
+                      <option>Min No.</option>
+                      <option>1</option>
+                      <option>2</option>
+                    </select>
+                    </li>
+                    <li>
+                    <label>Adults</label>
+                    <select class="selectpicker">
+                      <option>Select No.</option>
+                      <option>1</option>
+                      <option>2</option>
+                    </select>
+                    </li>
+                    <li>
+                    <label>Children</label>
+                        <select class="selectpicker age1">
+                          <option>Age 4-12</option>
+                          <option>1</option>
+                          <option>2</option>
+                        </select>
+
+
+                        <select class="selectpicker age2">
+                          <option>Age 0-3</option>
+                          <option>1</option>
+                          <option>2</option>
+                        </select>
+                    </li>
+                    <li>
+                    <label>Amenities & Features</label>
+                    <select id="ddlCars" multiple="multiple">
+                      <option value="Air Conditioning">Air Conditioning</option>
+                      <option value="TV">TV</option>
+                      <option value="Fireplace">Fireplace</option>
+                      <option value="Pet Friendly">Pet Friendly</option>
+                      <option value="Security System">Security System</option>
+                      <option value="Intercom">Intercom</option>
+                      <option value="Floor Heating">Floor Heating</option>
+                      <option value="Wifi">Wifi</option>
+                      <option value="Dishwasher">Dishwasher</option>
+                    </select>
+                    </li>
+                    <li>
+                    <label>Listing ID</label>
+                    <input name="" placeholder="Enter Listing ID" type="text">
+                    </li>
+
+                </ul>
+                </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <label>Baby Gear <span>€5 each</span></label>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <ul class="babygear">
+                          <li>
+                            <div class="checkbox checkRight">
+                              <label>
+                                <input type="checkbox" value="">
+                                Play Pen:
+                                <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                              </label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="checkbox checkRight">
+                              <label>
+                                <input type="checkbox" value="">
+                                Cot:
+                                <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                              </label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="checkbox checkRight">
+                              <label>
+                                <input type="checkbox" value="">
+                                Highchair:
+                                <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                              </label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="MoreFilterBox1">
+                <div class="row">
+                  <div class="col-md-12">
+                    <ul class="forsaleMoreFilters">
+                      <li>
+                        <label>Listing ID</label>
+                        <input name="" placeholder="Enter Listing ID" type="text">
+                      </li>
+                      <li>                    
+                        <label>Bedroom</label>
+                        <select class="selectpicker">
+                          <option>Select No.</option>
+                          <option>1</option>
+                          <option>2</option>
+                        </select>
+                      </li>
+                      <li>
+                        <label>Bathroom</label>
+                        <select class="selectpicker">
+                          <option>Select No.</option>
+                          <option>1</option>
+                          <option>2</option>
+                        </select>
+                      </li>
+                      <li>
+                        <label>Market Status</label>
+                        <select class="selectpicker">
+                          <option>Select Market Status</option>
+                          <option>1</option>
+                          <option>2</option>
+                        </select>
+                      </li>
+                      <li>
+                        <label>Property Status</label>
+                        <select class="selectpicker">
+                          <option>Select Property Status</option>
+                          <option>1</option>
+                          <option>2</option>
+                        </select>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <label>Features</label>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <ul class="babygear">
+                        <li>
+                        <div class="checkbox checkRight">
+                          <label>
+                            <input type="checkbox" value="">
+                            Sea Front:
+                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                          </label>
+                        </div>
+                        </li>
+                        <li>
+                        <div class="checkbox checkRight">
+                          <label>
+                            <input type="checkbox" value="">
+                            Sea View:
+                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                          </label>
+                        </div>
+                        </li>
+                        <li>
+                        <div class="checkbox checkRight">
+                          <label>
+                            <input type="checkbox" value="">
+                            Country View:
+                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                          </label>
+                        </div>
+                        </li>
+                        <li>
+                        <div class="checkbox checkRight">
+                          <label>
+                            <input type="checkbox" value="">
+                            Pool:
+                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                          </label>
+                        </div>
+                        </li>
+                        <li>
+                        <div class="checkbox checkRight">
+                          <label>
+                            <input type="checkbox" value="">
+                            Garden:
+                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                          </label>
+                        </div>
+                        </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Top Search Bar section End Here -->
+    <!-- Page Breadcrum Section -->
+    <section class="Breadcrum">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ol class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Europe</a></li>
+              <li class="active">Malta</li>   
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Page Breadcrum Section End Here -->
+    <!-- Inner List page section -->
+    <section class="container manage-section">
+      <h1>Malta</h1>
+
+    </section>
+    
+    <!-- Manage property list view section -->
+    <div class="container-flud manage-section">
+        <div class="container">
+          <ul id="myTab" class="nav nav-tabs" style="margin-bottom: 15px;">
+              <li class="active"><a href="#tab1" data-toggle="tab">Profile Info</a></li>
+              <li><a href="#tab2" data-toggle="tab">My Properties</a></li>
+              <li><a href="#tab3" data-toggle="tab">Favourite Properties</a></li>
+              <li><a href="#tab4" data-toggle="tab">Viewed Properties</a></li>
+              <li><a href="#tab5" data-toggle="tab">My Reviews</a></li>
+              <li><a href="#tab6" data-toggle="tab">Transacted Properties</a></li>
+              <li><a href="#tab7" data-toggle="tab">My Search Parameters</a></li>
+              <li><a href="#tab8" data-toggle="tab">Billing Info</a></li>
+          </ul>
+        </div>
+        <hr class="tab-hr">
+        <div class="container">
+          <div class="row tab-content">
+              <!-- tab 1 start from here -->
+              <div class="tab-pane fade in active" id="tab1">
+                  <div class="col-md-12">                                        
+                    <div class="row">
+                      <!-- booking tab section -->
+                      <div class="col-md-4 myprofile-left">
+                          <h4><span>A</span></h4>
+                          <div class="upload-imgclass">
+                            <input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1" data-multiple-caption="{count} files selected" multiple />
+                            <label for="file-1"><img src="images/upload-pic.png"> <span>upload image</span></label>
+                          </div>
+                          <ul class="upload-text">
+                            <li><p>Abdur Rehman <br> Siddique</p> </li>
+                          </ul>                    
+                      </div>
+                      <div class="col-md-7 myprofile-right">
+                        <div class="panel">
+                          <h2>My <span>Profile</span> <a href="index.html" class="btn pEdit">Return To Home</a></h2>
+                          <div class="panel-body">
+                            <div class="form-horizontal"> <!-- none editable -->
+
+                            <div class="form-group"> 
+                              <label class="control-label myText col-sm-4">Full Name <b>:</b></label>
+                              <div class="col-sm-8 fieldName">                  
+                                <input class="form-control" value="" type="text" disabled="disabled" placeholder="Abdur Rehman Siddique">
+                              </div>  
+                            </div>
+                            <div class="form-group"> 
+                              <label class="control-label myText col-sm-4">Username <b>:</b></label>
+                              <div class="col-sm-8 fieldName">                  
+                                <input class="form-control" value="" type="text" disabled="disabled" placeholder="abdur123">
+                              </div>  
+                            </div>
+                            <div class="form-group"> 
+                              <label class="control-label myText col-sm-4">Address <b>:</b></label>
+                              <div class="col-sm-8 fieldName">
+                                <textarea class="form-control" name="" id="" cols="30" rows="4" disabled="disabled"></textarea>
+                              </div>  
+                            </div> 
+                            <div class="form-group"> 
+                              <label class="control-label myText col-sm-4">Email Address <b>:</b></label>
+                              <div class="col-sm-8 fieldName">
+                                <input class="form-control" value="" type="email" disabled="disabled" placeholder="abdur.rehman@asergis.in">
+                              </div>  
+                            </div> 
+                            <div class="form-group"> 
+                              <label class="control-label myText col-sm-4">Contact No. <b>:</b></label>
+                              <div class="col-sm-8 fieldName">
+                                <input class="form-control" value="" type="text" disabled="disabled" placeholder="123456789">
+                              </div>  
+                            </div> 
+                            <div class="form-group"> 
+                              <label class="control-label myText col-sm-4">Password <b>:</b></label>
+                              <div class="col-sm-8 fieldName">
+                                <div class="row lastdiv">
+                                  <div class="col-xs-4 passsmall">XXXXXXXXXX</div>
+                                  <div class="col-xs-12 col-xs-8"><a id="changepass" href="javascript:void(0)">Change</a></div>
+                                </div>
+                              </div>  
+                            </div>
+
+                            <div class="col-sm-8 col-xs-offset-4 changepassblock">
+                              <div class="changePass">
+                                <i class="arrow-up"></i>
+                                <div class="form-group">
+                                  <div class="col-sm-12">
+                                    <input class="form-control" placeholder="Old Password" type="text">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <div class="col-sm-12">
+                                    <input class="form-control" placeholder="New Password" type="text">
+                                  </div>
+                                </div>
+                                <div class="form-group m-b-none">
+                                  <div class="col-sm-12">
+                                    <button type="submit" class="btn btn-primary">Save</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="mProBtn">
+                              <br>
+                              <button type="button" class="btn">Edit</button>
+                            </div>
+                             
+                          </div>
+
+
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+                    
+
+                  </div>
+
+                  <div class="clearfix"></div>
+              </div>
+              
+              <!-- tab 2 start from here -->
+              <div class="tab-pane fade" id="tab2">
+                  <!-- Page Loader -->
+                  <div id="preloader1"></div>
+                  <!-- Page Loader End Here -->
+                  <div class="col-md-8">
+
+                    <div class="gridArea">
+                        <div class="row">
+                          <div class="col-md-5">
+                            <div class="gridPhoto">
+                              <!-- Slider -->
+                              <div id="slider">
+                                  <!-- Top part of the slider -->
+                                  <div class="row">
+                                      <div class="col-sm-12" id="carousel-bounding-box">
+                                          <div class="carousel slide" id="myCarouselTwo">
+                                              <!-- Carousel items -->
+                                              <div class="carousel-inner">
+                                                  <div class="active item" data-slide-number="0">
+                                                  <img src="images/review-img.jpg"></div>
+
+                                                  <div class="item" data-slide-number="1">
+                                                  <img src="images/review-img.jpg"></div>
+
+                                                  <div class="item" data-slide-number="2">
+                                                  <img src="images/review-img.jpg"></div>
+                                              </div><!-- Carousel nav -->
+                                              <a class="left carousel-control" href="#myCarouselTwo" role="button" data-slide="prev">
+                                                  <span class="fa fa-angle-left"></span>                                       
+                                              </a>
+                                              <a class="right carousel-control" href="#myCarouselTwo" role="button" data-slide="next">
+                                                  <span class="fa fa-angle-right"></span>                                       
+                                              </a>                                
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!--/Slider-->
+                              <div class="hidden-xs" id="slider-thumbs">
+                                <!-- Bottom switcher of slider -->
+                                <ul class="hide-bullets">
+                                  <li><a class="thumbnail" id="carousel-selector1-0"><img src="images/property-thumb1.jpg"></a></li>
+                                  <li><a class="thumbnail" id="carousel-selector1-1"><img src="images/property-thumb1.jpg"></a></li>
+                                  <li><a class="thumbnail" id="carousel-selector1-2"><img src="images/property-thumb1.jpg"></a></li>
+                                </ul>                 
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-7">
+                            <div class="row gridDetails">
+                              <div class="row gridtitle">
+                                <div class="col-md-7">
+                                  <h2>Belvedere Court <span>Mellieha , Malta</span></h2>                    
+                                  <p>Apartment with Sea View</p>
+                                </div>
+                                <div class="col-md-5">
+                                  <div class="priceTag">€245 <span>Per Night</span></div>
+                                  <p class="child-unfr">Child Unfriendly</p>
+                                </div>
+                              </div>                             
+
+                              <div class="row gridtext mem-info">
+                                <div class="col-md-12"><h3>Tenants Info.</h3></div>
+                                <div class="col-md-6">
+                                  <b>Name:</b> Joen
+                                </div>
+                                <div class="col-md-6">
+                                  <b>Email:</b> Joen@gmail.com
+                                </div>
+                                <div class="col-md-6">
+                                  <b>Mobile No.:</b> 123456789
+                                </div>
+                                <div class="col-md-6">
+                                  <b>Country:</b> India 
+                                </div>
+                              </div>
+
+                              <div class="row gridshare">
+                                <div class="col-md-5 col-sm-5">
+                                  <div class="counter-tab">
+                                    <div class="counter_comnt"><i class="glyphicon glyphicon-user"></i> 15</div>
+                                    <div class="counter_like"><i class="glyphicon glyphicon-heart redcolor"></i></div>
+                                    <div class="counter_share"><i class="fa fa-share-alt"></i></div>
+                                    <div class="counter_view"><i class="glyphicon glyphicon-eye-open"></i></div>
+                                    <div class="counter_linkstar">
+                                      <fieldset class="rating">
+                                          <input id="star5" name="rating1" value="5" type="radio"><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                          <input id="star4half" name="rating1" value="4 and a half" type="radio"><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                          <input id="star4" name="rating1" value="4" type="radio"><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                          <input id="star3half" name="rating1" value="3 and a half" type="radio" checked="checked"><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                          <input id="star3" name="rating1" value="3" type="radio"><label class="full" for="star3" title="Meh - 3 stars"></label>
+                                          <input id="star2half" name="rating1" value="2 and a half" type="radio"><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                          <input id="star2" name="rating1" value="2" type="radio"><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                          <input id="star1half" name="rating1" value="1 and a half" type="radio"><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                          <input id="star1" name="rating1" value="1" type="radio"><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                          <input id="starhalf" name="rating1" value="half" type="radio"><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                      </fieldset>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                  <a href="#" class="btn btn-primary btn-lg rent">To Let</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gridArea">
+                        <div class="row">
+                          <div class="col-md-5">
+                            <div class="gridPhoto">
+                              <!-- Slider -->
+                              <div id="slider">
+                                  <!-- Top part of the slider -->
+                                  <div class="row">
+                                      <div class="col-sm-12" id="carousel-bounding-box">
+                                          <div class="carousel slide" id="myCarouselTwo">
+                                              <!-- Carousel items -->
+                                              <div class="carousel-inner">
+                                                  <div class="active item" data-slide-number="0">
+                                                  <img src="images/review-img.jpg"></div>
+
+                                                  <div class="item" data-slide-number="1">
+                                                  <img src="images/review-img.jpg"></div>
+
+                                                  <div class="item" data-slide-number="2">
+                                                  <img src="images/review-img.jpg"></div>
+                                              </div><!-- Carousel nav -->
+                                              <a class="left carousel-control" href="#myCarouselTwo" role="button" data-slide="prev">
+                                                  <span class="fa fa-angle-left"></span>                                       
+                                              </a>
+                                              <a class="right carousel-control" href="#myCarouselTwo" role="button" data-slide="next">
+                                                  <span class="fa fa-angle-right"></span>                                       
+                                              </a>                                
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!--/Slider-->
+                              <div class="hidden-xs" id="slider-thumbs">
+                                <!-- Bottom switcher of slider -->
+                                <ul class="hide-bullets">
+                                  <li><a class="thumbnail" id="carousel-selector1-0"><img src="images/property-thumb1.jpg"></a></li>
+                                  <li><a class="thumbnail" id="carousel-selector1-1"><img src="images/property-thumb1.jpg"></a></li>
+                                  <li><a class="thumbnail" id="carousel-selector1-2"><img src="images/property-thumb1.jpg"></a></li>
+                                </ul>                 
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-7">
+                            <div class="row gridDetails">
+                              <div class="row gridtitle">
+                                <div class="col-md-7">
+                                  <h2>La Plage No5 <span>Mellieha , Malta</span></h2>                    
+                                  <p>Apartment with Sea View</p>
+                                </div>
+                                <div class="col-md-5">
+                                  <div class="priceTag">€120,000</div>
+                                </div>
+                              </div>                             
+
+                              <div class="row gridtext mem-info">
+                                <div class="col-md-12"><h3>Owner Info.</h3></div>
+                                <div class="col-md-6">
+                                  <b>Name:</b> Joen
+                                </div>
+                                <div class="col-md-6">
+                                  <b>Email:</b> Joen@gmail.com
+                                </div>
+                                <div class="col-md-6">
+                                  <b>Mobile No.:</b> 123456789
+                                </div>
+                                <div class="col-md-6">
+                                  <b>Country:</b> India 
+                                </div>
+                              </div>
+
+                              <div class="row gridshare">
+                                <div class="col-md-5 col-sm-5">
+                                  <div class="counter-tab">
+                                    <div class="counter_comnt"><i class="glyphicon glyphicon-user"></i> 15</div>
+                                    <div class="counter_like"><i class="glyphicon glyphicon-heart redcolor"></i></div>
+                                    <div class="counter_share"><i class="fa fa-share-alt"></i></div>
+                                    <div class="counter_view"><i class="glyphicon glyphicon-eye-open"></i></div>
+                                    <div class="counter_linkstar">
+                                      <fieldset class="rating">
+                                          <input id="star5" name="rating2" value="5" type="radio"><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                          <input id="star4half" name="rating2" value="4 and a half" type="radio"><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                          <input id="star4" name="rating2" value="4" type="radio"><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                          <input id="star3half" name="rating2" value="3 and a half" type="radio"><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                          <input id="star3" name="rating2" value="3" type="radio"><label class="full" for="star3" title="Meh - 3 stars"></label>
+                                          <input id="star2half" name="rating2" value="2 and a half" type="radio" checked="checked"><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                          <input id="star2" name="rating2" value="2" type="radio"><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                          <input id="star1half" name="rating2" value="1 and a half" type="radio"><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                          <input id="star1" name="rating2" value="1" type="radio"><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                          <input id="starhalf" name="rating2" value="half" type="radio"><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                      </fieldset>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                  <a href="#" class="btn btn-primary btn-lg rent">For Sale</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gridArea">
+                        <div class="row">
+                          <div class="col-md-5">
+                            <div class="gridPhoto">
+                              <!-- Slider -->
+                              <div id="slider">
+                                  <!-- Top part of the slider -->
+                                  <div class="row">
+                                      <div class="col-sm-12" id="carousel-bounding-box">
+                                          <div class="carousel slide" id="myCarouselTwo">
+                                              <!-- Carousel items -->
+                                              <div class="carousel-inner">
+                                                  <div class="active item" data-slide-number="0">
+                                                  <img src="images/review-img.jpg"></div>
+
+                                                  <div class="item" data-slide-number="1">
+                                                  <img src="images/review-img.jpg"></div>
+
+                                                  <div class="item" data-slide-number="2">
+                                                  <img src="images/review-img.jpg"></div>
+                                              </div><!-- Carousel nav -->
+                                              <a class="left carousel-control" href="#myCarouselTwo" role="button" data-slide="prev">
+                                                  <span class="fa fa-angle-left"></span>                                       
+                                              </a>
+                                              <a class="right carousel-control" href="#myCarouselTwo" role="button" data-slide="next">
+                                                  <span class="fa fa-angle-right"></span>                                       
+                                              </a>                                
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!--/Slider-->
+                              <div class="hidden-xs" id="slider-thumbs">
+                                <!-- Bottom switcher of slider -->
+                                <ul class="hide-bullets">
+                                  <li><a class="thumbnail" id="carousel-selector1-0"><img src="images/property-thumb1.jpg"></a></li>
+                                  <li><a class="thumbnail" id="carousel-selector1-1"><img src="images/property-thumb1.jpg"></a></li>
+                                  <li><a class="thumbnail" id="carousel-selector1-2"><img src="images/property-thumb1.jpg"></a></li>
+                                </ul>                 
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-7">
+                            <div class="row gridDetails">
+                              <div class="row gridtitle">
+                                <div class="col-md-7">
+                                  <h2>Belvedere Court <span>Mellieha , Malta</span></h2>                    
+                                  <p>Apartment with Sea View</p>
+                                </div>
+                                <div class="col-md-5">
+                                  <div class="priceTag">€245 <span>Per Night</span></div>
+                                  <p class="child-unfr">Child Unfriendly</p>
+                                </div>
+                              </div>                             
+
+                              <div class="row gridtext mem-info">
+                                <div class="col-md-12"><h3>Tenants Info.</h3></div>
+                                <div class="col-md-6">
+                                  <b>Name:</b> Joen
+                                </div>
+                                <div class="col-md-6">
+                                  <b>Email:</b> Joen@gmail.com
+                                </div>
+                                <div class="col-md-6">
+                                  <b>Mobile No.:</b> 123456789
+                                </div>
+                                <div class="col-md-6">
+                                  <b>Country:</b> India 
+                                </div>
+                              </div>
+
+                              <div class="row gridshare">
+                                <div class="col-md-5 col-sm-5">
+                                  <div class="counter-tab">
+                                    <div class="counter_comnt"><i class="glyphicon glyphicon-user"></i> 15</div>
+                                    <div class="counter_like"><i class="glyphicon glyphicon-heart redcolor"></i></div>
+                                    <div class="counter_share"><i class="fa fa-share-alt"></i></div>
+                                    <div class="counter_view"><i class="glyphicon glyphicon-eye-open"></i></div>
+                                    <div class="counter_linkstar">
+                                      <fieldset class="rating">
+                                          <input id="star5" name="rating3" value="5" type="radio"><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                          <input id="star4half" name="rating3" value="4 and a half" type="radio"><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                          <input id="star4" name="rating3" value="4" type="radio"><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                          <input id="star3half" name="rating3" value="3 and a half" type="radio" checked="checked"><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                          <input id="star3" name="rating3" value="3" type="radio"><label class="full" for="star3" title="Meh - 3 stars"></label>
+                                          <input id="star2half" name="rating3" value="2 and a half" type="radio"><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                          <input id="star2" name="rating3" value="2" type="radio"><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                          <input id="star1half" name="rating3" value="1 and a half" type="radio"><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                          <input id="star1" name="rating3" value="1" type="radio"><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                          <input id="starhalf" name="rating3" value="half" type="radio"><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                      </fieldset>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                  <a href="#" class="btn btn-primary btn-lg rent">To Let</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gridArea">
+                        <div class="row">
+                          <div class="col-md-5">
+                            <div class="gridPhoto">
+                              <!-- Slider -->
+                              <div id="slider">
+                                  <!-- Top part of the slider -->
+                                  <div class="row">
+                                      <div class="col-sm-12" id="carousel-bounding-box">
+                                          <div class="carousel slide" id="myCarouselTwo">
+                                              <!-- Carousel items -->
+                                              <div class="carousel-inner">
+                                                  <div class="active item" data-slide-number="0">
+                                                  <img src="images/review-img.jpg"></div>
+
+                                                  <div class="item" data-slide-number="1">
+                                                  <img src="images/review-img.jpg"></div>
+
+                                                  <div class="item" data-slide-number="2">
+                                                  <img src="images/review-img.jpg"></div>
+                                              </div><!-- Carousel nav -->
+                                              <a class="left carousel-control" href="#myCarouselTwo" role="button" data-slide="prev">
+                                                  <span class="fa fa-angle-left"></span>                                       
+                                              </a>
+                                              <a class="right carousel-control" href="#myCarouselTwo" role="button" data-slide="next">
+                                                  <span class="fa fa-angle-right"></span>                                       
+                                              </a>                                
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!--/Slider-->
+                              <div class="hidden-xs" id="slider-thumbs">
+                                <!-- Bottom switcher of slider -->
+                                <ul class="hide-bullets">
+                                  <li><a class="thumbnail" id="carousel-selector1-0"><img src="images/property-thumb1.jpg"></a></li>
+                                  <li><a class="thumbnail" id="carousel-selector1-1"><img src="images/property-thumb1.jpg"></a></li>
+                                  <li><a class="thumbnail" id="carousel-selector1-2"><img src="images/property-thumb1.jpg"></a></li>
+                                </ul>                 
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-7">
+                            <div class="row gridDetails">
+                              <div class="row gridtitle">
+                                <div class="col-md-7">
+                                  <h2>La Plage No5 <span>Mellieha , Malta</span></h2>                    
+                                  <p>Apartment with Sea View</p>
+                                </div>
+                                <div class="col-md-5">
+                                  <div class="priceTag">€120,000</div>
+                                </div>
+                              </div>                             
+
+                              <div class="row gridtext mem-info">
+                                <div class="col-md-12"><h3>Owner Info.</h3></div>
+                                <div class="col-md-6">
+                                  <b>Name:</b> Joen
+                                </div>
+                                <div class="col-md-6">
+                                  <b>Email:</b> Joen@gmail.com
+                                </div>
+                                <div class="col-md-6">
+                                  <b>Mobile No.:</b> 123456789
+                                </div>
+                                <div class="col-md-6">
+                                  <b>Country:</b> India 
+                                </div>
+                              </div>
+
+                              <div class="row gridshare">
+                                <div class="col-md-5 col-sm-5">
+                                  <div class="counter-tab">
+                                    <div class="counter_comnt"><i class="glyphicon glyphicon-user"></i> 15</div>
+                                    <div class="counter_like"><i class="glyphicon glyphicon-heart redcolor"></i></div>
+                                    <div class="counter_share"><i class="fa fa-share-alt"></i></div>
+                                    <div class="counter_view"><i class="glyphicon glyphicon-eye-open"></i></div>
+                                    <div class="counter_linkstar">
+                                      <fieldset class="rating">
+                                          <input id="star5" name="rating4" value="5" type="radio"><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                          <input id="star4half" name="rating4" value="4 and a half" type="radio"><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                          <input id="star4" name="rating4" value="4" type="radio"><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                          <input id="star3half" name="rating4" value="3 and a half" type="radio"><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                          <input id="star3" name="rating4" value="3" type="radio"><label class="full" for="star3" title="Meh - 3 stars"></label>
+                                          <input id="star2half" name="rating4" value="2 and a half" type="radio" checked="checked"><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                          <input id="star2" name="rating4" value="2" type="radio"><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                          <input id="star1half" name="rating4" value="1 and a half" type="radio"><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                          <input id="star1" name="rating4" value="1" type="radio"><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                          <input id="starhalf" name="rating4" value="half" type="radio"><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                      </fieldset>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                  <a href="#" class="btn btn-primary btn-lg rent">For Sale</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                    </div>
+
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="fullMapArea">
+                      <div id="map"></div>
+                    </div>
+                  </div>
+
+                  <div class="clearfix"></div>
+              </div>
+              
+              <!-- tab 3 start from here -->
+              <div class="tab-pane fade" id="tab3">
+                  <div class="col-md-8">
+
+                    <div class="gridArea">
+                        <div class="row">
+                          <div class="col-md-5">
+                            <div class="gridPhoto">
+                              <!-- Slider -->
+                              <div id="slider">
+                                  <!-- Top part of the slider -->
+                                  <div class="row">
+                                      <div class="col-sm-12" id="carousel-bounding-box">
+                                          <div class="carousel slide" id="myCarouselTwo">
+                                              <!-- Carousel items -->
+                                              <div class="carousel-inner">
+                                                  <div class="active item" data-slide-number="0">
+                                                  <img src="images/review-img.jpg"></div>
+
+                                                  <div class="item" data-slide-number="1">
+                                                  <img src="images/review-img.jpg"></div>
+
+                                                  <div class="item" data-slide-number="2">
+                                                  <img src="images/review-img.jpg"></div>
+                                              </div><!-- Carousel nav -->
+                                              <a class="left carousel-control" href="#myCarouselTwo" role="button" data-slide="prev">
+                                                  <span class="fa fa-angle-left"></span>                                       
+                                              </a>
+                                              <a class="right carousel-control" href="#myCarouselTwo" role="button" data-slide="next">
+                                                  <span class="fa fa-angle-right"></span>                                       
+                                              </a>                                
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!--/Slider-->
+                              <div class="hidden-xs" id="slider-thumbs">
+                                <!-- Bottom switcher of slider -->
+                                <ul class="hide-bullets">
+                                  <li><a class="thumbnail" id="carousel-selector1-0"><img src="images/property-thumb1.jpg"></a></li>
+                                  <li><a class="thumbnail" id="carousel-selector1-1"><img src="images/property-thumb1.jpg"></a></li>
+                                  <li><a class="thumbnail" id="carousel-selector1-2"><img src="images/property-thumb1.jpg"></a></li>
+                                </ul>                 
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-7">
+                            <div class="row gridDetails">
+                              <div class="row gridtitle">
+                                <div class="col-md-7">
+                                  <h2>Belvedere Court <span>Mellieha , Malta</span></h2>                    
+                                  <p>Apartment with Sea View</p>
+                                </div>
+                                <div class="col-md-5">
+                                  <div class="priceTag">€245 <span>Per Night</span></div>
+                                  <p class="child-unfr">Child Unfriendly</p>
+                                </div>
+                              </div>
+                              
+                              <div class="row gridui">
+                                <ul class="roomdetail-ui">
+                                  <li class="bed-ico"><i></i> 3 Bedrooms</li>
+                                  <li class="bath-ico"><i></i> 2 Bathrooms</li>
+                                  <li class="gust-ico"><i></i> 4 Guests</li>
+                                </ul>
+                              </div>
+
+                              <div class="row gridtext">
+                                <div class="col-xs-6 col-sm-6 col-md-7">
+                                  Area 
+                                  <span>1200Sq Mtrs</span>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-5">
+                                  Minimum Stay 
+                                  <span>3 nights</span>
+                                </div>
+                              </div>
+
+                              <div class="row gridshare">
+                                <div class="col-md-5 col-sm-5">
+                                  <div class="counter-tab">
+                                    <div class="counter_comnt"><i class="glyphicon glyphicon-user"></i> 15</div>
+                                    <div class="counter_like"><i class="glyphicon glyphicon-heart redcolor"></i></div>
+                                    <div class="counter_share"><i class="fa fa-share-alt"></i></div>
+                                    <div class="counter_view"><i class="glyphicon glyphicon-eye-open"></i></div>
+                                    <div class="counter_linkstar">
+                                      <fieldset class="rating">
+                                          <input id="star5" name="rating5" value="5" type="radio"><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                          <input id="star4half" name="rating5" value="4 and a half" type="radio"><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                          <input id="star4" name="rating5" value="4" type="radio"><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                          <input id="star3half" name="rating5" value="3 and a half" type="radio"><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                          <input id="star3" name="rating5" value="3" type="radio" checked="checked"><label class="full" for="star3" title="Meh - 3 stars"></label>
+                                          <input id="star2half" name="rating5" value="2 and a half" type="radio"><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                          <input id="star2" name="rating5" value="2" type="radio"><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                          <input id="star1half" name="rating5" value="1 and a half" type="radio"><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                          <input id="star1" name="rating5" value="1" type="radio"><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                          <input id="starhalf" name="rating5" value="half" type="radio"><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                      </fieldset>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                  <a href="review.html" class="btn view">View Details</a>
+                                  <a href="booking-screen.html" class="btn btn-primary btn-lg">Book Now</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gridArea">
+                        <div class="row">
+                          <div class="disablearea"></div>
+                          <div class="col-md-5">
+                            <div class="gridPhoto">
+                              <!-- Slider -->
+                              <div id="slider">
+                                  <!-- Top part of the slider -->
+                                  <div class="row">
+                                      <div class="col-sm-12" id="carousel-bounding-box">
+                                          <div class="carousel slide" id="myCarouselThree">
+                                              <!-- Carousel items -->
+                                              <div class="carousel-inner">
+                                                  <div class="active item" data-slide-number="0">
+                                                  <img src="images/review-img.jpg"></div>
+
+                                                  <div class="item" data-slide-number="1">
+                                                  <img src="images/review-img.jpg"></div>
+
+                                                  <div class="item" data-slide-number="2">
+                                                  <img src="images/review-img.jpg"></div>
+                                              </div><!-- Carousel nav -->
+                                              <a class="left carousel-control" href="#myCarouselThree" role="button" data-slide="prev">
+                                                  <span class="fa fa-angle-left"></span>                                       
+                                              </a>
+                                              <a class="right carousel-control" href="#myCarouselThree" role="button" data-slide="next">
+                                                  <span class="fa fa-angle-right"></span>                                       
+                                              </a>                                
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!--/Slider-->
+                              <div class="hidden-xs" id="slider-thumbs">
+                                <!-- Bottom switcher of slider -->
+                                <ul class="hide-bullets">
+                                  <li><a class="thumbnail" id="carousel-selector2-0"><img src="images/property-thumb1.jpg"></a></li>
+                                  <li><a class="thumbnail" id="carousel-selector2-1"><img src="images/property-thumb1.jpg"></a></li>
+                                  <li><a class="thumbnail" id="carousel-selector2-2"><img src="images/property-thumb1.jpg"></a></li>
+                                </ul>                 
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-7">
+                            <div class="row gridDetails">
+                              <div class="row gridtitle">
+                                <div class="col-md-7">
+                                  <h2>Belvedere Court <span>Mellieha , Malta</span></h2>                    
+                                  <p>Apartment with Sea View</p>
+                                </div>
+                                <div class="col-md-5">
+                                  <div class="priceTag">€245 <span>Per Night</span></div>
+                                  <p class="child-unfr">Child Unfriendly</p>
+                                </div>
+                              </div>
+                              
+                              <div class="row gridui">
+                                <ul class="roomdetail-ui">
+                                  <li class="bed-ico"><i></i> 2 Bedrooms</li>
+                                  <li class="bath-ico"><i></i> 1 Bathrooms</li>
+                                  <li class="gust-ico"><i></i> 4 Guests</li>
+                                </ul>
+                              </div>
+
+                              <div class="row gridtext">
+                                <div class="col-xs-6 col-sm-6 col-md-7">
+                                  Area 
+                                  <span>1200Sq Mtrs</span>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-5">
+                                  Minimum Stay 
+                                  <span>3 nights</span>
+                                </div>
+                              </div>
+
+                              <div class="row gridshare">
+                                <div class="col-md-5 col-sm-5">
+                                  <div class="counter-tab">
+                                    <div class="counter_comnt"><i class="glyphicon glyphicon-user"></i> 15</div>
+                                    <div class="counter_like"><i class="glyphicon glyphicon-heart redcolor"></i></div>
+                                    <div class="counter_share"><i class="fa fa-share-alt"></i></div>
+                                    <div class="counter_view"><i class="glyphicon glyphicon-eye-open"></i></div>
+                                    <div class="counter_linkstar">
+                                      <fieldset class="rating">
+                                          <input id="star5" name="rating6" value="5" type="radio"><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                          <input id="star4half" name="rating6" value="4 and a half" type="radio"><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                          <input id="star4" name="rating6" value="4" type="radio" checked="checked"><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                          <input id="star3half" name="rating6" value="3 and a half" type="radio"><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                          <input id="star3" name="rating6" value="3" type="radio"><label class="full" for="star3" title="Meh - 3 stars"></label>
+                                          <input id="star2half" name="rating6" value="2 and a half" type="radio"><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                          <input id="star2" name="rating6" value="2" type="radio"><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                          <input id="star1half" name="rating6" value="1 and a half" type="radio"><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                          <input id="star1" name="rating6" value="1" type="radio"><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                          <input id="starhalf" name="rating6" value="half" type="radio"><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                      </fieldset>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                  <a href="#" class="btn btn-primary btn-lg red">Rented</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gridArea">
+                        <div class="row">
+                          <div class="col-md-5">
+                            <div class="gridPhoto">
+                              <!-- Slider -->
+                              <div id="slider">
+                                  <!-- Top part of the slider -->
+                                  <div class="row">
+                                      <div class="col-sm-12" id="carousel-bounding-box">
+                                          <div class="carousel slide" id="myCarouselFour">
+                                              <!-- Carousel items -->
+                                              <div class="carousel-inner">
+                                                  <div class="active item" data-slide-number="0">
+                                                  <img src="images/review-img.jpg"></div>
+
+                                                  <div class="item" data-slide-number="1">
+                                                  <img src="images/review-img.jpg"></div>
+
+                                                  <div class="item" data-slide-number="2">
+                                                  <img src="images/review-img.jpg"></div>
+                                              </div><!-- Carousel nav -->
+                                              <a class="left carousel-control" href="#myCarouselFour" role="button" data-slide="prev">
+                                                  <span class="fa fa-angle-left"></span>                                       
+                                              </a>
+                                              <a class="right carousel-control" href="#myCarouselFour" role="button" data-slide="next">
+                                                  <span class="fa fa-angle-right"></span>                                       
+                                              </a>                                
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!--/Slider-->
+                              <div class="hidden-xs" id="slider-thumbs">
+                                <!-- Bottom switcher of slider -->
+                                <ul class="hide-bullets">
+                                  <li><a class="thumbnail" id="carousel-selector3-0"><img src="images/property-thumb1.jpg"></a></li>
+                                  <li><a class="thumbnail" id="carousel-selector3-1"><img src="images/property-thumb1.jpg"></a></li>
+                                  <li><a class="thumbnail" id="carousel-selector3-2"><img src="images/property-thumb1.jpg"></a></li>
+                                </ul>                 
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-7">
+                            <div class="row gridDetails">
+                              <div class="row gridtitle">
+                                <div class="col-md-7">
+                                  <h2>Belvedere Court <span>Mellieha , Malta</span></h2>                    
+                                  <p>Apartment with Sea View</p>
+                                </div>
+                                <div class="col-md-5">
+                                  <div class="priceTag">€245 <span>Per Night</span></div>
+                                </div>
+                              </div>
+                              
+                              <div class="row gridui">
+                                <ul class="roomdetail-ui">
+                                  <li class="bed-ico"><i></i> 2 Bedrooms</li>
+                                  <li class="bath-ico"><i></i> 1 Bathrooms</li>
+                                  <li class="gust-ico"><i></i> 4 Guests</li>
+                                </ul>
+                              </div>
+
+                              <div class="row gridtext">
+                                <div class="col-xs-6 col-sm-6 col-md-7">
+                                  Area 
+                                  <span>1200Sq Mtrs</span>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-5">
+                                  Minimum Stay 
+                                  <span>3 nights</span>
+                                </div>
+                              </div>
+
+                              <div class="row gridshare">
+                                <div class="col-md-5 col-sm-5">
+                                  <div class="counter-tab">
+                                    <div class="counter_comnt"><i class="glyphicon glyphicon-user"></i> 15</div>
+                                    <div class="counter_like"><i class="glyphicon glyphicon-heart redcolor"></i></div>
+                                    <div class="counter_share"><i class="fa fa-share-alt"></i></div>
+                                    <div class="counter_view"><i class="glyphicon glyphicon-eye-open"></i></div>
+                                    <div class="counter_linkstar">
+                                      <fieldset class="rating">
+                                          <input id="star5" name="rating7" value="5" type="radio" checked="checked"><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                          <input id="star4half" name="rating7" value="4 and a half" type="radio"><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                          <input id="star4" name="rating7" value="4" type="radio"><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                          <input id="star3half" name="rating7" value="3 and a half" type="radio"><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                          <input id="star3" name="rating7" value="3" type="radio"><label class="full" for="star3" title="Meh - 3 stars"></label>
+                                          <input id="star2half" name="rating7" value="2 and a half" type="radio"><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                          <input id="star2" name="rating7" value="2" type="radio"><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                          <input id="star1half" name="rating7" value="1 and a half" type="radio"><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                          <input id="star1" name="rating7" value="1" type="radio"><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                          <input id="starhalf" name="rating7" value="half" type="radio"><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                      </fieldset>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                  <a href="review.html" class="btn view">View Details</a>
+                                  <a href="booking-screen.html" class="btn btn-primary btn-lg">Book Now</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                    </div>
+
+                  </div>
+                  
+                  <div class="col-md-4">
+                    <div class="fullMapArea">
+                      <!-- <img src="images/googlemap.jpg" alt="full map"> -->
+                      <div id="mapTwo"></div>
+                  </div>
+
+                  </div>
+
+                  <div class="clearfix"></div>
+              </div>
+
+              <!-- tab 4 start from here -->
+              <div class="tab-pane fade" id="tab4">
+                  <div class="col-md-8">
+
+                    <div class="gridArea">
+                        <div class="row">
+                          <div class="col-md-5">
+                            <div class="gridPhoto">
+                              <!-- Slider -->
+                              <div id="slider">
+                                  <!-- Top part of the slider -->
+                                  <div class="row">
+                                      <div class="col-sm-12" id="carousel-bounding-box">
+                                          <div class="carousel slide" id="myCarouselTwo">
+                                              <!-- Carousel items -->
+                                              <div class="carousel-inner">
+                                                  <div class="active item" data-slide-number="0">
+                                                  <img src="images/review-img.jpg"></div>
+
+                                                  <div class="item" data-slide-number="1">
+                                                  <img src="images/review-img.jpg"></div>
+
+                                                  <div class="item" data-slide-number="2">
+                                                  <img src="images/review-img.jpg"></div>
+                                              </div><!-- Carousel nav -->
+                                              <a class="left carousel-control" href="#myCarouselTwo" role="button" data-slide="prev">
+                                                  <span class="fa fa-angle-left"></span>                                       
+                                              </a>
+                                              <a class="right carousel-control" href="#myCarouselTwo" role="button" data-slide="next">
+                                                  <span class="fa fa-angle-right"></span>                                       
+                                              </a>                                
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!--/Slider-->
+                              <div class="hidden-xs" id="slider-thumbs">
+                                <!-- Bottom switcher of slider -->
+                                <ul class="hide-bullets">
+                                  <li><a class="thumbnail" id="carousel-selector1-0"><img src="images/property-thumb1.jpg"></a></li>
+                                  <li><a class="thumbnail" id="carousel-selector1-1"><img src="images/property-thumb1.jpg"></a></li>
+                                  <li><a class="thumbnail" id="carousel-selector1-2"><img src="images/property-thumb1.jpg"></a></li>
+                                </ul>                 
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-7">
+                            <div class="row gridDetails">
+                              <div class="row gridtitle">
+                                <div class="col-md-7">
+                                  <h2>Belvedere Court <span>Mellieha , Malta</span></h2>                    
+                                  <p>Apartment with Sea View</p>
+                                </div>
+                                <div class="col-md-5">
+                                  <div class="priceTag">€245 <span>Per Night</span></div>
+                                  <p class="child-unfr">Child Unfriendly</p>
+                                </div>
+                              </div>
+                              
+                              <div class="row gridui">
+                                <ul class="roomdetail-ui">
+                                  <li class="bed-ico"><i></i> 2 Bedrooms</li>
+                                  <li class="bath-ico"><i></i> 1 Bathrooms</li>
+                                  <li class="gust-ico"><i></i> 4 Guests</li>
+                                </ul>
+                              </div>
+
+                              <div class="row gridtext">
+                                <div class="col-xs-6 col-sm-6 col-md-7">
+                                  Area 
+                                  <span>1200Sq Mtrs</span>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-5">
+                                  Minimum Stay 
+                                  <span>3 nights</span>
+                                </div>
+                              </div>
+
+                              <div class="row gridshare">
+                                <div class="col-md-5 col-sm-5">
+                                  <div class="counter-tab">
+                                    <div class="counter_comnt"><i class="glyphicon glyphicon-user"></i> 15</div>
+                                    <div class="counter_like"><i class="glyphicon glyphicon-heart"></i></div>
+                                    <div class="counter_share"><i class="fa fa-share-alt"></i></div>
+                                    <div class="counter_view" title="view1"><i class="glyphicon glyphicon-eye-open"></i></div>
+                                    <div class="counter_linkstar">
+                                      <fieldset class="rating">
+                                          <input id="star5" name="rating15" value="5" type="radio"><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                          <input id="star4half" name="rating15" value="4 and a half" type="radio"><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                          <input id="star4" name="rating15" value="4" type="radio" checked="checked"><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                          <input id="star3half" name="rating15" value="3 and a half" type="radio"><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                          <input id="star3" name="rating15" value="3" type="radio"><label class="full" for="star3" title="Meh - 3 stars"></label>
+                                          <input id="star2half" name="rating15" value="2 and a half" type="radio"><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                          <input id="star2" name="rating15" value="2" type="radio"><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                          <input id="star1half" name="rating15" value="1 and a half" type="radio"><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                          <input id="star1" name="rating15" value="1" type="radio"><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                          <input id="starhalf" name="rating15" value="half" type="radio"><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                      </fieldset>
+                                    </div>
+                                  </div>                                  
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                  <a href="review.html" class="btn view">View Details</a>
+                                  <a href="booking-screen.html" class="btn btn-primary btn-lg">Book Now</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <hr>
+                        </div>
+                        
+                        <div class="col-md-12 viewProper">
+                          <textarea class="form-control" name="" id="" cols="30" rows="4" placeholder="Write your comment here"></textarea>
+                          <div class="viewSub">
+                            <button type="button" class="btn">Submit</button>
+                          </div>
+                        </div>
+
+                    </div>
+
+                    <div class="gridArea">
+                        <div class="row">
+                          <div class="col-md-5">
+                            <div class="gridPhoto">
+                              <!-- Slider -->
+                              <div id="slider">
+                                  <!-- Top part of the slider -->
+                                  <div class="row">
+                                      <div class="col-sm-12" id="carousel-bounding-box">
+                                          <div class="carousel slide" id="myCarouselTwo">
+                                              <!-- Carousel items -->
+                                              <div class="carousel-inner">
+                                                  <div class="active item" data-slide-number="0">
+                                                  <img src="images/review-img.jpg"></div>
+
+                                                  <div class="item" data-slide-number="1">
+                                                  <img src="images/review-img.jpg"></div>
+
+                                                  <div class="item" data-slide-number="2">
+                                                  <img src="images/review-img.jpg"></div>
+                                              </div><!-- Carousel nav -->
+                                              <a class="left carousel-control" href="#myCarouselTwo" role="button" data-slide="prev">
+                                                  <span class="fa fa-angle-left"></span>                                       
+                                              </a>
+                                              <a class="right carousel-control" href="#myCarouselTwo" role="button" data-slide="next">
+                                                  <span class="fa fa-angle-right"></span>                                       
+                                              </a>                                
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!--/Slider-->
+                              <div class="hidden-xs" id="slider-thumbs">
+                                <!-- Bottom switcher of slider -->
+                                <ul class="hide-bullets">
+                                  <li><a class="thumbnail" id="carousel-selector1-0"><img src="images/property-thumb1.jpg"></a></li>
+                                  <li><a class="thumbnail" id="carousel-selector1-1"><img src="images/property-thumb1.jpg"></a></li>
+                                  <li><a class="thumbnail" id="carousel-selector1-2"><img src="images/property-thumb1.jpg"></a></li>
+                                </ul>                 
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-7">
+                            <div class="row gridDetails">
+                              <div class="row gridtitle">
+                                <div class="col-md-7">
+                                  <h2>Belvedere Court <span>Mellieha , Malta</span></h2>                    
+                                  <p>Apartment with Sea View</p>
+                                </div>
+                                <div class="col-md-5">
+                                  <div class="priceTag">€245 <span>Per Night</span></div>
+                                  <p class="child-unfr">Child Unfriendly</p>
+                                </div>
+                              </div>
+                              
+                              <div class="row gridui">
+                                <ul class="roomdetail-ui">
+                                  <li class="bed-ico"><i></i> 2 Bedrooms</li>
+                                  <li class="bath-ico"><i></i> 1 Bathrooms</li>
+                                  <li class="gust-ico"><i></i> 4 Guests</li>
+                                </ul>
+                              </div>
+
+                              <div class="row gridtext">
+                                <div class="col-xs-6 col-sm-6 col-md-7">
+                                  Area 
+                                  <span>1200Sq Mtrs</span>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-5">
+                                  Minimum Stay 
+                                  <span>3 nights</span>
+                                </div>
+                              </div>
+
+                              <div class="row gridshare">
+                                <div class="col-md-5 col-sm-5">
+                                  <div class="counter-tab">
+                                    <div class="counter_comnt"><i class="glyphicon glyphicon-user"></i> 15</div>
+                                    <div class="counter_like"><i class="glyphicon glyphicon-heart"></i></div>
+                                    <div class="counter_share"><i class="fa fa-share-alt"></i></div>
+                                    <div class="counter_view" title="view2"><i class="glyphicon glyphicon-eye-open"></i></div>
+                                    <div class="counter_linkstar">
+                                      <fieldset class="rating">
+                                          <input id="star5" name="rating16" value="5" type="radio"><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                          <input id="star4half" name="rating16" value="4 and a half" type="radio"><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                          <input id="star4" name="rating16" value="4" type="radio"><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                          <input id="star3half" name="rating16" value="3 and a half" type="radio"><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                          <input id="star3" name="rating16" value="3" type="radio"><label class="full" for="star3" title="Meh - 3 stars"></label>
+                                          <input id="star2half" name="rating16" value="2 and a half" type="radio" checked="checked"><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                          <input id="star2" name="rating16" value="2" type="radio"><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                          <input id="star1half" name="rating16" value="1 and a half" type="radio"><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                          <input id="star1" name="rating16" value="1" type="radio"><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                          <input id="starhalf" name="rating16" value="half" type="radio"><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                      </fieldset>
+                                    </div>                                    
+                                  </div>                                  
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                  <a href="review.html" class="btn view">View Details</a>
+                                  <a href="booking-screen.html" class="btn btn-primary btn-lg">Book Now</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <hr>
+                        </div>
+                        
+                        <div class="col-md-12 viewProper">
+                          <textarea class="form-control" name="" id="" cols="30" rows="4" placeholder="Write your comment here"></textarea>
+                          <div class="viewSub">
+                            <button type="button" class="btn">Submit</button>
+                          </div>
+                        </div>
+
+                    </div>
+
+                  </div>
+                  
+                  <div class="col-md-4">
+                    <div class="fullMapArea">
+                      <!-- <img src="images/googlemap-2location.jpg" alt="full map"> -->
+                      <div id="mapThree"></div>
+                    </div>
+                  </div>
+
+                  <div class="clearfix"></div>
+              </div>
+
+              <!-- tab 5 start from here -->
+              <div class="tab-pane fade" id="tab5">
+                  <div class="col-md-12">
+                    
+                    <div class="myReview">
+                        <div class="myGrid">                          
+                          <div class="col-md-2">
+                            <div class="imgSection"><img src="images/myReviews-imgthumb.jpg" alt=""></div>
+                          </div>
+                          <div class="col-md-10">
+                            <h2>La Plage No5</h2>
+                            <h3>Flat no. 323, Mellieha Cout Road</h3>
+                            <span>january 14th 2017</span>
+
+                            <div class="counter_linkstar">
+                              <fieldset class="rating">
+                                  <input id="star5" name="rating8" value="5" type="radio"><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                  <input id="star4half" name="rating8" value="4 and a half" type="radio"><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                  <input id="star4" name="rating8" value="4" type="radio"><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                  <input id="star3half" name="rating8" value="3 and a half" type="radio"><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                  <input id="star3" name="rating8" value="3" type="radio"><label class="full" for="star3" title="Meh - 3 stars"></label>
+                                  <input id="star2half" name="rating8" value="2 and a half" type="radio" checked="checked"><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                  <input id="star2" name="rating8" value="2" type="radio"><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                  <input id="star1half" name="rating8" value="1 and a half" type="radio"><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                  <input id="star1" name="rating8" value="1" type="radio"><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                  <input id="starhalf" name="rating8" value="half" type="radio"><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                              </fieldset>
+                            </div>
+                          </div>
+
+                          <div class="col-md-12">
+                            <p>Good day! The overall vimpression is very positive. Greeted us very warmly, all told, showed! Thank you so much! The location is very convenient, restaurants and shops near the apparts! he apartment is clean. Provided liquid soap for washing and for washing dishes. Greeted us very warmly, all told, showed! Thank you so much! The location is very convenient, restaurants and shops near the apparts! </p>
+                          </div>
+                        </div>
+                        <div class="row"><hr></div>
+
+                        <div class="myGrid">                          
+                          <div class="col-md-2">
+                            <div class="imgSection"><img src="images/myReviews-imgthumb.jpg" alt=""></div>
+                          </div>
+                          <div class="col-md-10">
+                            <h2>La Plage No5</h2>
+                            <h3>Flat no. 323, Mellieha Cout Road</h3>
+                            <span>january 14th 2017</span>
+
+                            <div class="counter_linkstar">
+                              <fieldset class="rating">
+                                  <input id="star5" name="rating9" value="5" type="radio"><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                  <input id="star4half" name="rating9" value="4 and a half" type="radio"><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                  <input id="star4" name="rating9" value="4" type="radio" checked="checked"><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                  <input id="star3half" name="rating9" value="3 and a half" type="radio"><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                  <input id="star3" name="rating9" value="3" type="radio"><label class="full" for="star3" title="Meh - 3 stars"></label>
+                                  <input id="star2half" name="rating9" value="2 and a half" type="radio"><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                  <input id="star2" name="rating9" value="2" type="radio"><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                  <input id="star1half" name="rating9" value="1 and a half" type="radio"><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                  <input id="star1" name="rating9" value="1" type="radio"><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                  <input id="starhalf" name="rating9" value="half" type="radio"><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                              </fieldset>
+                            </div>
+                          </div>
+
+                          <div class="col-md-12">
+                            <p>Good day! The overall vimpression is very positive. Greeted us very warmly, all told, showed! Thank you so much! The location is very convenient, restaurants and shops near the apparts! he apartment is clean. Provided liquid soap for washing and for washing dishes. Greeted us very warmly, all told, showed! Thank you so much! The location is very convenient, restaurants and shops near the apparts!</p>
+                          </div>
+                        </div>
+                        <div class="row"><hr></div>
+
+                        <div class="myGrid">                          
+                          <div class="col-md-2">
+                            <div class="imgSection"><img src="images/myReviews-imgthumb.jpg" alt=""></div>
+                          </div>
+                          <div class="col-md-10">
+                            <h2>La Plage No5</h2>
+                            <h3>Flat no. 323, Mellieha Cout Road</h3>
+                            <span>january 14th 2017</span>
+
+                            <div class="counter_linkstar">
+                              <fieldset class="rating">
+                                  <input id="star5" name="rating10" value="5" type="radio"><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                  <input id="star4half" name="rating10" value="4 and a half" type="radio"><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                  <input id="star4" name="rating10" value="4" type="radio"><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                  <input id="star3half" name="rating10" value="3 and a half" type="radio"><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                  <input id="star3" name="rating10" value="3" type="radio"><label class="full" for="star3" title="Meh - 3 stars"></label>
+                                  <input id="star2half" name="rating10" value="2 and a half" type="radio"><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                  <input id="star2" name="rating10" value="2" type="radio"><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                  <input id="star1half" name="rating10" value="1 and a half" type="radio"><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                  <input id="star1" name="rating10" value="1" type="radio" checked="checked"><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                  <input id="starhalf" name="rating10" value="half" type="radio"><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                              </fieldset>
+                            </div>
+                          </div>
+
+                          <div class="col-md-12">
+                            <p>Good day! The overall vimpression is very positive. Greeted us very warmly, all told, showed! Thank you so much! The location is very convenient, restaurants and shops near the apparts! he apartment is clean. Provided liquid soap for washing and for washing dishes. Greeted us very warmly, all told, showed! Thank you so much! The location is very convenient, restaurants and shops near the apparts! </p>
+                          </div>
+                        </div>
+                        
+
+                    </div>
+
+                  </div>
+                  <div class="clearfix"></div>
+              </div>
+
+              <!-- tab 6 start from here -->
+              <div class="tab-pane fade" id="tab6">
+                  <div class="col-md-12">
+                    <h3 class="head">My Properties</h3>
+                  </div>
+                  <div class="col-md-8">
+                    <!-- grid section start from here -->
+                    
+                    <h4>Rentals</h4>
+                    <div class="gridArea">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="row gridDetails tranBlock">
+                              <div class="row gridtitle">
+                                <div class="col-md-4">
+                                  <h2>Belvedere Court <span>Mellieha , Malta</span></h2>
+                                </div>
+                                <div class="col-md-4 rentList">
+                                  <div class="rentTotal">Total in €<br>€200</div>                                  
+                                </div>
+                                <div class="col-md-4 rentList">
+                                  <div class="rentTran"># of Transactions <br>2</div>
+                                </div>
+                              </div>
+
+                              <div class="row gridshare">
+                                <div class="col-md-12">
+                                  <a href="transacted-review-rentals.html" class="btn view">View Details</a>
+                                  <a href="#" class="btn btn-primary btn-lg rent pull-right">Rented Out</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                    </div>
+                    
+                    <h4>Sale</h4>
+                    <div class="gridArea">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="row gridDetails tranBlock">
+                              <div class="row gridtitle">
+                                <div class="col-md-4">
+                                  <h2>La Plage No5 <span>Mellieha , Malta</span></h2>
+                                </div>
+                                <div class="col-md-4 rentList">
+                                  <div class="rentTotal">Total in €<br>€120,000</div>                                  
+                                </div>
+                              </div>
+
+                              <div class="row gridshare">
+                                <div class="col-md-12">
+                                  <a href="transacted-review-sold.html" class="btn view">View Details</a>
+                                  <a href="#" class="btn btn-primary btn-lg rent pull-right">Sold</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                    </div>
+
+                    <h3 class="head">Third Party properties</h3>
+                    <!-- grid section start from here -->
+                    <h4>Rentals</h4>
+                    <div class="gridArea">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="row gridDetails tranBlock">
+                              <div class="row gridtitle">
+                                <div class="col-md-4">
+                                  <h2>Belvedere Court <span>Mellieha , Malta</span></h2>
+                                </div>
+                                <div class="col-md-4 rentList">
+                                  <div class="rentTotal">Total in €<br>€200</div>                                  
+                                </div>
+                                <div class="col-md-4 rentList">
+                                  <div class="rentTran"># of Transactions <br>2</div>
+                                </div>
+                              </div>
+
+                              <div class="row gridshare">
+                                <div class="col-md-12">
+                                  <a href="transacted-review-rentals.html" class="btn view">View Details</a>
+                                  <a href="#" class="btn btn-primary btn-lg rent pull-right">Rented Out</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                    </div>
+                    
+                    <h4>Sale</h4>
+                    <div class="gridArea">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="row gridDetails tranBlock">
+                              <div class="row gridtitle">
+                                <div class="col-md-4">
+                                  <h2>La Plage No5 <span>Mellieha , Malta</span></h2>
+                                </div>
+                                <div class="col-md-4 rentList">
+                                  <div class="rentTotal">Total in €<br>€120,000</div>                                  
+                                </div>
+                              </div>
+
+                              <div class="row gridshare">
+                                <div class="col-md-12">
+                                  <a href="transacted-review-sold.html" class="btn view">View Details</a>
+                                  <a href="#" class="btn btn-primary btn-lg rent pull-right">Sold</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="clearfix"></div>
+                  </div>
+                  
+                  <div class="col-md-4">
+                    <div class="fullMapArea">
+                      <div id="mapFour"></div>
+                    </div>
+                  </div>
+              </div>
+
+              <!-- tab 7 start from here -->
+              <div class="tab-pane fade" id="tab7">
+                  <div class="col-md-12 searchPara">
+
+                    <div class="panel">
+                      <h3>Search Maisonette</h3>
+                      <div class="panel-body">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="col-md-3">
+                              <h4>Location</h4>
+                              <ul>
+                                <li>Main Road Malta</li>
+                              </ul>
+                            </div>
+                            <div class="col-md-3">
+                              <h4>Min Price</h4>
+                              <ul>
+                                <li>€320 per night</li>
+                              </ul>
+                            </div>
+                            <div class="col-md-3">
+                              <h4>Max Price</h4>
+                              <ul>
+                                <li>€400 per night</li>
+                              </ul>
+                            </div>
+                            <div class="col-md-3">
+                              <h4>Bathrooms</h4>
+                              <ul>
+                                <li>3</li>
+                              </ul>
+                            </div>
+                            <div class="col-md-3">
+                              <h4>Baby Gear</h4>
+                              <ul>
+                                <li>Play Pen</li>
+                              </ul>
+                            </div>
+                          </div>
+                          
+                          <hr>  
+                        
+                          <div class="col-md-12">
+                            <div class="col-md-3">
+                              <h4>Adults</h4>
+                              <ul>
+                                <li>3</li>
+                              </ul>
+                            </div>
+                            <div class="col-md-3">
+                              <h4>Children</h4>
+                              <ul>
+                                <li>1 age: 0-3</li>
+                              </ul>
+                            </div>
+                            <div class="col-md-3">
+                              <h4>Property type</h4>
+                              <ul>
+                                <li>Flat</li>
+                              </ul>
+                            </div>
+                            <div class="col-md-3">
+                              <h4>Amenities</h4>
+                              <ul>
+                                <li>Air Conditioning</li>
+                                <li>Cable TV</li>
+                                <li>Heating</li>
+                              </ul>
+                            </div>
+                            <div class="col-md-3">
+                              <h4>Facilities</h4>
+                              <ul>
+                                <li>Elevator in Building</li>
+                                <li>Free parking on street</li>
+                                <li>Free parking on premises</li>
+                              </ul>
+                            </div>
+                          </div>
+                          
+                          <div class="searchParaBtn">
+                            <button type="button" class="btn"><i class="fa fa-search"></i> Submit</button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="panel">
+                      <h3>Search Penthouse</h3>
+                      <div class="panel-body">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="col-md-3">
+                              <h4>Location</h4>
+                              <ul>
+                                <li>Main Road Malta</li>
+                              </ul>
+                            </div>
+                            <div class="col-md-3">
+                              <h4>Min Price</h4>
+                              <ul>
+                                <li>€320 per night</li>
+                              </ul>
+                            </div>
+                            <div class="col-md-3">
+                              <h4>Max Price</h4>
+                              <ul>
+                                <li>€400 per night</li>
+                              </ul>
+                            </div>
+                            <div class="col-md-3">
+                              <h4>Bathrooms</h4>
+                              <ul>
+                                <li>2</li>
+                              </ul>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="searchParaBtn">
+                                <button type="button" class="btn"><i class="fa fa-search"></i> Submit</button>
+                              </div>
+                            </div>
+
+                          </div>                          
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="panel">
+                      <h3>Family Retreat</h3>
+                      <div class="panel-body">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="col-md-3">
+                              <h4>Location</h4>
+                              <ul>
+                                <li>Main Road Malta</li>
+                              </ul>
+                            </div>
+                            <div class="col-md-3">
+                              <h4>Min Price</h4>
+                              <ul>
+                                <li>€320 per night</li>
+                              </ul>
+                            </div>
+                            <div class="col-md-3">
+                              <h4>Max Price</h4>
+                              <ul>
+                                <li>€400 per night</li>
+                              </ul>
+                            </div>
+                            <div class="col-md-3">
+                              <h4>Bathrooms</h4>
+                              <ul>
+                                <li>2</li>
+                              </ul>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="searchParaBtn">
+                                <button type="button" class="btn"><i class="fa fa-search"></i> Submit</button>
+                              </div>
+                            </div>
+
+                          </div>                          
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="panel">
+                      <h3>Investment</h3>
+                      <div class="panel-body">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="col-md-3">
+                              <h4>Location</h4>
+                              <ul>
+                                <li>Main Road Malta</li>
+                              </ul>
+                            </div>
+                            <div class="col-md-3">
+                              <h4>Min Price</h4>
+                              <ul>
+                                <li>€320 per night</li>
+                              </ul>
+                            </div>
+                            <div class="col-md-3">
+                              <h4>Max Price</h4>
+                              <ul>
+                                <li>€400 per night</li>
+                              </ul>
+                            </div>
+                            <div class="col-md-3">
+                              <h4>Bathrooms</h4>
+                              <ul>
+                                <li>2</li>
+                              </ul>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="searchParaBtn">
+                                <button type="button" class="btn"><i class="fa fa-search"></i> Submit</button>
+                              </div>
+                            </div>
+                            
+                          </div>                          
+
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="clearfix"></div>
+              </div>
+
+              <!-- tab 8 start from here -->
+              <div class="tab-pane fade" id="tab8">
+                  <div class="col-md-12 billing-info">
+                    <div class="panel">
+                      <div class="panel-body">
+                         <div class="row billgrid">
+                           <div class="col-md-3 img-area"><a href="transacted-review-rentals.html"><img src="images/review-img.jpg"></a></div>
+                           <div class="col-sm-6 col-md-6">
+                             <h4><a href="transacted-review-rentals.html">La Plage No5 <span>(Rented Out)</span></a></h4>
+                             <p class="address">Flat no. 323, Mellieha Cout Road</p>
+                             <ul class="billgrid-ui">
+                                <li>Check-in <span>16 Feb 2017</span></li>
+                                <li>Check-Out <span>18 Feb 2017</span></li>
+                                <li>Guests <span>3 Adults</span></li>
+                             </ul>
+                           </div>
+                           <div class="col-sm-6 col-md-3">
+                             <ul class="bill-total">
+                               <li><span class="dei">€60 x 3 nights</span> <span class="pri">€180</span></li>
+                               <li><span class="dei">Services Fee</span> <span class="pri">€20</span></li>
+                             </ul>
+                             <div class="totalPrice">
+                               <span class="dei">Total</span> <span class="pri">€20</span>
+                             </div>
+                             <div class="payment">Payment by master card</div>
+                           </div>
+                         </div>
+
+                         <div class="row billOther-details">
+                           <h3>Tenants Info.</h3>
+                           <div class="col-sm-6 col-md-3">Name: John Deo</div>
+                           <div class="col-sm-6 col-md-4">Email: John.deo@asergis.com</div>
+                           <div class="col-sm-6 col-md-3">Mobile No: 123456789</div>
+                           <div class="col-sm-6 col-md-2">Country: India</div>
+                         </div>
+
+                      </div>
+
+                      <div class="panel-body">
+                         <div class="row billgrid">
+                           <div class="col-md-3 img-area"><a href="transacted-review-sold.html"><img src="images/review-img.jpg"></a></div>
+                           <div class="col-sm-6 col-md-5">
+                             <h4><a href="transacted-review-sold.html">Pepprina <span>(Sold)</span></a></h4>
+                             <p class="address">Flat no. 323, Mellieha Cout Road</p>
+                             <ul class="billgrid-ui">
+                                <li>Property Status <span>Ready to Move</span></li>
+                                <li>Area <span>1200Sq Mtrs</span></li>
+                             </ul>
+                           </div>
+                           <div class="col-sm-6 col-md-4">
+                             <ul class="bill-total m-t-none">
+                               <li><span class="sell m-b"><b>Amount sold for</b></span> <span class="pri orgColor"><b>€294,000</b></span></li>
+                               <!-- <li><span class="sell">Advance booking amount(5%)</span> <span class="pri">€14,700</span></li>
+                               <li><span class="sell">Services Fee</span> <span class="pri">€20</span></li> -->
+                             </ul>
+                             <!-- <div class="totalPrice">
+                               <span class="sell">Total booking amout</span> <span class="pri">€14,720</span>
+                             </div> -->
+                             <div class="payment">Payment by master card</div>
+                           </div>
+                         </div>
+
+                         <div class="row billOther-details">
+                           <h3>Owner Info.</h3>
+                           <div class="col-sm-6 col-md-3">Name: John Deo</div>
+                           <div class="col-sm-6 col-md-4">Email: John.deo@asergis.com</div>
+                           <div class="col-sm-6 col-md-3">Mobile No: 123456789</div>
+                           <div class="col-sm-6 col-md-2">Country: India</div>
+                         </div>
+                      </div>
+
+                      <div class="panel-body">
+                         <div class="row billgrid">
+                           <div class="col-md-3 img-area"><a href="transacted-review-rentals.html"><img src="images/review-img.jpg"></a></div>
+                           <div class="col-sm-6 col-md-6">
+                             <h4><a href="transacted-review-rentals.html">Mellieha House <span>(Rented Out)</span></a></h4>
+                             <p class="address">Flat no. 323, Mellieha Cout Road</p>
+                             <ul class="billgrid-ui">
+                                <li>Check-in <span>16 Feb 2017</span></li>
+                                <li>Area <span>1200Sq Mtrs</span></li>
+                             </ul>
+                           </div>
+                           <div class="col-sm-6 col-md-3">
+                             <ul class="bill-total">
+                               <li><span class="dei">€60 x 3 nights</span> <span class="pri">€180</span></li>
+                               <li><span class="dei">Services Fee</span> <span class="pri">€20</span></li>
+                             </ul>
+                             <div class="totalPrice">
+                               <span class="dei">Total</span> <span class="pri">€200</span>
+                             </div>
+                             <div class="payment">Payment by master card</div>
+                           </div>
+                         </div>
+
+                         <div class="row billOther-details">
+                           <h3>Owner Info.</h3>
+                           <div class="col-sm-6 col-md-3">Name: John Deo</div>
+                           <div class="col-sm-6 col-md-4">Email: John.deo@asergis.com</div>
+                           <div class="col-sm-6 col-md-3">Mobile No: 123456789</div>
+                           <div class="col-sm-6 col-md-2">Country: India</div>
+                         </div>
+
+                      </div>
+
+                      <div class="panel-body">
+                         <div class="row billgrid">
+                           <div class="col-md-3 img-area"><a href="transacted-review-sold.html"><img src="images/review-img.jpg"></a></div>
+                           <div class="col-sm-6 col-md-5">
+                             <h4><a href="transacted-review-sold.html">Belvedere Court <span>(Bought)</span></a></h4>
+                             <p class="address">Flat no. 323, Mellieha Cout Road</p>
+                             <ul class="billgrid-ui">
+                                <li>Check-in <span>16 Feb 2017</span></li>
+                                <li>Area <span>1200Sq Mtrs</span></li>
+                             </ul>
+                           </div>
+                           <div class="col-sm-6 col-md-4">
+                             <ul class="bill-total m-t-none">
+                               <li><span class="sell m-b"><b>Amount Bought for</b></span> <span class="pri orgColor"><b>€212,000</b></span></li>
+                               <!-- <li><span class="sell">Advance booking amount(5%)</span> <span class="pri">€14,700</span></li>
+                               <li><span class="sell">Services Fee</span> <span class="pri">€20</span></li> -->
+                             </ul>
+                             <!-- <div class="totalPrice">
+                               <span class="sell">Total booking amout</span> <span class="pri">€14,720</span>
+                             </div> -->
+                             <div class="payment">Payment by master card</div>
+                           </div>
+                         </div>
+
+                         <div class="row billOther-details">
+                           <h3>Owner Info.</h3>
+                           <div class="col-sm-6 col-md-3">Name: John Deo</div>
+                           <div class="col-sm-6 col-md-4">Email: John.deo@asergis.com</div>
+                           <div class="col-sm-6 col-md-3">Mobile No: 123456789</div>
+                           <div class="col-sm-6 col-md-2">Country: India</div>
+                         </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+              </div>
+
+
+          </div>
+        </div>
+    </div>
+    <!-- Manage property list view section end-->
+    <!-- Inner list Page section -->
+
+    <!-- Footer Main Section -->
+    <footer class="FooterMain">
+      <!-- New Footer Background -->
+      <section class="footerBG">
+        <img src="images/footer-new-bg.png" alt="">
+      </section>
+      <!-- New Footer Background End Here -->
+      <div class="FooterTop">
+        <div class="container FooterMenuSection">
+          <div class="row">
+            <div class="col-sm-5 col-md-5">
+              <a href="index.html" class="FooterLogo">
+                <img src="images/footer-logo.png" alt="Asergis Logo"/>
+              </a>
+              <p>The real estate portal for buyers, sellers, landlords and those who are looking for a holiday rental.</p>
+            </div>
+            <div class="col-sm-4 col-md-4">
+              <h5>Quick Links</h5>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-malta.html">About Malta</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 col-md-3">
+              <h5>Payment by Services</h5>
+              <img src="images/payment-icons.png" alt="Payment"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="FooterContactBar">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-6">
+              <p><span>© 2017 All rights reserved</span> <a href="disclaimer.html">Disclaimer</a> - <a href="privacy-policy.html">Privacy Policy</a> -  <a href="terms-and-conditions.html">Terms & Conditions</a> - <a href="copyright.html">Copyright</a></p>
+            </div>
+            <div class="col-sm-4 col-md-6">
+              <ul>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="FooterTnC">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>Use of this website constitutes an acceptance to our Terms and Conditivons and Privacy Policy. "Asergis Property", asergisproperty.com and the corresponding logo are registered trademarks of Asergis Global Services Limited and cannot be used without permission.</p>
+            </div>              
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Main Section end Here -->
+    </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/bootstrap-slider.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-multiselect.js"></script>    
+    <script src="js/custom.js"></script>
+    
+    <script src="js/bootstrap-tabcollapse.js"></script>
+    <script type="text/javascript">
+      $('#myTab').tabCollapse();
+    </script>
+    
+    <script src="js/google-map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWAoxTVd_zUi11jJe9TEvu6MUoOfzTerE&callback=initMap"></script>
+
+  </body>
+</html>

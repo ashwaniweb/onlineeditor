@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Asergis Property</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet"> 
+    <link href="css/bootstrap-multiselect.css" rel="stylesheet">  
+    <!-- Owl crowsel -->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/datepicker.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-select.css">
+    <!-- Our Own Custom Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="wrapper">
+    <div class="overlay"></div>
+    <!-- Sidebar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+      <ul class="nav sidebar-nav">
+        <li class="sidebar-brand">
+          <ul>
+            <li>
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <span>Favourites</span>
+            </li>
+            <li>
+              <button class="hamburger innerClose"><img src="images/menu-close.png" alt=""/><!-- <i class="fa fa-close" aria-hidden="true"></i> --></button>
+            </li>
+          </ul>
+          
+        </li>
+        <li> <a href="index.html"><span class="icon-home"></span> Home</a> </li>
+        <li> <a href="about-malta.html"><span class="icon-about-malta"></span> About Malta</a> </li>
+        <li> <a href="about-us.html"><span class="icon-aboutUs-icon"></span> About Us</a> </li>
+        <li> <a href="faq.html"><span class="icon-faq"></span> FAQ</a> </li>
+        <li> <a href="contact-us.html"><span class="icon-contactus"></span> Contact Us</a> </li>
+      </ul>
+    </nav>
+    <!-- /#sidebar-wrapper --> 
+    <!-- Header Section -->
+    <div id="page-content-wrapper">
+    <header class="innerHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3 col-md-3">
+            <a href="index.html" class="logo">
+              <img class="img-responsive" src="images/logo.png" alt=""/>
+            </a>
+          </div>
+          <div class="col-sm-9 col-md-9 pull-right">
+            <ul class="header-contact">
+              <li><span><i class="fa fa-phone" aria-hidden="true"></i> +356 21 252 252 </span></li>
+              <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:support@asergis.com">support@asergis.com</a></li>
+            </ul>
+            <div class="btn-group" role="group" aria-label="...">
+              <a href="list-your-property.html" class="btn btn-default btn-orange">Rent/Sell your property</a>
+              <div class="btn-group user_menu" role="group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Hello Abdur Rehman
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="manage-property.html">Manage My Properties</a></li>
+                    <li><a href="manage-property.html">My Profile</a></li>
+                    <li><a href="login.html">Sign Out</a></li>
+                </ul>
+              </div>
+              <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
+              <img src="images/menu-toggle-icon.png" alt=""/>
+               <!-- <span class="hamb-top"></span> <span class="hamb-middle"></span> <span class="hamb-bottom"></span> --> 
+               </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section End Here -->
+
+    <!-- Top Search Bar Section -->
+    <section class="TopSearchBar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <form>
+              <div class="ShortLetSelect">
+                <select id="SearchSelectBox" class="selectpicker">
+                  <option value="Shortlet">Short Let</option>
+                  <option value="Longlet">Long Let</option>
+                  <option value="Forsale">For Sale</option>
+                </select>
+              </div>
+              <ul class="MoreFilterSearch1">
+                <li class="LocationSelect">
+                  <select class="selectpicker">
+                    <option>Select Regions</option>
+                    <option>Malta</option>
+                    <option>India</option>
+                  </select>
+                </li>
+                <li class="location">
+                  <input id="name" placeholder="Enter Locality" type="text">
+                </li>
+                <li class="CheckinSelect">
+                  <input class="span2" value="" id="dpd1" type="text" placeholder="Check In" />
+                </li>
+                <li class="CheckinSelect">
+                  <input class="span2" value="" id="dpd2" type="text" placeholder="Check Out" />
+                </li>
+                <li class="MinPriceSelect">
+                  <select class="selectpicker">
+                    <option>Min Price</option>
+                    <option>Malta</option>
+                    <option>India</option>
+                  </select>
+                </li>
+                <li class="MinPriceSelect">
+                  <select class="selectpicker">
+                    <option>Max Price</option>
+                    <option>Malta</option>
+                    <option>India</option>
+                  </select>
+                </li>
+                <li class="MoreFiltersSelect">
+                  <button class="MrFilter moreFilter">More Filters <span class="bs-caret"><span class="caret"></span></span></button>
+                </li>
+                <li class="SearchBtn">
+                  <button type="submit" class="btn">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </li>
+              </ul>
+              <ul class="MoreFilterSearch2">
+                <li class="LocationSelect">
+                  <select class="selectpicker">
+                    <option>Select Regions</option>
+                    <option>Malta</option>
+                    <option>India</option>
+                  </select>
+                </li>
+                <li class="location">
+                  <input id="name" placeholder="Enter Locality" type="text">
+                </li>
+                <li class="showAll">
+                  <select class="home-icon selectpicker">
+                    <option>Show All</option>
+                    <option>Malta</option>
+                    <option>India</option>
+                  </select>
+                </li>
+                <li class="MinPriceSelect">
+                  <select class="selectpicker">
+                    <option>Min Price</option>
+                    <option>Malta</option>
+                    <option>India</option>
+                  </select>
+                </li>
+                <li class="MinPriceSelect">
+                  <select class="selectpicker">
+                    <option>Max Price</option>
+                    <option>Malta</option>
+                    <option>India</option>
+                  </select>
+                </li>
+                <li class="MoreFiltersSelect">
+                  <button class="SaleMoreFilter">More Filters <span class="bs-caret"><span class="caret"></span></span></button>
+                </li>
+                <li class="SearchBtn">
+                  <button type="submit" class="btn">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </li>
+              </ul>
+              <div class="MoreFilterBox">
+                <div class="row">
+                  <div class="col-md-12">
+                    <ul>
+                    <li>
+                    <label>Property Type</label>
+                    <select class="home-icon selectpicker">
+                      <option>Show All</option>
+                      <option>Malta</option>
+                      <option>India</option>
+                    </select>
+                    </li>
+                    <li>
+                    <label>Bedroom</label>
+                    <select class="bed-icon selectpicker">
+                      <option>Min No.</option>
+                      <option>1</option>
+                      <option>2</option>
+                    </select>
+                    </li>
+                    <li>
+                    <label>Adults</label>
+                    <select class="selectpicker">
+                      <option>Select No.</option>
+                      <option>1</option>
+                      <option>2</option>
+                    </select>
+                    </li>
+                    <li>
+                    <label>Children</label>
+                        <select class="selectpicker age1">
+                          <option>Age 4-12</option>
+                          <option>1</option>
+                          <option>2</option>
+                        </select>
+
+
+                        <select class="selectpicker age2">
+                          <option>Age 0-3</option>
+                          <option>1</option>
+                          <option>2</option>
+                        </select>
+                    </li>
+                    <li>
+                    <label>Amenities & Features</label>
+                    <select id="ddlCars" multiple="multiple">
+                      <option value="Air Conditioning">Air Conditioning</option>
+                      <option value="TV">TV</option>
+                      <option value="Fireplace">Fireplace</option>
+                      <option value="Pet Friendly">Pet Friendly</option>
+                      <option value="Security System">Security System</option>
+                      <option value="Intercom">Intercom</option>
+                      <option value="Floor Heating">Floor Heating</option>
+                      <option value="Wifi">Wifi</option>
+                      <option value="Dishwasher">Dishwasher</option>
+                    </select>
+                    </li>
+                    <li>
+                    <label>Listing ID</label>
+                    <input name="" placeholder="Enter Listing ID" type="text">
+                    </li>
+
+                </ul>
+                </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <label>Baby Gear <span>€5 each</span></label>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <ul class="babygear">
+                          <li>
+                            <div class="checkbox checkRight">
+                              <label>
+                                <input type="checkbox" value="">
+                                Play Pen:
+                                <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                              </label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="checkbox checkRight">
+                              <label>
+                                <input type="checkbox" value="">
+                                Cot:
+                                <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                              </label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="checkbox checkRight">
+                              <label>
+                                <input type="checkbox" value="">
+                                Highchair:
+                                <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                              </label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="MoreFilterBox1">
+                <div class="row">
+                  <div class="col-md-12">
+                    <ul class="forsaleMoreFilters">
+                      <li>
+                        <label>Listing ID</label>
+                        <input name="" placeholder="Enter Listing ID" type="text">
+                      </li>
+                      <li>                    
+                        <label>Bedroom</label>
+                        <select class="selectpicker">
+                          <option>Select No.</option>
+                          <option>1</option>
+                          <option>2</option>
+                        </select>
+                      </li>
+                      <li>
+                        <label>Bathroom</label>
+                        <select class="selectpicker">
+                          <option>Select No.</option>
+                          <option>1</option>
+                          <option>2</option>
+                        </select>
+                      </li>
+                      <li>
+                        <label>Market Status</label>
+                        <select class="selectpicker">
+                          <option>Select Market Status</option>
+                          <option>1</option>
+                          <option>2</option>
+                        </select>
+                      </li>
+                      <li>
+                        <label>Property Status</label>
+                        <select class="selectpicker">
+                          <option>Select Property Status</option>
+                          <option>1</option>
+                          <option>2</option>
+                        </select>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <label>Features</label>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <ul class="babygear">
+                        <li>
+                        <div class="checkbox checkRight">
+                          <label>
+                            <input type="checkbox" value="">
+                            Sea Front:
+                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                          </label>
+                        </div>
+                        </li>
+                        <li>
+                        <div class="checkbox checkRight">
+                          <label>
+                            <input type="checkbox" value="">
+                            Sea View:
+                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                          </label>
+                        </div>
+                        </li>
+                        <li>
+                        <div class="checkbox checkRight">
+                          <label>
+                            <input type="checkbox" value="">
+                            Country View:
+                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                          </label>
+                        </div>
+                        </li>
+                        <li>
+                        <div class="checkbox checkRight">
+                          <label>
+                            <input type="checkbox" value="">
+                            Pool:
+                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                          </label>
+                        </div>
+                        </li>
+                        <li>
+                        <div class="checkbox checkRight">
+                          <label>
+                            <input type="checkbox" value="">
+                            Garden:
+                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                          </label>
+                        </div>
+                        </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Top Search Bar section End Here -->
+    <!-- Page Breadcrum Section -->
+    <section class="Breadcrum">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ol class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li class="active">Contact Us</li>        
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Page Breadcrum Section End Here -->
+    <!-- Inner Page Static Banner Section -->
+    <section class="StaticBanner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+              <h1>Contact Us</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Inner Page Static Banner Section End Here -->
+
+    <!-- Contact Us Middle Section -->
+    <section class="ContactMiddle">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="page-heading">We are Here <span>To Help</span></h2>
+            <p class="p1">If you have a question that has not been answered in our <a href="faq.html">FAQ</a>, let us know:</p>
+          </div>
+          <div class="col-sm-8 col-md-8">
+            <!-- <div class="alert alert-success">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                    ×</button>
+  
+                <p>
+                    You successfully read this important alert message.</p>
+              </div> -->
+            <form class="ContactForm">
+              <div class="row">
+                <div class="form-group col-md-4">
+                  <label for="exampleInputEmail1">Category<span>*</span></label>
+                  <select class="form-control selectpicker">
+                    <option>General Inquiry</option>
+                    <option>Personal Inquiry</option>
+                  </select>
+                  <!-- <div class="alert-danger" role="alert">
+                    Enter a valid email address
+                  </div> -->
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="exampleInputEmail1">Name & Surname<span>*</span></label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter your name & surname">
+                  <!-- <div class="alert-danger" role="alert">
+                    Enter a valid email address
+                  </div> -->
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="exampleInputEmail1">Email<span>*</span></label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
+                  <!-- <div class="alert-danger" role="alert">
+                    Enter a valid email address
+                  </div> -->
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-12">
+                  <label for="exampleInputEmail1">Listing ID (if relevant)</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Listing ID (if relevant)">
+                  <!-- <div class="alert-danger" role="alert">
+                    Enter a valid email address
+                  </div> -->
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-12">
+                  <label for="exampleInputEmail1">Subject<span>*</span></label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Subject">
+                  <!-- <div class="alert-danger" role="alert">
+                    Enter a valid email address
+                  </div> -->
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-12">
+                  <label for="exampleInputEmail1">Message<span>*</span></label>
+                  <textarea class="form-control" placeholder="Enter Your Message here"></textarea>
+                  <!-- <div class="alert-danger" role="alert">
+                    Enter a valid email address
+                  </div> -->
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <button class="btn pull-right" type="submit">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-sm-4 col-md-3 col-md-offset-1">
+            <h4>Address:</h4>
+            <div class="AddressMap">
+              <!-- <img class="img-responsive" src="images/contact-map.jpg" alt="Map" /> -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3232.00318262797!2d14.482229615211336!3d35.89793772566395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130e5ab2a5f5ae9f%3A0xf6c4926de73f8562!2sAsergis+Malta+Limited!5e0!3m2!1sen!2sin!4v1491290708363" width="100%" height="280" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <address>
+              1st Floor <br>
+              Mompalao Building <br>
+              Triq it-Torri <br>
+              Msida, MSD 1825 <br>
+              Malta <br>
+              Phone: +356 2776 1451 <br>
+              Email: <a href="mailto:info@asergis.com">info@asergis.com</a>
+            </address>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Us Middle Section End Here -->
+
+    <!-- Footer Main Section -->
+    <footer class="FooterMain">
+      <!-- New Footer Background -->
+      <section class="footerBG">
+        <img src="images/footer-new-bg.png" alt="">
+      </section>
+      <!-- New Footer Background End Here -->
+      <div class="FooterTop">
+        <div class="container FooterMenuSection">
+          <div class="row">
+            <div class="col-sm-5 col-md-5">
+              <a href="index.html" class="FooterLogo">
+                <img src="images/footer-logo.png" alt="Asergis Logo"/>
+              </a>
+              <p>The real estate portal for buyers, sellers, landlords and those who are looking for a holiday rental.</p>
+            </div>
+            <div class="col-sm-4 col-md-4">
+              <h5>Quick Links</h5>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-malta.html">About Malta</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 col-md-3">
+              <h5>Payment by Services</h5>
+              <img src="images/payment-icons.png" alt="Payment"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="FooterContactBar">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-6">
+              <p><span>© 2017 All rights reserved</span> <a href="disclaimer.html">Disclaimer</a> - <a href="privacy-policy.html">Privacy Policy</a> -  <a href="terms-and-conditions.html">Terms & Conditions</a> - <a href="copyright.html">Copyright</a></p>
+            </div>
+            <div class="col-sm-4 col-md-6">
+              <ul>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="FooterTnC">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>Use of this website constitutes an acceptance to our Terms and Conditivons and Privacy Policy. "Asergis Property", asergisproperty.com and the corresponding logo are registered trademarks of Asergis Global Services Limited and cannot be used without permission.</p>
+            </div>              
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Main Section end Here -->
+    </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/bootstrap-slider.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-multiselect.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

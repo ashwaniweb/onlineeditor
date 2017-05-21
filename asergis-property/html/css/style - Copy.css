@@ -1,0 +1,1119 @@
+/*Common CSS*/
+body{background: #fafafa;background-color: #fafafa;font-family: 'Poppins', sans-serif!important;}
+h1{font-size: 60px;text-transform: uppercase;line-height: 60px;}
+.alertText{color: #e00909;}
+/*Common CSS End Here*/
+textarea{outline: none;}
+input{outline: none;}
+
+/*Page Loader*/
+#preloader {
+	position:fixed;
+	left:0; 
+	top:0;
+	z-index:99999999;
+	width:100%;
+	height:100%;
+	overflow:visible;
+	background: #ffffff url(../images/preload.gif) no-repeat center center;
+	background-size: 100px 100px;
+}
+#preloader1 {position:absolute;left:0; top:0;z-index:99999999;width:100%;height:100%;
+	overflow:visible;background: url(../images/preload.gif) no-repeat center center;background-size: 100px 100px;background-color: #ffffff;display: none;}
+.tab-content > .tab-pane{position: relative;}
+
+/*Header CSS Start Here*/
+header .container, .TopSearchBar .container {max-width: 1310px;width: 100%;}
+header{padding:8px 0px 8px 0px;border-bottom: 1px solid #e9e9e9;margin-bottom: 1px;background: #ffffff;
+	position: fixed;z-index: 9999;width: 100%;top: 0px;}
+#wrapper.toggled header{z-index: 1;}
+.btn.btn-default.btn-orange {background: #fb8506;border: 1px solid #fb8506;color: #fff;font-size: 14px;
+	font-weight: 400;line-height: 16px;padding: 5px;height: 26px;margin-right: 15px;border-radius: 3px !important;transition: background 0.5s;}
+.btn.btn-default.btn-orange:hover{background: #bc6609;border: 1px solid #bc6609;}
+.btn-group.user_menu .btn.btn-default {background: transparent;border: 0px saddlebrown;color: #020202;
+	font-size: 13px;font-weight: 400;line-height: 16px;padding: 5px 5px 5px 0px;height: 26px;box-shadow: none!important;}
+.user_menu .dropdown-menu {border-bottom: 3px solid #fb8506;border-radius: 3px;border-left: 0px solid;	border-right: 0px solid;border-top: 0px solid;box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);margin-top: 30px;padding: 0px;}
+.user_menu .dropdown-menu li{border-bottom: 1px solid #ededec;}
+.user_menu .dropdown-menu li:last-child{border-bottom: 0px solid;}
+.user_menu .dropdown-menu li a {color: #434343;font-size: 13px;padding: 7px 10px;font-weight: 400;}
+.user_menu .dropdown-menu:before {position: absolute;top: -10px;left: 70px;display: inline-block; border-right: 10px solid transparent;border-bottom: 10px solid #ccc;border-left: 10px solid transparent;border-bottom-color: rgba(0, 0, 0, 0.2);content: '';}
+.user_menu .dropdown-menu:after {position: absolute;top: -9px;left: 71px;display: inline-block; border-right: 9px solid transparent;border-bottom: 9px solid #ffffff;border-left: 9px solid transparent;content: '';}
+.MainMenuToggle {background: transparent;border: 0px;padding: 0px;line-height: 26px;margin-left: 15px !important;font-size: 24px;}
+.MainMenuToggle:hover, .MainMenuToggle:focus, .MainMenuToggle:active{background: transparent!important;
+	background-color: transparent!important;box-shadow: none;}
+header .pull-right{text-align: right;}
+header .pull-right > .btn-group{padding-top: 15px;}
+.removeHeader {display: none;}
+.header-contact {float: left;list-style: none;padding: 0;text-align: left;margin: 0;}
+.header-contact li {color: #5b5b5b;font-size: 13px;font-weight: 400;line-height: 22px;}
+.header-contact li a{color: #5b5b5b;}
+
+/*Banner Sectio CSS*/
+.MainBanner img{width:100%;position: relative;}
+.BannerCaption{position: fixed;top: 220px;color: #ffffff;max-width: 640px;}
+.BannerCaption h1 {font-size: 40px;text-transform: uppercase;line-height: 50px;font-weight: 500;}
+.BannerCaption p {font-size: 19px;line-height: 24px;font-weight: 400;}
+.MainBanner .owl-dots {height: 40px;z-index: 99999;bottom: 260px;position: absolute;right: 0px;line-height: 24px;vertical-align: middle;}
+.MainBanner .owl-dots .owl-dot{display: inline-block;width: 24px;height: 24px;margin: auto 4px;line-height: 24px;vertical-align: middle;}
+.MainBanner .owl-dots .owl-dot span{display: inline-block;width: 18px;height: 18px;background: #fbfbfb;	border-radius: 20px;line-height: 24px;vertical-align: middle;}
+.MainBanner .owl-dots .owl-dot.active span{display: inline-block;width: 24px;height: 24px;background: #fbfbfb;border-radius: 20px;line-height: 24px;vertical-align: middle;}
+.WerapContainer{position: relative;}
+
+/*New Slider CSS*/
+.banner-new .item img{width: 100%;}
+/*Search Section CSS*/
+.SearchTabMain.fixedTab{
+  bottom: -380px !important;
+  margin: 0 auto;
+  max-width: 1140px;
+  position: fixed;
+  top: auto !important;
+}
+.SearchTabMain.wow.fadeInUp.notfixed{position: relative;}
+.MainSearchSection.wow.fadeInUp {z-index: 999999;}
+.SearchTabMain {margin-top: -160px;z-index: 1;position: relative;background: #ffffff;	background-color: #ffffff;border-radius: 4px;overflow: visible;border: 0px solid;-webkit-box-shadow: 1px -1px 5px rgba(0,0,0,.38);-moz-box-shadow: 1px -1px 5px rgba(0,0,0,.38);box-shadow: 1px -1px 5px rgba(0,0,0,.38);display: block;width: 100%;margin-bottom: 25px;}
+.MainSearchSection {padding-bottom: 30px;}
+.SearchTabMain .container{position: relative;}
+ul.tabs {margin: 0;padding: 0;float: left;list-style: none;height: 58px;width: 100%;background: #20a0da;border-radius: 4px 4px 0 0;overflow: hidden;}
+ul.tabs li {float: left;margin: 0;cursor: pointer;padding: 0px 21px;height: 58px;line-height: 58px;	background-color: #20a0da;color: #ffffff;overflow: hidden;position: relative;width: 33.334%;	border-top: 3px solid #20a0da;text-align: center;font-size: 23px;font-weight: 400;}
+ul.tabs li:hover {background-color: #ffffff;color: #20a0da;}
+ul.tabs li.active {background-color: #ffffff;color: #20a0da;}
+.tab_container {border-top: none;float: left;width: 100%;background: #fff;overflow: visible;	-webkit-box-shadow: 1px -1px 5px rgba(0,0,0,.38);-moz-box-shadow: 1px -1px 5px rgba(0,0,0,.38);
+	box-shadow: 1px -1px 5px rgba(0,0,0,.38);}
+.tab_content {padding: 20px;display: none;}
+.tab_drawer_heading { display: none; }
+.tab_container form label{color: #1e1e1e;font-size: 17px;font-weight: 400;line-height: 20px;display: inline-block;width: 100%;margin-bottom: 10px}
+.tab_container form label span{color: #818181; font-size: 15px;}
+.tab_container form input{width: 100%;background: #f6f6f6;border: 1px solid #eaeaea;border-radius: 4px;
+	overflow: hidden;height: 55px;line-height: 25px;padding: 15px;color: #5d5d5d;font-size: 15px;
+	font-weight: 400;margin-bottom: 15px;}
+.tab_container h2{color: #2f2f2f;font-size: 25px;line-height: 70px;margin: 0px;font-weight: 400;}
+.tab_container form .bootstrap-select{width: 100%!important;max-width: 100%;margin-bottom: 15px;}
+.tab_container form .bootstrap-select .btn{width: 100%;background: #f6f6f6;border: 1px solid #eaeaea;
+	border-radius: 4px;overflow: hidden;height: 55px;line-height: 25px;padding: 15px;color: #5d5d5d;
+	font-size: 15px;font-weight: 400;box-shadow: none;}
+.tab_container form .bootstrap-select.location-icon .btn {background: url(../images/location-icon.png)no-repeat;background-color: #f6f6f6;padding-left: 40px;background-position: 15px;}
+.tab_container form .bootstrap-select .btn:focus{outline: none;box-shadow: none;}
+.tab_container form .span2{background: url(../images/calendar-icon.png)no-repeat;background-color: #f6f6f6;
+	padding-left: 40px;background-position: 15px 18px;}
+.tab_container form .bootstrap-select.min-price-icon .btn{background: url(../images/min-price-icon.png)no-repeat;background-color: #f6f6f6;padding-left: 40px;background-position: 15px;}
+.tab_container form .bootstrap-select.bed-icon .btn{background: url(../images/bedroomform-icon.png)no-repeat;background-color: #f6f6f6;padding-left: 40px;background-position: 15px;}
+.tab_container form .bootstrap-select.home-icon .btn{background: url(../images/home-icon.png)no-repeat;
+	background-color: #f6f6f6;padding-left: 40px;background-position: 15px;}
+.tab_container form button[type="submit"]{background-color: #fb8506;width: 160px;float: right;height: 55px;
+	color: #ffffff;font-weight: 400;font-size: 20px;text-transform: uppercase;margin-bottom: 10px;}
+.tab_container form button[type="submit"]:hover {background: #bc6609;border: 1px solid #bc6609;}
+.tab_container form .bootstrap-select .dropdown-menu{background: #f6f6f6;margin-top:-4px;border-radius: 0px 0px 4px 4px;border: 1px solid #eaeaea;}
+.tab_container form .bootstrap-select .dropdown-menu li a:focus, .tab_container form .bootstrap-select .dropdown-menu li a:active, .tab_container form .bootstrap-select .dropdown-menu li a:visited{outline: none;}
+.tab_container form .bootstrap-select button span{color: #5d5d5d;opacity: 0.5;}
+.tab_container form .bootstrap-select button span.bs-caret, .tab_container form .bootstrap-select button span.bs-caret .caret{opacity: 1;}
+.bootstrap-select .dropdown-toggle:focus{outline: none!important;background-color: transparent!important;}
+.tab_container .btn-default.active.focus, .tab_container .btn-default.active:focus, .tab_container .btn-default.active:hover, .tab_container .btn-default:active.focus, .tab_container .btn-default:active:focus, .tab_container .btn-default:active:hover, .tab_container .open>.dropdown-toggle.btn-default.focus, .tab_container .open>.dropdown-toggle.btn-default:focus, .tab_container .open>.dropdown-toggle.btn-default:hover{border-color: #eaeaea!important;outline: none!important;box-shadow: none!important;background-color: #f6f6f6!important;}
+.box, .box1, .box2{width: 100%;display:none;margin-bottom: 20px;}
+.slide-down, .slide-down1, .slide-down2{cursor: pointer;font-size: 17px; color: #1ba9e1;font-weight: 400;line-height: 24px;margin-top: 15px;}
+.age-label {color: #1e1e1e;font-size: 14px;line-height: 55px;}
+.checkbox.checkRight {margin-top: 0px;margin-bottom: 0;}
+.tab_container form .checkbox.checkRight label{font-size: 14px;display: inline-block;width:auto;}
+.tab_container form .checkbox.checkRight.listingCheck label{font-size: 12px;}
+.multiselect-native-select .btn-group{width: 100%;}
+.multiselect.dropdown-toggle.btn.btn-default{width: 100%;background: #f6f6f6;border: 1px solid #eaeaea;	border-radius: 4px;overflow: hidden;height: 55px;line-height: 25px;padding: 15px;color: #5d5d5d;	font-size: 15px;font-weight: 400;box-shadow: none;opacity: 0.5;}
+.multiselect-container.dropdown-menu {max-height: 200px;overflow: auto;}
+.multiselect.dropdown-toggle.btn.btn-default.btn .caret {margin-left: 15px;}
+.multiselect-selected-text {width: 90%;display: inline-block;text-align: left;}
+.multiselect-container.dropdown-menu {width: 100%;border: 1px solid #eaeaea;border-radius: 0px 0px 4px 4px; margin-top: -3px;position: absolute;z-index: 9999;}
+.multiselect-container.dropdown-menu .checkbox{padding:0px;font-size: 13px;color:#5d5d5d;line-height: 14px;}
+.multiselect-container.dropdown-menu li{border-bottom: 1px solid #eaeaea;padding: 10px 10px 10px 20px;background-color: #f6f6f6;}
+.multiselect-container.dropdown-menu li:last-child{border-bottom: 0px solid #eaeaea;}
+.multiselect-container > li > a > label > input[type="checkbox"] {right: 0px;margin: 0;	width: 14px;	height: 14px;}
+.multiselect-container.dropdown-menu > .active > a, .multiselect-container.dropdown-menu > .active > a:focus, .multiselect-container.dropdown-menu > .active > a:hover{background-color: transparent;}
+.datepicker{z-index: 1;}
+.box2 .checkbox.checkRight{padding-top: 20px;}
+.tab_container form .bootstrap-select.searchCriteria .btn {background: #ffffff;}
+.tab_container form .bootstrap-select.searchCriteria .dropdown-menu {font-size: 12px;}
+.babygear{list-style: none;padding-left: 0px;margin-top: 0px;}
+.babygear li{list-style: none;display: inline-block;padding-right: 15px} 
+.bootstrap-select.btn-group .dropdown-menu li.selected{display: none;}
+.TopSearchBar .MoreFilterBox .babygear li{list-style: none;display: inline-block;padding-right: 15px; width: auto!important;border: 0px solid!important;} 
+.TopSearchBar .MoreFilterBox1 .babygear{border: 0px solid!important;}
+.TopSearchBar .MoreFilterBox1 .babygear li{list-style: none;display: inline-block;padding-right: 15px; width: auto!important;border: 0px solid!important;height: auto;} 
+
+/*Key Properties CSS*/
+
+.PropertyThumb{position: relative;}
+.ReviewRating {position: absolute;height: 45px;background: rgba(3, 3, 3, 0.24);bottom: 0px;padding: 20px 10px 10px 10px;color: #fefefe;width: 100%;font-size: 14px;line-height: 15px;}
+.per_night_price {position: absolute;right: 10px;top: 10px;width: 75px;height: 43px;background: #2cafe3;
+	padding: 5px;color: #fefefe;text-align: right;font-size: 12px;line-height: 16px;font-weight: 400;-webkit-box-shadow: 6px 2px 4px rgba(0,0,0,.35);-moz-box-shadow: 6px 2px 4px rgba(0,0,0,.35);	box-shadow: 6px 2px 4px rgba(0,0,0,.35);}
+.per_night_price span{width: 100%;font-size: 15px;display: inline-block;}
+.thumbnailText h4 {color: #2e2d2d;font-size: 18px;font-weight: 400;line-height: 20px;}
+.thumbnailText p {color: #2e2d2d;font-size: 14px;font-weight: 400;line-height: 16px;}
+#KeyPropertyBanner .item {border: 1px solid #dfdfdf;border-radius: 4px;overflow: hidden;background: #ffffff;}
+.ThumbnailText{padding: 15px 10px;display: inline-block;border-top: 1px solid #dfdfdf;}
+.ThumbnailText ul{list-style: none;padding: 0px;margin: 0px;}
+.ThumbnailText ul li{display: inline-block;float: left;width: 50%;color: #434343;font-size: 13px;	font-weight: 400;padding-left: 24px;margin: 2px 0px;line-height: 28px;text-transform: capitalize;}
+.plot{background: url(../images/plot-icon.png)no-repeat left center;}
+.bedroom{background: url(../images/bedroom-icon.png)no-repeat left center;}
+.bathroom{background: url(../images/bathroom-icon.png)no-repeat left center;}
+.kitchen{background: url(../images/kitchen-icon.png)no-repeat left center;}
+.guests{background: url(../images/guest-icon.png)no-repeat left top;}
+#KeyPropertyBanner .ThumbnailText ul li.plot, #KeyPropertyBanner .ThumbnailText ul li.bathroom{width:58%;}
+#KeyPropertyBanner .ThumbnailText ul li.bedroom, #KeyPropertyBanner .ThumbnailText ul li.guests, #KeyPropertyBanner .ThumbnailText ul li.gustpro{width:42%;}
+#KeyPropertyBanner .owl-nav {position: absolute;top: 48%;top:-webkit-calc(50% - 75px);top: -moz-calc(50% - 75px);top: calc(50% - 75px);width: 100%;}
+#KeyPropertyBanner .owl-nav .owl-prev{float: left;height: 58px;width: 58px;background: #ffffff url(../images/prev-arrow.png) no-repeat center center;border-radius: 70px;text-indent: -9999px;-webkit-box-shadow: 0 2px 5px 2px #DED5D9;box-shadow: 0 2px 5px 2px #DED5D9;display: inline-block;margin-left: -30px;}
+#KeyPropertyBanner .owl-nav .owl-next{float: right;height: 58px;width: 58px;background: #ffffff url(../images/next-arrow.png) no-repeat center center;border-radius: 70px;text-indent: -9999px;-webkit-box-shadow: 0 2px 5px 2px #DED5D9;box-shadow: 0 2px 5px 2px #DED5D9;display: inline-block;margin-right: -30px;}
+.thumbnailText h4{color: #2e2d2d;font-weight: 400;font-size: 18px;margin-top: 0px;}
+.KeyPropertiesMain{padding-bottom: 60px;position: relative;z-index: 0;}
+.KeyPropertiesMain h2 {color: #2e2d2d;font-size: 27px;font-weight: 400;margin-bottom: 25px;margin-top: 20px;line-height: 27px;}
+.KeyPropertiesMain h2 span{color: #1ba9e1;}
+.ThumbnailText h4 a{color: #333;}
+
+/*Tell Us More Section CSS*/
+
+.TellUsMore{background: #ffffff;padding: 65px 0px;}
+.TellUsMoreInner{padding: 35px 30px 35px 5px;background: url(../images/tellus-bg.png)no-repeat 100% 100%;
+	border-radius: 4px;overflow: hidden;}
+.TellUsMore h2{font-size: 35px;font-weight: 300;margin: 0px;line-height: 40px;color: #ffffff;}
+.TellUsMore h2 span {font-size: 30px;}
+.TellUsMore p{font-size: 20px;font-weight: 300;margin: 0px;line-height: 24px;color: #ffffff;}
+.TellUsMore .btn {background: #fb8506;color: #ffffff;text-transform: uppercase;border: 1px solid #fb8506;
+	font-size: 25px;font-weight: 400;height: 65px;line-height: 55px;width: 245px;float: right;transition: all 0.5s;}
+.TellUsMore .btn:hover{background: #bc6609;border: 1px solid #bc6609;}
+
+/*Footer CSS Start here*/
+
+.FooterTop form .fieldWrapper{width: 77%;float: left;background-color: #ffffff;background: #ffffff;height: 58px;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;-webkit-box-shadow: 0 0 15px rgba(0,0,0,.15);	-moz-box-shadow: 0 0 15px rgba(0,0,0,.15);box-shadow: 0 0 15px rgba(0,0,0,.15);
+	overflow: hidden;}
+.FooterTop form .fieldWrapper span {background: transparent;border: 0px solid;height: 58px;width: 35px;
+	color: #7d7d7d;font-size: 16px;display: inline-block;float: left;vertical-align: middle;padding: 17px 0px 17px 12px;}
+.FooterTop form .fieldWrapper input {width: 85%;display: inline-block;float: left;height: 58px;border: 0px solid;box-shadow: none;color: #7d7d7d;font-size: 16px;}
+.FooterTop form .fieldWrapper i{font-size: 20px;}
+.FooterTop form .btn {float: left;width: 20%;background: #fb8506;border: 1px solid #fb8506;height: 58px;
+	width: 125px;margin-left: 15px;font-size: 20px;text-transform: uppercase;transition: all 0.5s;color: #ffffff;font-weight: 400;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;
+	-webkit-box-shadow: 0 0 15px rgba(0,0,0,.15);-moz-box-shadow: 0 0 15px rgba(0,0,0,.15);box-shadow: 0 0 15px rgba(0,0,0,.15);}
+.FooterTop form .btn:hover{background: #bc6609;border: 1px solid #bc6609;}
+.FooterTop form .input-group{width: 100%;}
+.FooterTop{background-color: #efefef;padding: 0px 0px 65px 0px;
+	background-size: 100%;}
+.FooterTop.news-subscriber {padding: 40px 0 20px 0;background: #fafafa;border-top: 1px solid #e5e5e5;}
+
+.footerBG{background-color:#fafafa;}	
+.footerBG img{width: 100%;}
+
+.FooterTop p {color: #393939;font-size: 18px;font-weight: 400;line-height: 58px;margin: 0;}
+.FooterTop .FooterMenuSection p{color: #454444;font-weight: 400;font-size: 13px;line-height: 22px;margin-top: 25px;padding-right: 30%;}
+.FooterTop .FooterMenuSection h5{margin-top: 0px;margin-bottom: 20px;color: #1f1f1f;font-weight: 400;	font-size: 20px;}
+.FooterTop .FooterMenuSection ul{list-style: none;padding: 0px;margin: 0px;}
+.FooterTop .FooterMenuSection ul li a{color: #454444;font-size: 14px;line-height: 22px;font-weight: 400;}
+.FooterContactBar {padding: 5px 0px;background: #454444;color: #fff;}
+.FooterContactBar p{color: #adadad;font-size: 11px;font-weight: 400;line-height: 22px;margin: 0px;}
+.FooterContactBar p a{color: #20a0da;text-decoration: underline;}
+.FooterContactBar p span{margin-right: 10px;}
+.FooterContactBar p i{margin-right: 5px;}
+.FooterContactBar ul{list-style: none;padding: 0px;margin: 0px;float: right;}
+.FooterContactBar ul li{display: inline-block;height: 22px;width: 22px;background:#d6d6d6;border-radius: 20px;padding: 2px 5px;text-align: center;cursor: pointer;}
+.FooterContactBar ul li a{color: #454444;font-size: 12px;}
+.FooterContactBar ul li:hover{background: #fb8506;}
+.FooterContactBar ul li:hover a{color: #ffffff;}
+.FooterTnC {background: #1f1f1f;padding: 15px 0px;}
+.FooterTnC p{color: #adadad;font-size: 11px;line-height: 15px;margin: 0px;font-weight: 400;text-align: center;}
+.FooterTnC p a{color: #20a0da;text-decoration: underline;}
+
+
+
+/*Top Searchbar CSS*/
+li.location { border-bottom: 0px solid #d9d6d6;padding: 0;}
+li.location input {background-color: #f7f7f7;background-image: url("../images/location-bg.png"); background-position: 10px center;background-repeat: no-repeat;background-size: 14px auto;border: 0 solid #d9d6d6;height: auto;padding: 12px 15px 12px 35px;font-size: 14px;width: 100%;}
+.TopSearchBar ul li.location{width: 15%;}
+.TopSearchBar {padding: 10px 0px;background: #ffffff;}
+.TopSearchBar ul{list-style: none;margin: 0px;border: 1px solid #e9e9e9;padding: 0px;float: left;width: 90%;}
+.TopSearchBar ul li{display: inline-block;border-right: 1px solid #e9e9e9;float: left;height: 45px;}
+.TopSearchBar ul li:last-child{border-right: 0px solid #e9e9e9;}
+.ShortLetSelect {width: 10%;float: left;}
+.ShortLetSelect .bootstrap-select .btn{border: 0px solid;border-radius: 0px;background: #2cafe3!important;color: #ffffff;height: 47px;font-size: 18px;font-weight: 400;}
+.LocationSelect{width: 15%;}
+.LocationSelect .bootstrap-select .btn{border: 0px solid;border-radius: 0px;background: url(../images/location-icon.png)no-repeat;background-color: #f7f7f7;color: #5d5d5d;height: 45px;font-size: 14px;
+	font-weight: 400;padding-left: 40px;background-position: 15px;}
+.TopSearchBar .span2 {background: url(../images/calendar-icon.png)no-repeat;background-color: #f7f7f7;	padding-left: 40px;background-position: 15px 15px;color: #5d5d5d;height: 45px;font-size: 14px;	font-weight: 400;box-shadow: none;border: 0px solid;border-radius: 0px;width: 100%;}
+.CheckinSelect{width: 13%;}
+.MinPriceSelect .bootstrap-select .btn {background: url(../images/min-price-icon.png)no-repeat;	background-color: #f7f7f7;padding-left: 40px;background-position: 15px;color: #5d5d5d;height: 45px;
+	font-size: 14px;font-weight: 400;box-shadow: none;border: 0px solid;border-radius: 0px;width: 100%;}
+.MinPriceSelect{width: 12%;}
+.TopSearchBar ul.MoreFilterSearch2 li.MinPriceSelect { width: 15%;}
+.MoreFiltersSelect .bootstrap-select .btn {background: url(../images/filter-icon.png)no-repeat;background-color: #f7f7f7;padding-left: 40px;background-position: 15px;color: #5d5d5d;height: 45px;
+	font-size: 14px;font-weight: 400;box-shadow: none;border: 0px solid;border-radius: 0px;width: 100%;}
+.MoreFiltersSelect button{background: url(../images/filter-icon.png)no-repeat;background-color: #f7f7f7;padding-left: 40px;background-position: 15px;color: #5d5d5d;height: 45px;
+	font-size: 14px;font-weight: 400;box-shadow: none;border: 0px solid;border-radius: 0px;width: 100%;}
+.MoreFiltersSelect{width: 14%;}
+.SearchBtn .btn{background: #fb8506;color: #ffffff;border-radius: 0px;font-size: 18px;width: 100%;height: 45px;border: 0px solid;}
+.TopSearchBar .dropdown-menu li{width: 100%;border: 0px solid;height: auto;border-radius: 0px;}
+.TopSearchBar .dropdown-menu{border-radius: 0px;}
+.SearchBtn {width: 6%;}
+.TopSearchBar .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){width: 100%;}
+.TopSearchBar.fixed {position: fixed;z-index: 7;width: 100%;top: 0;}
+.TopSearchBar ::-webkit-input-placeholder { /* Chrome/Opera/Safari */color: #5d5d5d;opacity: 1;}
+.TopSearchBar ::-moz-placeholder { /* Firefox 19+ */color: #5d5d5d;opacity: 1;}
+.TopSearchBar :-ms-input-placeholder { /* IE 10+ */color: #5d5d5d;opacity: 1;}
+.TopSearchBar :-moz-placeholder { /* Firefox 18- */color: #5d5d5d;opacity: 1;}
+.MoreFilterBox, .MoreFilterBox1{display: none;padding: 15px; position: absolute;top: 46px;width: 100%;z-index: 1;height: auto;background-color: #fff;border: solid 1px #d7d5d5;}
+.TopSearchBar form{position: relative;}
+.TopSearchBar ul.forsaleMoreFilters li{width: 20%;height: auto; border: 0 solid!important;padding: 0 5px}
+.TopSearchBar ul.forsaleMoreFilters li:first-child{padding-left: 0px;}
+.TopSearchBar ul.forsaleMoreFilters li:last-child{padding-right: 0px;}
+.TopSearchBar ul.forsaleMoreFilters{width: 100%;border: 0 solid;}
+.TopSearchBar ul.forsaleMoreFilters li input {background: #f6f6f6;border: 1px solid #eaeaea;border-radius: 4px;color: #5d5d5d;font-size: 14px;font-weight: 400;height: 55px;line-height: 25px;margin-bottom: 15px;
+  overflow: hidden;padding: 15px;width: 100%;}
+.TopSearchBar .MoreFilterBox1 ul li .bootstrap-select .btn {background: #f6f6f6; border: 1px solid #eaeaea;
+  border-radius: 4px; box-shadow: none; color: #5d5d5d; font-size: 14px; font-weight: 400; height: 55px;
+  line-height: 25px; overflow: hidden; padding: 15px;}
+
+
+
+/*Breadcrumb CSS*/
+.breadcrumb{margin: 0px;padding: 15px 0px;background-color: transparent;}
+.breadcrumb > li + li::before {content: ">";color: #5d5d5d;}
+.breadcrumb > li a{color: #5d5d5d;font-size: 14px;font-weight: 400;line-height: 14px;}
+.breadcrumb > li{color: #5d5d5d;font-size: 14px;font-weight: 400;line-height: 14px;}
+.breadcrumb > li.active{color: #fb8506;}
+
+/*Inner pages Static Banner CSS*/
+.StaticBanner{background: url(../images/contactus-banner.jpg) no-repeat;background-size: 100%;padding: 150px 0px;}
+.StaticBanner h1{font-size: 62px;margin-top: 0;margin-bottom: 20px;line-height: 62px;color: #ffffff;	text-transform: capitalize;width: 50%;}
+
+/*Contact us page Middle Section CSS*/
+.ContactForm .form-control{height: auto;}
+.ContactForm input.form-control{height: 55px;}
+form .alert-danger {background-color: transparent;color: #a94442;margin-top: 10px;font-size: 12px;}
+.ContactMiddle{background: #fafafa;padding: 35px 0px;}
+.page-heading{color: #2e2d2d;font-size: 30px;font-weight: 300;margin-top: 0;line-height: 35px;margin-bottom: 5px;}
+.page-heading span{color: #1ba9e1;}
+.p1{color: #434343;font-size: 14px;line-height: 16px;margin-bottom: 10px;font-weight: 400;}
+.p1 a{color: #1ba9e1;text-decoration: underline;}
+.ContactMiddle .p1{margin-bottom: 30px;}
+.ContactForm{padding: 20px 15px;background: #ffffff;border-radius: 4px;-webkit-box-shadow: 0 2px 5px 2px #DED5D9;box-shadow: 0 2px 5px 2px #DED5D9;}
+.ContactForm label{color: #2b2b2b;font-size: 15px;line-height: 15px;font-weight: 400;margin-bottom: 15px;}
+.ContactForm label span{color: #ff4e00;}
+.ContactForm input{background: #f6f6f6;border: 1px solid #eaeaea;border-radius: 3px;height: 55px;color: #787878;font-size: 14px;font-weight: 400;box-shadow: none;margin-bottom: 10px;}
+.ContactForm textarea{background: #f6f6f6;border: 1px solid #eaeaea;border-radius: 3px;height: 120px!important;	color: #787878;font-size: 14px;font-weight: 400;box-shadow: none;margin-bottom: 5px;resize: none;}
+form.ContactForm .bootstrap-select .btn {width: 100%;background: #f6f6f6;border: 1px solid #eaeaea;	border-radius: 3px;overflow: hidden;height: 55px;line-height: 25px;padding: 15px;color: #999;	font-size: 14px;font-weight: 400;box-shadow: none;}
+.ContactForm button[type="submit"]{background: #fb8506;color: #fefdfd;width: 205px;height: 62px;	text-transform: uppercase;font-size: 20px;font-weight: 400;border: 1px solid #fb8506;transition: 0.5s all;}
+.ContactForm button[type="submit"]:hover{background: #bc6609;border: 1px solid #bc6609;}
+.ContactMiddle h4{color: #2a2a2a;font-size: 20px;font-weight: 400;margin-top: 0px;line-height: 20px;	margin-bottom: 15px;}
+.AddressMap {border-radius: 4px;margin-bottom: 30px;overflow: hidden;}
+address{color: #434343;font-size: 16px;font-weight: 400;line-height: 25px;}
+address a{color: #1ba9e1;text-decoration: underline;}
+
+/*-------------------------------*/
+/*        Login Page CSS         */
+/*-------------------------------*/
+.Loginlayout{height: 985px;background: url(../images/login-footer-bg.png)no-repeat bottom;background-size: 100%;}
+.row-full{width: 44vw;position: absolute; margin-left: -44vw;height: 980px;left: 44%;background: #1aa4dd url(../images/login-bg.png)no-repeat;background-size: 100% 100%;z-index: -1;}
+.loginBackBtn{padding-top: 30px;margin-bottom: 220px;}
+.PropertyLogo{padding: 30px 0px;margin-bottom: 50px;}
+.loginSection {max-width: 560px;margin: 0 auto;}
+.loginSection.guestUser {margin-top: 170px;text-align: center;/*max-width: 650px;*/}
+.loginSection.guestUser p{color: #2e2d2d; font-size: 22px; line-height: 35px; margin-bottom: 50px;}
+.loginSection.guestUser .btn.btn-lg.btn-primary.btn-signin {margin: 8px 8px;}
+
+
+.LoginForm h2{color: #2e2d2d;font-size: 28px;font-weight: 400;margin-top: 0;margin-bottom: 20px;line-height: 32px;}
+.LoginForm input[type="email"], .LoginForm input[type="password"]{background-color: #ffffff; color: #434343;font-weight: 400;font-size: 17px;height: 62px; border-radius: 4px; border: 1px solid #ffffff;padding: 20px 60px 20px 20px;-webkit-box-shadow: 0 2px 5px 2px #DED5D9;box-shadow: 0 2px 5px 2px #DED5D9;margin: 14px 0px;}
+.LoginForm input[type="email"]{background: #ffffff url(../images/email-icon.png)no-repeat right 15px center;}
+.LoginForm input[type="password"]{background: #ffffff url(../images/password-icon.png)no-repeat right 15px center;}
+.LoginForm ::-webkit-input-placeholder { /* Chrome/Opera/Safari */color: #cecece!important;}
+.LoginForm ::-moz-placeholder { /* Firefox 19+ */color: #cecece!important;}
+.LoginForm :-ms-input-placeholder { /* IE 10+ */color: #cecece!important;}
+.LoginForm :-moz-placeholder { /* Firefox 18- */color: #cecece!important;}
+.btn.btn-default.BackBtn {background: #1188bc;color: #fff;border: 1px solid #1188bc;height: 40px;width: 100px;line-height: 26px;text-transform: uppercase;font-size: 15px;font-weight: 400;transition: all 0.5s;}
+.btn.btn-default.BackBtn:hover{background: #0c5d80;border: 1px solid #0c5d80;}
+.Logintext h1 {color: #fff;font-size: 30px;font-weight: 600;margin-top: 0;line-height: 30px;margin-bottom: 20px;text-transform: inherit;}
+.Logintext p{color: #ffffff;font-size: 15px;font-weight: 400;line-height: 24px;margin-bottom: 30px;}
+.btn.btn-default.CreateAcBtn {width: 220px;height: 55px;font-size: 20px;font-weight: 400;text-transform: uppercase;line-height: 42px;background: #f9f9fa;border: 1px solid #f9f9fa;transition: all 0.5s;color: #2e2d2d;}
+.btn.btn-default.CreateAcBtn:hover{background: #bcbcc3;border: 1px solid #bcbcc3;color: #ffffff;}
+.btn.btn-lg.btn-primary.btn-signin {background: #fb8506;border: 1px solid #fb8506;border-radius: 4px;width: 225px;height: 62px;color: #fefdfd;font-weight: 400;font-size: 20px;text-transform: uppercase;margin-bottom: 15px;line-height: 42px;}
+.btn.btn-lg.btn-primary.btn-signin:hover {background: #bc6609;border: 1px solid #bc6609;}
+.forgot-password {color: #19a1da;font-size: 15px;text-decoration: underline;font-weight: 400;}
+.seprator{height: 65px;margin: 40px 0px;text-align: center;background: url(../images/seprator-line.png) repeat-x center;}
+.seprator span{display: inline-block;height: 65px;width: 65px;background: #ffffff;border-radius: 50px;border: 1px solid #dcdcdc;vertical-align: middle;padding: 10px;color: #434343;font-size: 22px;font-weight: 400;text-transform: uppercase;line-height: 45px;}
+#remember {margin-bottom: 20px;margin-top: 20px;}
+.SocialLogin ul{list-style: none;padding: 0px;margin: 0px;}
+.SocialLogin ul li{display: inline-block;height: 55px;width: 55px;border-radius: 4px;overflow: hidden;margin: 0 4px;cursor: pointer;transition: all 0.5s;}
+.SocialLogin ul li.fb{background: #3b579d;border-bottom: 4px solid #1a3675;}
+.SocialLogin ul li a{color: #ffffff;font-size: 32px;vertical-align: middle;line-height: 55px;}
+.SocialLogin ul li.linkIn{background: #0077b7;border-bottom: 4px solid #056294;}
+.SocialLogin ul li.goog{background: #dc4937;border-bottom: 4px solid #c83220;}
+.SocialLogin ul li a i{line-height: 55px;}
+.SocialLogin h4 {font-size: 20px;color: #2e2d2d;margin-top: 0;margin-bottom: 15px;}
+.SocialLogin ul li.fb:hover{background: #204296;}
+.SocialLogin ul li.linkIn:hover{background: #014b72;}
+.SocialLogin ul li.goog:hover{background: #b61805;}
+.FooterMain.Footerlogin .FooterTop {background: #efefef;}
+#myModal .modal-dialog {width: 500px;}
+.modal-open #myModal.modal{background: rgba(0, 0, 0, 0.72);}
+
+/*Verifacition Form CSS*/
+.LoginForm.VerificationForm p{color: #2e2d2d;font-size: 18px;font-weight: 400;margin-bottom: 10px;}
+.LoginForm.VerificationForm h2 {margin-bottom: 5px;}
+.LoginForm.VerificationForm input[type="email"]{margin-bottom: 30px;background: transparent;background-color: #ffffff;-webkit-box-shadow: 0 2px 5px 2px #DED5D9;box-shadow: 0 2px 5px 2px #DED5D9;}
+.LoginForm.VerificationForm p span{color: #0a8624;}
+.LoginForm.VerificationForm h4{font-size: 22px; color: #2e2d2d; font-weight: 400;margin-bottom: 30px;}
+.LoginForm.VerificationForm p.p3{font-size: 16px;margin-bottom: 25px;margin-top: 10px;}
+.LoginForm.VerificationForm input[type="text"]{height: 85px;background: #ffffff;margin-bottom: 40px;border: 1px solid #ffffff;-webkit-box-shadow: 0 2px 5px 2px #DED5D9;box-shadow: 0 2px 5px 2px #DED5D9;text-align: center; font-size: 24px;max-width: 110px;}
+.VerificationForm input.inputs {display: inline-block;float: left;margin-left: 2%;margin-right: 2%;width: 22%;}
+.VerificationForm input.inputs:first-child {margin-left: 0;}
+.VerificationForm input.inputs:last-child {margin-right: 0;}
+
+/*SignUp Form CSS*/
+.LoginForm textarea {background: #ffffff;border: 1px solid #ffffff;border-radius: 4px;box-shadow: 0 2px 5px 2px #ded5d9;color: #434343;font-size: 17px;font-weight: 400;height: 120px; margin: 0px;padding: 20px 20px 20px 20px;width: 100%;resize: none;}
+.LoginForm input.textInput{background: #ffffff url(../images/user-icon.png)no-repeat right 15px center;color: #434343;font-weight: 400;font-size: 17px;
+	height: 62px;border-radius: 4px;border: 1px solid #ffffff;padding: 20px 60px 20px 20px;	-webkit-box-shadow: 0 2px 5px 2px #DED5D9;box-shadow: 0 2px 5px 2px #DED5D9;margin: 0px 0px;}
+.LoginForm input.contactInput{background: #ffffff url(../images/mobile-icon.png)no-repeat right 15px center;color: #434343;font-weight: 400;font-size: 17px;
+	height: 62px;border-radius: 4px;border: 1px solid #ffffff;padding: 20px 60px 20px 20px;	-webkit-box-shadow: 0 2px 5px 2px #DED5D9;box-shadow: 0 2px 5px 2px #DED5D9;margin: 14px 0px;}
+.LoginForm.signUpForm .p4{color: #2e2d2d; font-size: 13px; line-height: 22px; font-weight: 400;}
+.LoginForm.signUpForm .p4 a{color: #21a1da;text-decoration: underline;}
+.signupSection .seprator {margin: 0px 0px 20px 0px;}
+.PropertyLogo.pull-right{display: none;}
+.LoginForm input.Nationality {background: #ffffff url("../images/flag.png") no-repeat scroll right 15px center;
+  border: 1px solid #ffffff;border-radius: 4px;box-shadow: 0 2px 5px 2px #ded5d9;color: #434343;font-size: 17px;
+  font-weight: 400;height: 62px;margin: 14px 0;padding: 20px 60px 20px 20px;}
+.singupChecks {list-style: outside none none;margin: 20px 0;padding: 0;}
+.singupChecks li{display: inline-block;}
+.singupChecks li .checkbox label {color: #434343;font-size: 14px;}
+.signupLabel {font-size: 19px; color: #434343; font-weight: 400;margin-top: 15px;}
+.checkbox.checkLeft label {color: #2e2d2d;font-size: 13px;}
+.g-recaptcha {margin-bottom: 20px;margin-top: 20px;}
+.checkbox.checkLeft {margin-bottom: 0;}
+.Loginlayout.signup-page {height: 1445px;}
+.Loginlayout.signup-page .row-full{height: 1440px;}
+
+
+/*About Malta Page CSS*/
+.ContactMiddle.aboutMaltaMain {background: #f7f7f7;}
+.StaticBanner.malta-banner {background: url(../images/about-malta.jpg) no-repeat;background-size: 100% 100%;}
+.page-heading1{font-weight: 400; font-size: 22px; }
+.content.horizontal-images{margin-top: 35px;margin-bottom: 15px;}
+/*Scrollbar CSS*/
+.horizontal-images.content ul{margin: 0;padding: 0;list-style: none;overflow: hidden;}
+.horizontal-images.content li{margin: 0 8px;float: left;max-width: 370px;position: relative;}
+.horizontal-images.content li:first-child{ margin-left: 0; }
+.horizontal-images.content li:last-child{ margin-right: 0; }
+.horizontal-images.content li img{width: 100%;padding: 0;}
+.mCS-light-3.mCSB_scrollTools .mCSB_draggerRail, .mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail{background-color: #c6c8c8;}
+.mCS-light-3.mCSB_scrollTools_horizontal .mCSB_draggerRail, .mCS-dark-3.mCSB_scrollTools_horizontal .mCSB_draggerRail{height: 7px;}
+.mCS-light-3.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar, .mCS-dark-3.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar{height: 11px;background-color: #2cafe3;margin: 3px;border-radius: 10px;}
+.img-box-overlay {background: url(../images/img-overlay-bg.png);position: absolute;height: 100%;
+	width: 40%;top: 0;padding: 10px;}
+.overlay-innerbox {height: 125px;width: 160px;border: 2px solid #f9f9f9;color: #f9f9f9;top: 50%;position: relative;margin-top: -65px;}
+.innerBgBox {position: absolute;height: 100%;width: 86%;background: #2cafe3;padding: 10px;color: #f9f9f9;
+	vertical-align: middle;display: table;}
+.innerBgBox h5 {color: #f9f9f9;font-size: 20px;line-height: 24px;margin: 0px;display: table-cell;height: 100%;vertical-align: middle;}
+.innerBgBox h5 span{display: inline-block;width: 100%; font-size: 16px; line-height: 20px;}
+#content-6 {margin-top: 35px;}
+/*Animation Hover*/
+.horizontal-images.content li{overflow: hidden;cursor: pointer;}
+.horizontal-images.content li img{-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;transition: opacity 0.35s, transform 0.35s;}
+.horizontal-images.content li:hover img{-webkit-transform: scale3d(2,2,1);transform: scale3d(2,2,1);}
+/*Highlights Events CSS*/
+.HighlightsEvents{padding: 20px 0px;background:#fafafa;}
+.HighlightsHeading{border-top: 1px solid #e4e3e3; border-bottom: 1px solid #e4e3e3;padding: 10px 0px;margin-bottom: 40px;}
+.HighlightsHeading h6{margin: 0px;color: #2e2d2d;font-size: 18px; font-weight: 400; line-height: 40px;}
+#EventHightlight .item img{width: 100%;}
+.EventHightlightRight h5{color: #2e2d2d; font-size: 20px; margin: 0px; line-height: 28px; font-weight: 400;}
+.EventHightlightRight h5 span{font-size: 14px; color: #7c7b7b;}
+.EventHightlightRight h6{color: #2e2d2d; font-size: 17px; margin: 0px; line-height: 28px; font-weight: 400;}
+.EventHightlightRight p{color: #2b2b2b; font-size: 14px; line-height: 27px; font-weight: 400; margin: 15px 0px;}
+.EventHightlightRight p a{color: #2cafe3;}
+.EventHightlight-img {display: inline-block;width: 33%;float: left;}
+.EventHightlightRight{display: inline-block;width: 67%;float: left;padding-left: 15px;}
+#EventHightlight .owl-nav{top: 50%;margin-top: -22px;position: absolute;width: 100%;}
+#EventHightlight .owl-nav .owl-prev, #EventHightlight .owl-nav .owl-next{text-indent: -9999px;width: 23px;height: 44px; display: inline-block;}
+#EventHightlight .owl-nav .owl-prev{background: url(../images/event-previous.png)no-repeat;float: left;margin-left: -32px;}
+#EventHightlight .owl-nav .owl-next {background: url(../images/event-next.png)no-repeat;float: right;	margin-right: -32px;}
+
+/*Property Listing Form Tab*/
+.infoHover i {display: inline-block;font-size: 24px;margin: 16px 0;width: auto;cursor: pointer;}
+.infoHover i:hover {cursor: pointer;}
+.infoHover .popover h3{font-size:14px;font-weight: 700;}
+.listing-form-heading h1 {font-size: 20px;color: #2e2d2d;font-weight: 400;margin: 0;line-height: 24px;	padding: 30px 0;}
+.listing-form-heading h1 span{color: #1fa0da;}
+.FormTabHeader{background: #ececec;background-color: #ececec; border-top: 1px solid #e3e3e3; border-bottom:  1px solid #e3e3e3;margin-bottom: 10px;}
+.FormTabHeader ul.tabs {margin: 0;padding: 0;float: left;list-style: none;height: 56px;width: 100%;	background: transparent;border-radius: 0px 0px 0 0;overflow: hidden;}
+.FormTabHeader ul.tabs li {float: left;margin: 0;cursor: pointer;padding: 0px 10px;height: 56px;line-height: 56px;background-color: #fff;color: #c1c0c0;overflow: hidden;position: relative;width: 210px;	border-top: 0px solid #20a0da;text-align: left;font-size: 20px;font-weight: 400;transform: skew(45deg, 0deg) ;-webkit-transform: skew(45deg, 0deg) ;-moz-transform: skew(45deg, 0deg) ;-o-transform: skew(45deg, 0deg) ;-ms-transform: skew(45deg, 0deg) ;}
+.FormTabHeader ul.tabs li:nth-child(2){width: 240px;}
+.FormTabHeader ul.tabs li:nth-child(2) p{padding-left: 10px;}
+.FormTabHeader ul.tabs li:hover, .FormTabHeader ul.tabs li.active{background: #0d98d7; background-color: #0d98d7;color: #ffffff;}
+.FormTabHeader ul.tabs li:hover .stepSubtext, .FormTabHeader ul.tabs li.active .stepSubtext{color: #ffffff;}
+.FormTabHeader ul.tabs li:hover .roundNumber, .FormTabHeader ul.tabs li.active .roundNumber{border: 1px solid #ffffff;}
+.FormTabHeader ul.tabs li:first-child{margin-left: -50px; padding-left: 60px;}
+.FormTabHeader ul.tabs li p{transform: skew(-45deg, 0deg) ;-webkit-transform: skew(-45deg, 0deg) ;-moz-transform: skew(-45deg, 0deg) ;-o-transform: skew(-45deg, 0deg) ;-ms-transform: skew(-45deg, 0deg) ; line-height: 20px;padding: 10px 0px;}
+.roundNumber {font-size: 20px;display: inline-block;width: 30px;height: 30px;padding: 5px;border-radius: 30px;border: 1px solid #c1c0c0;line-height: 20px;text-align: center;float: left;margin-right: 10px;margin-top: 5px;}
+.stepSubtext {display: inline-block;font-size: 15px;color: #dbdbdb;line-height: 15px;}
+.FormSectionInner .tab_container{-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;
+	background-color: #fff;-webkit-box-shadow: 1px -1px 5px rgba(0,0,0,.13);-moz-box-shadow: 1px -1px 5px rgba(0,0,0,.13);box-shadow: 1px -1px 5px rgba(0,0,0,.13);}
+.tab_container #dv157 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */color: #5d5d5d;opacity: 1;}
+.tab_container #dv157 ::-moz-placeholder { /* Firefox 19+ */color: #5d5d5d;opacity: 1;}
+.tab_container #dv157 :-ms-input-placeholder { /* IE 10+ */color: #5d5d5d;opacity: 1;}
+.tab_container #dv157 :-moz-placeholder { /* Firefox 18- */color: #5d5d5d;opacity: 1;}
+
+.tab_container #dv156 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */color: #5d5d5d;opacity: 1;}
+.tab_container #dv156 ::-moz-placeholder { /* Firefox 19+ */color: #5d5d5d;opacity: 1;}
+.tab_container #dv156 :-ms-input-placeholder { /* IE 10+ */color: #5d5d5d;opacity: 1;}
+.tab_container #dv156 :-moz-placeholder { /* Firefox 18- */color: #5d5d5d;opacity: 1;}
+.FormSectionInner .tab_container ::-webkit-input-placeholder { /* Chrome/Opera/Safari */color: #5d5d5d;opacity: 1;}
+.FormSectionInner .tab_container ::-moz-placeholder { /* Firefox 19+ */color: #5d5d5d;opacity: 1;}
+.FormSectionInner .tab_container :-ms-input-placeholder { /* IE 10+ */color: #5d5d5d;opacity: 1;}
+.FormSectionInner .tab_container :-moz-placeholder { /* Firefox 18- */color: #5d5d5d;opacity: 1;}
+.FormTabMain .tab_last{pointer-events: none;}
+#listMap{width: 100%; height: 220px;}
+
+
+
+
+
+
+/*Radio Btns*/
+.FormSectionInner label.btn span {font-size: 14px ; color: #434343;}
+.FormSectionInner label.btn {padding-left: 0px;float: left;width: 25%;text-align: left;background: transparent;box-shadow: none;border-radius: 0;}
+.FormSectionInner label input[type="radio"] ~ i.fa.fa-circle-o{color: #c4c3c3;display: inline;font-size: 15px;}
+.FormSectionInner label input[type="radio"] ~ i.fa.fa-dot-circle-o{display: none;font-size: 15px;}
+.FormSectionInner label input[type="radio"]:checked ~ i.fa.fa-circle-o{display: none;}
+.FormSectionInner label input[type="radio"]:checked ~ i.fa.fa-dot-circle-o{color: #09b82e;display:inline;}
+.FormSectionInner label:hover input[type="radio"] ~ i.fa {color: #09b82e;}
+
+/*Animated Input Fields*/
+
+.tab_container  .animatedInputBox input {padding: 0px;border: 0px solid ;margin: 0 ;height:20px;color: #434343;font-size: 14px;}
+.tab_container .animatedInputBox label {color: #787878;font-size: 12px;line-height: 14px;font-weight: 400;margin-bottom: 0px;}
+.animatedInputBox {background: #f7f7f7;border-radius: 4px;padding: 10px 15px;height: 60px}
+.formRow{margin-top: 12px; margin-bottom: 24px;}
+.formRow1{margin-top: 12px; margin-bottom: 12px;}
+.FormSectionInner .bootstrap-select.btn-group .dropdown-toggle .filter-option{opacity: 1;}
+.questionsBtn {color: #5d5d5d;font-size: 25px;display: inline-block;height: 25px;width: 25px;margin: 15px 0;line-height: 25px;}
+.Listingmap img{width: 100%;}
+.FormSectionInner textarea{background-color: #f6f6f6; background: #f6f6f6;border: 1px solid #eaeaea; height: 90px;-webkit-border-radius: 2px;	-moz-border-radius: 2px;border-radius: 2px;width:100%;padding: 15px;color: ##5d5d5d; font-size: 15px;resize: none;}
+.FormSectionInner .checkbox.checkRight{margin-top: 15px;}
+.inactive {display: none;}
+#file-1 {display: none;}
+.box123 {display: inline-block;width: 350px;}
+.box123 .inputfile-1 + label {color: #20a0da;background-color: transparent; font-size: 18px;padding-left: 0px;}
+.box123 .inputfile-1 + label span{text-decoration: underline;}
+.uploadImage{border-radius: 4px; overflow: hidden;}
+.uploadImage img{width: 100%;}
+.UploadCaption h6 {margin-bottom: 0;margin-top: 20px;}
+.FormTabHeader .container, .FormSectionInner .container{max-width: 950px;}
+
+
+
+/*Looking For Popup CSS*/
+.modal {text-align: center;padding: 0!important;}
+.modal:before {content: '';display: inline-block;height: 100%;vertical-align: middle;margin-right: -4px;}
+.modal-dialog {display: inline-block;text-align: left;vertical-align: middle;}
+.modal-content{-webkit-border-radius: 6px;-moz-border-radius: 6px;	border-radius: 6px;background-color: #fdfdfd;-webkit-box-shadow: -9px 1px 7px rgba(0,0,0,.38);-moz-box-shadow: -9px 1px 7px rgba(0,0,0,.38);box-shadow: -9px 1px 7px rgba(0,0,0,.38);}
+.modal-header .close{width: 47px;height: 47px;-webkit-border-radius: 23px 24px 24px 23px/23px 23px 24px 24px;-moz-border-radius: 23px 24px 24px 23px/23px 23px 24px 24px;border-radius: 23px 24px 24px 23px/23px 23px 24px 24px;background-color: #1ba9e1;-webkit-box-shadow: 0 6px 7px rgba(0,0,0,.38);-moz-box-shadow: 0 6px 7px rgba(0,0,0,.38);box-shadow: 0 6px 7px rgba(0,0,0,.38);color: #ffffff;margin-top: -32px;margin-right: -32px;opacity: 1;}
+#onload .modal-title{font-size: 30px;color: #2e2d2d;font-weight: 300;line-height: 30px;}
+#onload .modal-title span{color: #1ba9e1;}
+#onload .modal-header p{color: #434343; font-weight: 300; font-size: 20px; line-height: 24px;}
+#onload .modal-header{border-bottom: 0px solid;}
+#onload .modal-footer.text-center{border-top: 0px solid;}
+#onload .modal-footer.text-center{text-align: center;}
+#onload .modal-footer button[type="button"] {background-color: #fb8506;color: #ffffff;font-size: 20px;
+  font-weight: 400;height: 55px;margin-bottom: 10px;text-transform: uppercase; width: 170px;}
+#onload .modal-footer button[type="button"]:hover {background: #bc6609 none repeat scroll 0 0;border: 1px solid #bc6609;}  
+#onload .modal-dialog{width: 650px;}
+#onload .modal-content .checkbox label span {display: inline-block; width: 40px;}
+#onload .modal-content .checkbox input[type="checkbox"], .modal-content .checkbox-inline input[type="checkbox"]{margin-left: 0;position: absolute; right: 0;}
+#onload .modal-content .checkbox {padding-left: 0px;line-height: 32px;margin: 22px 0px;}
+#onload .modal-content .checkbox label {display: inline-block;position: relative;padding-left: 5px;width:100%;font-size: 17px; color: #434343; }
+#onload .modal-content .checkbox label::before {content: "";display: inline-block;position: absolute;width: 32px;
+      height: 32px;right: 0;border: 2px solid #444444;border-radius: 3px;background-color: #fff;-webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;-o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;transition: border 0.15s ease-in-out, color 0.15s ease-in-out; }
+#onload .modal-content .checkbox label::after {display: inline-block;position: absolute;width: 31px;height: 31px;
+      right: 0;top: 0;padding-left: 3px;padding-top: 1px;font-size: 22px;color: #555555;}
+#onload .modal-content .checkbox input[type="checkbox"] {opacity: 0; }
+#onload .modal-content .checkbox input[type="checkbox"]:focus + label::before {outline: thin dotted;outline: 5px auto -webkit-focus-ring-color;outline-offset: -2px; }
+#onload .modal-content .checkbox input[type="checkbox"]:checked + label::after {font-family: 'FontAwesome';   content: "\f00c"; }
+#onload .modal-content .checkbox input[type="checkbox"]:disabled + label {opacity: 0.65; }
+#onload .modal-content .checkbox input[type="checkbox"]:disabled + label::before {background-color: #eeeeee;cursor: not-allowed; }
+#onload .modal-content .checkbox.checkbox-circle label::before {border-radius: 50%; }
+#onload .modal-content .checkbox.checkbox-inline {margin-top: 0; }
+#onload .modal-content .checkbox-primary input[type="checkbox"]:checked + label::before {background-color: #444444;
+  border-color: #444444; }
+#onload .modal-content .checkbox-primary input[type="checkbox"]:checked + label::after {color: #fff; }
+#onload .modal-content .checkbox-danger input[type="checkbox"]:checked + label::before {background-color: #d9534f;
+  border-color: #d9534f; }
+#onload .modal-content .checkbox-danger input[type="checkbox"]:checked + label::after {color: #fff; }
+#onload .modal-content .checkbox-info input[type="checkbox"]:checked + label::before {background-color: #5bc0de;
+  border-color: #5bc0de; }
+#onload .modal-content .checkbox-info input[type="checkbox"]:checked + label::after {color: #fff; }
+#onload .modal-content .checkbox-warning input[type="checkbox"]:checked + label::before {background-color: #f0ad4e;
+  border-color: #f0ad4e; }
+#onload .modal-content .checkbox-warning input[type="checkbox"]:checked + label::after {color: #fff; }
+#onload .modal-content .checkbox-success input[type="checkbox"]:checked + label::before {background-color: #5cb85c;
+  border-color: #5cb85c; }
+#onload .modal-content .checkbox-success input[type="checkbox"]:checked + label::after {color: #fff; }
+
+/*Looking For New page CSS*/
+label.btn.active.focus {outline: none!important;}
+.lookingForSection {padding-top: 50px;}
+.LokingForm label{display: block;width: 100%;}
+.LokingForm ul li{list-style: none;display: inline-block;}
+.LokingForm ul{padding:15px 0px 0px 0px; margin: 0px;}
+.LokingForm ul li .checkbox .cr{float: right; margin-left:15px;margin-right: 15px;}
+.lookingForSection form .bootstrap-select .btn {background: #f6f6f6 none repeat scroll 0 0;border: 1px solid #eaeaea; border-radius: 4px;box-shadow: none;color: #5d5d5d;font-size: 15px;font-weight: 400;
+  height: 55px;line-height: 25px;overflow: hidden;padding: 15px;width: 100%;}
+.lookingForSection form .bootstrap-select{width: 100%!important;}
+.lookingForSection form .bootstrap-select.location-icon .btn {background: #f6f6f6 url("../images/location-icon.png") no-repeat scroll 15px center;padding-left: 40px;}
+.lookingForSection form .bootstrap-select.home-icon .btn {background: #f6f6f6 url("../images/home-icon.png") no-repeat scroll 15px center;padding-left: 40px;}
+.lookingForSection .bootstrap-select.btn-group .dropdown-menu li {width: 100%; display: inline-block;}
+.lookingForSection form .bootstrap-select .dropdown-menu {background: #f6f6f6 none repeat scroll 0 0;
+  border: 1px solid #eaeaea; border-radius: 0 0 4px 4px;margin-top: -4px;}
+.lookingForSection .btn-group.bootstrap-select.form-control{height: auto;}
+.lookingForSection form label {color: #1e1e1e;display: inline-block;font-size: 17px;font-weight: 400; line-height: 20px;margin-bottom: 10px;width: 100%;margin-bottom: 20px;}
+.LokingForm ul li label{font-size: 15px;}
+.row.lookingRow{margin-bottom: 40px;}
+.lookingForSection h2{color: #2e2d2d; font-size: 26px;font-weight: 400; line-height: 26px;}
+.lookingForSection h2 span{color: #1ba9e1;}
+.lookingForSection h6{color: #434343; font-weight: 400; font-size: 18px; line-height: 18px;margin-bottom: 25px;}
+.lookingForSection .rangeslider {display: block;float: none;margin: 0 auto;max-width: 280px; padding: 15px 2px;}
+.lookingForSection .rangeslider .rangeprice {line-height: 15px;padding: 5px 0 0;}
+.lookingForSection .rangeslider .rangetxt {margin-bottom: 5px;}
+.lookingForSection form button[type="submit"] {background-color: #fb8506;color: #ffffff; font-size: 20px;font-weight: 400;height: 55px;margin-bottom: 10px;text-transform: uppercase;width: 185px;}
+.lookingForSection form button[type="submit"]:hover {background: #bc6609;border: 1px solid #bc6609;}
+.rangeslider.disabled {background: #fff; opacity: 0.5;pointer-events: none;}
+.rangeslider .slider-disabled .slider-selection{background-color: #bebebe ;background-image: linear-gradient(to bottom, #dfdfdf 0%, #bebebe 100%);}
+
+
+/*Mixed For All Pages New CSS*/
+.gridshare.forsaleGrid .btn-primary {font-size: 14px;}
+.ChildUnfriendly {color: #e00909;font-size: 10px;line-height: 24px;text-align: right;}
+.TopSearchBar ul li.showAll{border-left: 1px solid #e9e9e9;width: 20%;}
+.TopSearchBar ul li.showAll .bootstrap-select.home-icon .btn {background: #f6f6f6 url("../images/home-icon.png") no-repeat scroll 15px center; padding-left: 40px;border: 0px solid #eaeaea;  border-radius: 4px; box-shadow: none; color: #5d5d5d; font-size: 15px; font-weight: 400; height: 45px;
+    line-height: 25px; overflow: hidden; width: 100%;}
+.MoreFilterSearch2{display: none}
+.TopSearchBar .MoreFilterBox ul{width: 100%;border:0px solid;}
+.TopSearchBar .MoreFilterBox ul li{list-style: none; display: inline-block; width: auto;height: auto;border:0px solid!important;padding: 0 5px;}
+.TopSearchBar .MoreFilterBox ul li label, .MoreFilterBox label, .MoreFilterBox1 label{color: #1e1e1e; display: inline-block; font-size: 14px; font-weight: 400; line-height: 17px; margin-bottom: 10px;width: 100%;}
+.MoreFilterBox label span, .MoreFilterBox1 label span{color: #818181;font-size: 15px;}
+.TopSearchBar .MoreFilterBox ul li:nth-child(1){width: 12%;padding-left: 0px;}
+.TopSearchBar .MoreFilterBox ul li:nth-child(2){width: 12%;}
+.TopSearchBar .MoreFilterBox ul li:nth-child(3){width: 12%;}
+.TopSearchBar .MoreFilterBox ul li:nth-child(4){width: 24%;}
+.TopSearchBar .MoreFilterBox ul li:nth-child(5){width: 20%;}
+.TopSearchBar .MoreFilterBox ul li:nth-child(6){width: 20%;padding-right: 0px;}
+.TopSearchBar .MoreFilterBox ul li:nth-child(4) .bootstrap-select{width: 50%!important;padding: 0 5px;float: left;}
+.TopSearchBar .MoreFilterBox ul li:nth-child(4) .bootstrap-select.age1{padding-left: 0px;}
+.TopSearchBar .MoreFilterBox ul li:nth-child(4) .bootstrap-select.age2{padding-right: 0px;}
+.TopSearchBar .MoreFilterBox ul li ul.dropdown-menu li{width: 100%;padding: 0px}
+.TopSearchBar .MoreFilterBox ul li ul.multiselect-container.dropdown-menu li { background-color: #f6f6f6;
+  border-bottom: 1px solid #eaeaea; padding: 10px 10px 10px 20px;}
+.TopSearchBar .MoreFilterBox ul li .bootstrap-select.home-icon .btn {
+  background: #f6f6f6 url("../images/home-icon.png") no-repeat scroll 15px center;padding-left: 40px; border: 1px solid #eaeaea; border-radius: 4px; box-shadow: none; color: #5d5d5d; font-size: 14px;  font-weight: 400; height: 55px; line-height: 25px; overflow: hidden;}
+.TopSearchBar .MoreFilterBox ul li .bootstrap-select.bed-icon .btn {
+  background: #f6f6f6 url("../images/bedroomform-icon.png") no-repeat scroll 15px center;
+  padding-left: 40px;border: 1px solid #eaeaea; border-radius: 4px; box-shadow: none; color: #5d5d5d; font-size: 14px;  font-weight: 400; height: 55px; line-height: 25px; overflow: hidden;}
+.TopSearchBar .MoreFilterBox ul li .bootstrap-select .btn{background: #f6f6f6;
+  padding: 15px;border: 1px solid #eaeaea; border-radius: 4px; box-shadow: none; color: #5d5d5d; font-size: 14px;  font-weight: 400; height: 55px; line-height: 25px; overflow: hidden;}
+.TopSearchBar .MoreFilterBox ul li .multiselect.dropdown-toggle.btn.btn-default { font-size: 14px;}
+.TopSearchBar .MoreFilterBox ul li input { background: #f6f6f6;border: 1px solid #eaeaea;border-radius: 4px;color: #5d5d5d;font-size: 14px;font-weight: 400;height: 55px;line-height: 25px;margin-bottom: 15px;
+  overflow: hidden;padding: 15px;width: 100%;}
+.TopSearchBar .MoreFilterBox .checkbox label {font-size: 14px;}
+.TopSearchBar .MoreFilterBox ul li .multiselect.dropdown-toggle.btn.btn-default {opacity: 1;}
+.TopSearchBar .MoreFilterBox .checkbox, .TopSearchBar .MoreFilterBox1 .checkbox {display: inline-block;}
+.TopSearchBar .MoreFilterBox .checkbox, .TopSearchBar .MoreFilterBox1 .checkbox label{font-size: 14px;}
+.TopSearchBar ul.forsaleMoreFilters li ul.dropdown-menu li {width: 100%;padding: 0px;}
+.gridshare.forsaleGrid .view {color: #2cafe3; font-size: 14px;font-weight: 400; padding-left: 0; padding-right: 5px; text-decoration: underline;text-transform: inherit;}
+.gridshare.forsaleGrid .counter-tab {font-size: 15px;line-height: 15px;padding: 15px 0;}
+.gridshare.forsaleGrid .btn-primary {text-transform: uppercase;}
+.proSearch .bootstrap-select.bedroom_icon .btn {background: #f6f6f6 url(../images/bedroomform-icon.png) no-repeat scroll 10px center;}
+.refine .bootstrap-select.bedroom_icon .btn {background: #f6f6f6 url(../images/bedroomform-icon.png) no-repeat scroll 10px center;}
+.refine .bootstrap-select.no_icon .btn {background: #f6f6f6; padding-left: 15px;}
+.refine .bootstrap-select.loc_icon .btn {background: #f6f6f6 url(../images/location-bg.png) no-repeat scroll 10px center;padding-left: 40px;}
+.refine .span2 {background: #f6f6f6 url(../images/calendar-icon.png) no-repeat scroll 15px 12px;padding-left: 40px;border: 1px solid #eaeaea;border-radius: 0px;color: #5d5d5d;font-weight: 400;height: 45px;line-height: 25px;overflow: hidden;width: 100%;box-shadow: none;}
+.refine input {background: #f6f6f6;border: 1px solid #eaeaea;border-radius: 0px;color: #5d5d5d;font-size: 14px;font-weight: 400;height: 45px;line-height: 25px;overflow: hidden;width: 100%;box-shadow: none;}
+.refine label {font-weight: 500;margin-bottom: 10px;margin-top: 15px;}
+.refine .checkRight label{font-size: 12px;}
+.refine .checkbox.checkRight .cr {border-radius: 3px;}
+.refine ::-webkit-input-placeholder { /* Chrome/Opera/Safari */color: #5d5d5d;opacity: 1;}
+.refine ::-moz-placeholder { /* Firefox 19+ */color: #5d5d5d;opacity: 1;}
+.refine :-ms-input-placeholder { /* IE 10+ */color: #5d5d5d;opacity: 1;}
+.refine :-moz-placeholder { /* Firefox 18- */color: #5d5d5d;opacity: 1;}
+.refine .multiselect.dropdown-toggle.btn.btn-default {opacity: 1;}
+.refine-region{padding: 15px 15px 0px 15px;}
+.refine-region label{width: 100%;}
+.refine-region .bootstrap-select.loc_icon .btn{border-radius: 0px; width: 100%; height: 45px;}
+.refine-region .bootstrap-select.loc_icon{width: 100%!important;}
+.refine-region .bootstrap-select.loc_icon .dropdown-menu{border-radius: 0px;}
+.rangeprice > input {background: transparent;border: 0 none;box-shadow: none;height: auto;text-align: center;width: 35px;}
+.refine .babygear li {padding-right: 0;}
+.refine .babygear li label{margin-top: 0px;}
+.refine .location input {background-color: #f7f7f7;background-image: url(../images/location-bg.png);  background-position: 10px 10px;background-repeat: no-repeat;border: 1px solid #d9d6d6;color: #5d5d5d;
+  font-size: 14px; height: auto;padding: 10px 15px 10px 40px;}
+
+/*.MoreFilterBox [class*=' col-']{padding: 0 10px;}*/
+
+/*About Us page CSS*/
+.StaticBanner.aboutus-banner {background:rgba(0, 0, 0, 0) url(../images/about-banner.jpg) no-repeat scroll 0 0 / 100% auto;
+}
+.aboutSection ul{padding: 0px; margin: 0px; text-align: center;list-style: none;}
+.aboutSection ul li{display: inline-block; margin: 10px 10px;}
+.aboutSection h4{color: #2e2d2d; font-size: 22px; font-weight: 400;}
+ 
+/*Radio Btns*/
+.lookingForSection label.btn span {font-size: 17px ; color: #434343;}
+.lookingForSection label.btn {padding-left: 0px;float: left;width: 20%;text-align: left;background: transparent;box-shadow: none;border-radius: 0;padding: 0px;}
+.lookingForSection label.btn:first-child{width:26%;}
+.lookingForSection label.btn:nth-child(2){width:26%;}
+.lookingForSection label.btn:nth-child(3){width:26%;}
+.lookingForSection label input[type="radio"] ~ i.fa.fa-circle-o{color: #c4c3c3;display: inline;font-size: 17px;}
+.lookingForSection label input[type="radio"] ~ i.fa.fa-dot-circle-o{display: none;font-size: 17px;}
+.lookingForSection label input[type="radio"]:checked ~ i.fa.fa-circle-o{display: none;}
+.lookingForSection label input[type="radio"]:checked ~ i.fa.fa-dot-circle-o{color: #09b82e;display:inline;}
+.lookingForSection label:hover input[type="radio"] ~ i.fa {color: #09b82e;}
+.btn-group, .btn-group-vertical {padding: 0;}
+
+ /*Make an Appointment CSS*/
+.LoginForm textarea.appointmentTextArea{background: #ffffff;color: #434343;font-weight: 400;font-size: 17px;height: 135px;border-radius: 4px;border: 1px solid #ffffff;padding: 20px 60px 20px 20px;-webkit-box-shadow: 0 2px 5px 2px #DED5D9;box-shadow: 0 2px 5px 2px #DED5D9;margin: 14px 0px;resize: none;}
+.makeAppointment{padding: 40px 0 0 0;}
+.makeAppointment .container{max-width: 600px;}
+.makeAppointment h2{color: #2e2d2d; font-size: 20px; font-weight: 400; line-height: 30px;margin-bottom: 10px;}
+.makeAppointment h2 span{color: #1fa0da;}
+.makeAppointment p{color: #434343; font-weight: 400; font-size: 14px; line-height: 24px;margin-bottom: 20px;}
+.makeAppointment .btn.btn-lg.btn-primary.btn-signin{margin-top: 15px;margin-bottom: 0px;}
+.makeAppointment .LoginForm .btn-group.bootstrap-select {width: 100%;margin: 14px 0;}
+.makeAppointment .LoginForm .btn-group.bootstrap-select .btn.btn-default{background-color: #ffffff;border: 1px solid #ffffff;border-radius: 4px;box-shadow: 0 2px 5px 2px #ded5d9;color: #434343;font-size: 17px;
+  font-weight: 400;height: 62px;padding: 20px 60px 20px 20px;}
+.makeAppointment .LoginForm .btn-group.bootstrap-select .btn.btn-default .caret {border-left: 8px solid transparent;border-right: 8px solid transparent;border-top: 10px dashed;}
+.makeAppointment .LoginForm .btn-group.bootstrap-select.dropup .btn.btn-default .caret {border-bottom: 10px dashed;border-top: 0 none;content: "";}
+.LoginForm input.textInput.optimal {background: #ffffff url(../images/alarm_clock.png) no-repeat scroll right 15px center;}
+
+
+/* Custom Checkbox CSS*/
+.checkbox.checkRight .cr{float: right;margin-left: 15px;}
+.checkbox label:after {content: '';display: table;clear: both;}
+.checkbox .cr{position: relative;display: inline-block;border: 1px solid #d3d3d3;border-radius: 4px;    width: 1.3em;height: 1.3em;float: left;margin-right: .5em;background:#ffffff;}
+.FormSectionInner .checkbox.checkRight .cr {float: left;margin-left: 0;}
+.checkbox .cr .cr-icon{position: absolute;font-size: .8em;line-height: 0;top: 50%;left: 20%;color: #39b54a;}
+.checkbox label input[type="checkbox"]{display: none;}
+.checkbox label input[type="checkbox"] + .cr > .cr-icon{transform: scale(3) rotateZ(-20deg);opacity: 0;
+    transition: all .3s ease-in;}
+.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon{transform: scale(1) rotateZ(0deg);
+    opacity: 1;}
+.checkbox label input[type="checkbox"]:disabled + .cr{opacity: .5;}
+.checkbox label{padding-left: 0px;color: #2e2d2d;font-size: 15px;}
+.calendarBox{width: 150px;height: 39px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;background: #ebecec url(../images/calendar-icon1.png) no-repeat right 10px center;padding: 10px;color: #7b7a7a;font-weight: 400;font-size: 13px;line-height: 22px;}
+
+
+
+/*-------------------------------*/
+/*           VARIABLES           */
+/*-------------------------------*/
+
+
+body {position: relative; overflow-x: hidden;}
+body, html { height: 100%;}
+.nav .open > a { background-color: transparent; }
+.nav .open > a:hover { background-color: transparent; }
+.nav .open > a:focus { background-color: transparent; }
+
+/*-------------------------------*/
+/*           Wrappers            */
+/*-------------------------------*/
+
+#wrapper {-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;-webkit-transition: all 0.5s ease;
+  padding-right: 0;-webkit-transition: all 0.5s ease;transition: all 0.5s ease;}
+/*#wrapper.toggled { padding-right: 250px; }*/
+#wrapper.toggled #sidebar-wrapper { width: 250px; -webkit-box-shadow: -12px 0 8px rgba(0,0,0,.38);
+	-moz-box-shadow: -12px 0 8px rgba(0,0,0,.38);box-shadow: -12px 0 8px rgba(0,0,0,.38);}
+/*#wrapper.toggled #page-content-wrapper {margin-left: -250px;position: absolute;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;-webkit-transition: all 0.5s ease;-webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;}*/
+#sidebar-wrapper {-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;-webkit-transition: all 0.5s ease;background: #ffffff;height: 100%;right: 250px;margin-right: -250px;left: auto;overflow-x: hidden;
+  overflow-y: auto;-webkit-transition: all 0.5s ease;transition: all 0.5s ease;width: 0;z-index: 99999;}
+#sidebar-wrapper::-webkit-scrollbar {display: none;-webkit-box-shadow: -12px 0 8px rgba(0,0,0,.38);
+	-moz-box-shadow: -12px 0 8px rgba(0,0,0,.38);box-shadow: -12px 0 8px rgba(0,0,0,.38);}
+#page-content-wrapper {padding-top: 65px;width: 100%;}
+
+/*-------------------------------*/
+/*     Sidebar nav styles        */
+/*-------------------------------*/
+
+.sidebar-nav {list-style: none;margin: 0;padding: 0;position: absolute;top: 0;width: 250px;}
+.sidebar-nav li {display: inline-block;line-height: 16px;position: relative;width: 100%;border-bottom: 1px solid #e5e5e5;float: left;}
+.sidebar-nav li:before {-moz-transition: width 0.2s ease-in;-ms-transition: width 0.2s ease-in;-webkit-transition: width 0.2s ease-in;background-color: #1c1c1c;content: '';height: 100%;left: 0;position: absolute;top: 0;-webkit-transition: width 0.2s ease-in;transition: width 0.2s ease-in;width: 0px;
+  z-index: -1;}
+.sidebar-nav li:first-child a {background-color: #1a1a1a;color: #ffffff;}
+.sidebar-nav li:nth-child(2):before { background-color: #20a0da; }
+.sidebar-nav li:nth-child(3):before { background-color: #20a0da; }
+.sidebar-nav li:nth-child(4):before { background-color: #20a0da; }
+.sidebar-nav li:nth-child(5):before { background-color: #20a0da; }
+.sidebar-nav li:nth-child(6):before { background-color: #20a0da; }
+.sidebar-nav li:nth-child(7):before { background-color: #20a0da; }
+.sidebar-nav li:nth-child(8):before { background-color: #20a0da; }
+.sidebar-nav li:nth-child(9):before { background-color: #20a0da; }
+.sidebar-nav li:hover:before {-webkit-transition: width 0.2s ease-in;transition: width 0.2s ease-in;width: 100%;}
+.sidebar-nav li a {color: #434343;display: block;padding: 15px 15px 15px 25px;text-decoration: none;	font-size: 17px;font-weight: 400;line-height: 24px;}
+.sidebar-nav li a span {font-size: 24px;line-height: 24px;position: relative; top: 6px;}
+.sidebar-nav li.open:hover before {-webkit-transition: width 0.2s ease-in;transition: width 0.2s ease-in;
+  width: 100%;}
+.sidebar-nav .dropdown-menu {background-color: #222222;border-radius: 0;border: none;box-shadow: none;
+  margin: 0;padding: 0;position: relative;width: 100%;}
+.sidebar-nav li a:hover, .sidebar-nav li a:active, .sidebar-nav li a:focus, .sidebar-nav li.open a:hover, .sidebar-nav li.open a:active, .sidebar-nav li.open a:focus {background-color: transparent;color: #ffffff;text-decoration: none;}
+.sidebar-nav > .sidebar-brand {height: 78px;border-bottom: 1px solid #e5e5e5;}
+.sidebar-nav li.sidebar-brand::before{background-color: transparent;content: none;}
+.sidebar-nav li.sidebar-brand ul {padding: 15px 0px 16px 0;display: inline-block;width: 100%;margin: 0;
+	float: left;}
+.sidebar-nav li.sidebar-brand ul li{display: inline-block;width: 50%; float: left;text-align: center;color: #9a9a9a;font-size: 12px;font-weight: 400;border-bottom: 0px solid;background:url(../images/top-border-bg.png)no-repeat right top;cursor: pointer;}
+.sidebar-nav li.sidebar-brand ul li:hover {color: #2cafe3;}
+.sidebar-nav li.sidebar-brand ul li:last-child{background:none;}
+.sidebar-nav li.sidebar-brand ul li span{margin: 10px 0 0 0;display: inline-block;width:100%;}
+.sidebar-nav li.sidebar-brand ul li i{font-size: 18px;}
+.sidebar-nav li.sidebar-brand ul li::before{content: none;background-color: transparent;}
+
+/*-------------------------------*/
+/*       Hamburger-Cross         */
+/*-------------------------------*/
+
+.hamburger {background: transparent;border: none;display: inline-block;height: 32px;position: relative;
+	top: -3px;width: 32px;z-index: 999;margin-left: 10px;}
+.hamburger:hover { outline: none; }
+.hamburger:focus { outline: none; }
+.hamburger:active { outline: none; }
+.hamburger.is-closed:before {-webkit-transform: translate3d(0, 0, 0);-webkit-transition: all 0.35s ease-in-out;color: #000;content: '';display: block;font-size: 14px;line-height: 32px;opacity: 0;
+  text-align: center;width: 100px;}
+.hamburger.is-closed:hover before {-webkit-transform: translate3d(-100px, 0, 0);-webkit-transition: all 0.35s ease-in-out;display: block;opacity: 1;}
+.hamburger.is-closed:hover .hamb-top {-webkit-transition: all 0.35s ease-in-out;top: 0;}
+.hamburger.is-closed:hover .hamb-bottom {-webkit-transition: all 0.35s ease-in-out;bottom: 0;}
+.hamburger.is-closed .hamb-top {-webkit-transition: all 0.35s ease-in-out;background-color:#333333;top: 5px;}
+.hamburger.is-closed .hamb-middle {background-color: #333333;margin-top: -2px;top: 50%;}
+.hamburger.is-closed .hamb-bottom {-webkit-transition: all 0.35s ease-in-out;background-color: #333333;
+  bottom: 5px;}
+.hamburger.is-closed .hamb-top, .hamburger.is-closed .hamb-middle, .hamburger.is-closed .hamb-bottom, .hamburger.is-open .hamb-top, .hamburger.is-open .hamb-middle, .hamburger.is-open .hamb-bottom {height: 4px;left: 0;position: absolute;width: 100%;}
+.hamburger.is-open .hamb-top {-webkit-transform: rotate(45deg);-webkit-transition: -webkit-transform 0.2s cubic-bezier(0.73, 1, 0.28, 0.08);background-color: #333333;margin-top: -2px;top: 50%;}
+.hamburger.is-open .hamb-middle {background-color: #333333;display: none;}
+.hamburger.is-open .hamb-bottom {-webkit-transform: rotate(-45deg);-webkit-transition: -webkit-transform 0.2s cubic-bezier(0.73, 1, 0.28, 0.08);background-color: #333333;margin-top: -2px;top: 50%;}
+.hamburger.is-open:before {-webkit-transform: translate3d(0, 0, 0);-webkit-transition: all 0.35s ease-in-out;color: #333333;content: '';display: block;font-size: 14px;line-height: 32px;opacity: 0;
+  text-align: center;width: 100px;}
+.hamburger.is-open:hover before {-webkit-transform: translate3d(-100px, 0, 0);-webkit-transition: all 0.35s ease-in-out;display: block;opacity: 1;}
+
+/*-------------------------------*/
+/*          Dark Overlay         */
+/*-------------------------------*/
+
+.overlay {position: fixed;display: none;width: 100%;height: 100%;top: 0;left: 0;right: 0;bottom: 0;  background-color: rgba(0, 0, 0, 0.7);z-index: 9;}
+
+
+/****** Style Star Rating Widget *****/
+
+.rating {border: none;float: left;}
+.rating > input { display: none; } 
+.rating > label:before {margin: 0px 3px;font-size: 16px;font-family: FontAwesome;display: inline-block;
+  content: "\f005";}
+.rating > .half:before {content: "\f089";position: absolute;}
+.rating > label {color: #f7f7f7; float: right;cursor: pointer;}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #ed8a19;  } /* hover previous stars in list */
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #ed8a19;  } 
+
+
+
+/*Review Page Additional tab*/
+#myTabContent #tab4 {background-color: #fff;border: 1px solid #dfdfdf;border-radius: 3px;clear: both;
+  margin: 20px 0;padding: 30px 15px;float: left;width: 100%;}
+#myTab li.active a:hover, #myTab li.active a:focus, #myTab li a:hover, #myTab li a:focus, #myTab li:focus{
+	outline: none!important;}
+.HouseRules p {color: #849094;font-size: 13px;line-height: 22px;}
+.HouseRules h6{color: #849094;font-size: 13px;line-height: 22px;}
+.HouseRules ul li{list-style: none;background: url(../images/bullet-square.png) no-repeat left center;	padding-left: 15px;color: #849094;font-size: 13px;line-height: 22px;font-weight: 400;}
+.HouseRules ul {padding: 0px;margin: 0px;}
+
+/*******************************
+*************Media Queries*****
+********************************/
+@media screen and (max-width: 1199px) {
+	.BannerCaption{top: 50px;}
+	.BannerCaption h1 {font-size: 32px;line-height: 36px;}
+	.BannerCaption p {font-size: 16px;line-height: 20px;}
+	.TellUsMore h2{font-size: 30px;}
+	.TellUsMore .btn {font-size: 20px;width: 185px;}
+	.FooterTop p{font-size: 15px;}
+	.FooterTop form .fieldWrapper{width: 75%;}
+	.FooterTop form .btn{width: 110px;}
+	.TopSearchBar ul li {border: 1px solid #e9e9e9!important;margin-bottom: 5px;height: 47px;}
+	.TopSearchBar ul.forsaleMoreFilters li{width: 19%;}
+	.TopSearchBar ul li.LocationSelect{width: 18%;}
+	.TopSearchBar ul li.location {width: 15% ;}
+	.TopSearchBar ul li.showAll {width: 15% ;}
+	.TopSearchBar ul.MoreFilterSearch2 li.MinPriceSelect {width: 15%;}
+	.MoreFiltersSelect {width: 15%;}
+	.ShortLetSelect .bootstrap-select .btn, .LocationSelect .bootstrap-select .btn, li.location input, .TopSearchBar ul li.showAll .bootstrap-select.home-icon .btn, .MinPriceSelect .bootstrap-select .btn, .MoreFiltersSelect button, .TopSearchBar .MoreFilterBox .checkbox, .TopSearchBar .MoreFilterBox1 .checkbox label, .TopSearchBar ul.forsaleMoreFilters li input, .TopSearchBar .MoreFilterBox1 ul li .bootstrap-select .btn, .TopSearchBar .MoreFilterBox ul li .multiselect.dropdown-toggle.btn.btn-default, .TopSearchBar .MoreFilterBox ul li input, .TopSearchBar .MoreFilterBox .checkbox label{font-size: 12px;}
+	.checkbox .cr {border-radius: 3px; height: 15px;width: 15px;}
+	.checkbox .cr .cr-icon {font-size: 10px;left: 8%;}
+	li.location input{line-height: 21px;}
+	.TopSearchBar ul li.CheckinSelect {width: 11%;}
+	.TopSearchBar .span2 {background: #f7f7f7 url(../images/calendar-icon.png) no-repeat scroll 5px 15px;
+  	font-size: 12px;padding-left: 25px;}
+  	.MinPriceSelect .bootstrap-select .btn {background: #f7f7f7 url(../images/min-price-icon.png) no-repeat scroll 5px center; padding-left: 25px;padding-right: 20px;}
+  	.TopSearchBar .MoreFilterBox ul li .bootstrap-select.home-icon .btn {background: #f6f6f6 url(../images/home-icon.png) no-repeat scroll 5px center;font-size: 12px;padding-left: 30px;}
+  	.TopSearchBar .MoreFilterBox ul li .bootstrap-select.bed-icon .btn {background: #f6f6f6 url(../images/bedroomform-icon.png) no-repeat scroll 5px center;font-size: 12px;padding-left: 30px;}
+  	.TopSearchBar .MoreFilterBox ul li .bootstrap-select .btn {font-size: 12px;padding: 15px 10px;}
+	.TopSearchBar ul {border: 0px solid #e9e9e9;}
+	.TopSearchBar .dropdown-menu li{width: 100%!important;border: 0px solid!important;margin-bottom: 0px!important;}
+	.StaticBanner {padding: 94px 0px;}
+	.row-full {width: 41vw;margin-left: -41vw;left: 41%;}
+	.Logintext p {padding-right: 30px;}
+	.Logintext h1 {font-size: 24px;line-height: 24px;}
+	.Logintext p {font-size: 14px;line-height: 20px;}
+	.FooterContactBar p{font-size: 10px;}
+	#EventHightlight .owl-nav .owl-prev{margin-left: -12px;}
+	#EventHightlight .owl-nav .owl-next{margin-right: -12px;}
+	#EventHightlight .owl-nav .owl-prev, #EventHightlight .owl-nav .owl-next{width: 10px; height: 20px;background-size: 100%;}
+	#EventHightlight .owl-nav {margin-top: -10px;}
+	.EventHightlightRight p {font-size: 12px;line-height: 20px;margin: 5px 0px;}
+	.StaticBanner h1{width: 75%;}
+	.manage-section #myTab li a {font-size: 12px;padding: 10px 7px;}
+	.singupChecks li .checkbox label {font-size: 12px;}
+	.tab_container form .checkbox.checkRight label {font-size: 10px;}
+	.tab_container form .checkbox.checkRight label .cr {margin-left: 5px;width: 15px; height: 15px; border-radius: 3px;margin-right: 0px;}
+	.tab_container form .checkbox.checkRight label .cr .cr-icon {font-size: 10px;left: 9%;top: 45%;}
+	.tab_container form button[type="submit"]{width: 140px;}
+	/*25/04/2017*/
+	.gridshare .btn-primary {font-size: 12px; padding: 10px 5px;}
+	.counter_linkstar .rating > label::before {font-size: 12px;}
+	.counter-tab div i, .counter-tab, .gridshare .view, .gridshare.forsaleGrid .btn-primary, .gridshare.forsaleGrid .view, ul.roomdetail-ui li {font-size: 12px;}
+	.gridPhoto ul.hide-bullets li {margin-left: 10px;max-width: 65px;}
+
+
+
+	/*Bharat*/
+	ul.roomdate-ui li {width: 32.3%;padding-left: 0px;}
+	.book-rate .btn{margin-top: 15px;}
+
+}
+@media screen and (max-width: 991px) {
+	.BannerCaption {top: 25px;}
+	.BannerCaption h1 {font-size: 20px;line-height: 24px;}
+	.BannerCaption h1 br{display: none;}
+	.BannerCaption p {font-size: 14px;line-height: 18px;}
+	.TellUsMore h2 {font-size: 20px;}
+	.TellUsMore p {font-size: 16px;}
+	.TellUsMoreInner {padding: 25px 15px 25px 5px;}
+	.ContactForm .btn-group.bootstrap-select.form-control{height: auto;}
+	.TopSearchBar ul li {width: 50% !important;}
+	.StaticBanner {padding: 64px 0px;}
+	.StaticBanner h1{font-size: 48px;}
+	.Logintext h1 {font-size: 20px;}
+	.row-full {width: 42vw;margin-left: -42vw;left: 42%;}
+	.TopSearchBar.fixed{position: relative;}
+	.removeHeader {display: block;}
+	.header-contact li {font-size: 10px;}
+	.box, .box1, .box2{margin-bottom: 35px;}
+	.HighlightsHeading h6{font-size: 14px;}
+	.FormSectionInner label.btn {width: 50%;}
+	.makeAppointment .LoginForm input[type="text"]{margin: 14px 0;}
+	.makeAppointment .LoginForm input[type="text"]#inputLastName{margin-bottom: 0px;}
+	.manage-section #myTab li a {font-size: 10px;padding: 10px 3px;}
+	.manage-section #myTab li {margin-left: 0;}
+	.singupChecks li .checkbox.checkRight .cr {margin-left: 10px;margin-right: 5px;}
+	.singupChecks li .checkbox label {font-size: 10px;}
+	.tab_container .Amenities {margin-bottom: 15px;}
+
+
+	/*Bharat*/
+	.room-fulldetails h2 {font-size: 16px;line-height: 20px;}
+	ul.roomdetail-ui li {width: 31.7%;}
+	ul.roomdate-ui li{width: 32%;}
+	.mapAddress{top: 20px;}
+	#myTab {font-size: 13px;}
+	#myTab li.active a::before{bottom: -17px;}
+}
+
+@media screen and (max-width: 767px) {
+	.SearchTabMain {margin-top: 35px !important;}
+	.TellUsMoreInner {background-size: 100% 100%;}
+	.TellUsMore h2 {font-size: 24px;text-align: center;line-height: 26px;margin-bottom: 10px;}
+	.TellUsMore p {font-size: 16px;text-align: center;margin-bottom: 10px;}
+	.TellUsMoreInner{text-align: center;}
+	.TellUsMoreInner .btn{text-align: center; float: none;}
+	.FooterTop form .btn {width: 90px;padding: 15px 5px;}
+	.FooterTop form .fieldWrapper input{font-size: 12px;}
+	.FooterContactBar {text-align: center;}
+	.FooterContactBar p{margin-bottom: 5px;}
+	.FooterContactBar ul {margin-bottom: 5px;float: none;}
+	.FooterTop .FooterMenuSection h5 {margin-bottom: 10px;margin-top: 25px;}
+	.MainBanner .owl-dots{bottom: 0px;}
+	.logo {float: none;display: inline-block;}
+	header{text-align: center;}
+	header .pull-right {text-align: center;	float: none !important;}
+	.tabs {display: none;}
+	.tab_drawer_heading {background-color: #20a0da;color: #fff;border-top: 1px solid #0d6993;margin: 0;padding: 5px 20px;display: block;cursor: pointer;-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+	.d_active {background-color: #20a0da;color: #fff;}
+	.SearchTabMain{min-height: auto;}
+	#page-content-wrapper{padding-top: 140px;}
+	.ContactForm{margin-bottom: 30px;}
+	.LocationSelect .bootstrap-select .btn, .MinPriceSelect .bootstrap-select .btn, .MoreFiltersSelect .bootstrap-select .btn, .TopSearchBar .span2{font-size: 11px;}
+		.ShortLetSelect .bootstrap-select .btn{font-size: 16px;}
+	.StaticBanner {padding: 35px 0px;}
+	.StaticBanner h1 {font-size: 32px;line-height: 34px;}
+	.row-full {display: none;}
+	.logiBgMob{background-color: #1aa4dd!important;background: url(../images/login-bg.png)no-repeat;background-size: 100% 100%;}
+	.Loginlayout{height: auto;}
+	.loginBackBtn {margin-bottom: 30px;}
+	.Logintext {padding-bottom: 30px;}
+	.loginSection {max-width: 100%;padding: 30px 0;}
+	.PropertyLogo.text-center{display: none;}
+	.PropertyLogo.pull-right {padding: 15px;margin: 0;background: #fff;border-radius: 4px;margin-top: -25px;width: 50%;display: inline-block;}
+	.btn.btn-default.BackBtn {background: transparent;border: 0px solid #1188bc;height: auto;width: auto;
+	line-height: 24px;padding: 0;}
+	.btn.btn-default.BackBtn:hover{background: transparent;border: 0px solid #1188bc;color: #771421;}
+	.btn.btn-default.CreateAcBtn {width: 180px;height: 45px;font-size: 16px;line-height: 32px;}
+	.LoginForm h2 {font-size: 20px;line-height: 24px;}
+	.LoginForm.VerificationForm p.p3 {font-size: 14px;}
+	.LoginForm.VerificationForm h4 {font-size: 16px;margin-bottom: 20px;}
+	.btn.btn-lg.btn-primary.btn-signin {width: 180px;height: 52px;font-size: 16px;line-height: 32px;}
+	.LoginForm.VerificationForm input[type="text"] {height: 65px;margin-bottom: 30px;}
+	.seprator{height: 50px;}
+	.seprator span {height: 50px;width: 50px;font-size: 16px;line-height: 28px;}
+	.SocialLogin h4{font-size: 16px;}
+	.SocialLogin ul li{height: 40px;width: 40px;}
+	.SocialLogin ul li a {font-size: 24px;line-height: 28px;}
+	.SocialLogin ul li a i {line-height: 40px;}
+	.Logintext h1 {font-size: 18px;}
+	.LoginForm input.textInput{margin: 14px 0px;font-size: 14px;}
+	.LoginForm input[type="email"], .LoginForm input[type="password"], .LoginForm input.contactInput{font-size: 14px;}
+	.LoginForm input.textInput#inputLastName{margin-bottom: 0px;}
+	.header-contact {float: none;text-align: center;}
+	.header-contact li {font-size: 11px;display: inline-block;padding: 0 5px;}
+	.slide-down, .slide-down1, .slide-down2 {font-size: 14px;margin-top: 8px; margin-bottom: 15px;}
+	.MainBanner img {max-height: 300px;}
+	.MainBanner .owl-dots .owl-dot.active span {width: 15px;height: 15px;line-height: 15px;}
+	.MainBanner .owl-dots .owl-dot span {width: 10px;height: 10px;line-height: 15px;}
+	.MainBanner .owl-dots .owl-dot {width: 15px;height: 15px;line-height: 15px;}
+	.page-heading {font-size: 20px;font-weight: 500;line-height: 24px;}
+	.pterm {font-size: 14px;margin: 10px 0;	line-height: 20px;}
+	.aboutMaltaMain p{font-size: 14px;line-height: 20px;}
+	.HighlightsHeading h6 {font-size: 12px;line-height: 20px;}
+	.EventHightlight-img {width: 100%;margin-bottom: 15px;text-align: center;}
+	#EventHightlight .item img {width: auto;max-width: 100%;margin: 0 auto;}
+	.EventHightlightRight {width: 100%;padding-left: 0;}
+	#EventHightlight .owl-dots {display: inline-block;width: 100%;height: 20px;text-align: center;}
+	#EventHightlight .owl-dots .owl-dot{display: inline-block;width: 10px;height: 10px;background: #2cafe3;border-radius: 20px;margin: 5px 5px;}
+	#EventHightlight .owl-dots .owl-dot.active, #EventHightlight .owl-dots .owl-dot:hover{background: #fb8506;}
+	.animatedInputBox {margin: 6px 0; display: inline-block;width: 100%;}
+	.formRow {margin-top: 0;margin-bottom: 0;}
+	.ListinNextBtn {margin-top: 20px;}
+	.UploadCaption h6 {margin-top: 10px;margin-bottom: 10px;}
+	.tab_container form .checkbox.checkRight label {font-size: 13px;}
+	.loginSection.guestUser {margin-top: 30px;}
+	.formRow1{margin-top: 0px; margin-bottom: 0px; }
+	.tab_container form .formRow1 .bootstrap-select, .tab_container form .formRow1 input[type="text"]{margin-top: 6px; margin-bottom: 6px;}
+	.Listingmap {margin-top: 20px;}
+	.Loginlayout.signup-page {height: auto;}
+	.singupChecks li .checkbox label {font-size: 14px;}
+	.singupChecks li {float: left;margin: 5px 0;}
+
+
+
+	/*Bharat*/
+	.get-directionOne, .get-directionTwo{width: 182px;clear: inherit;margin: 0 2px;}
+	.get-directionOne .bodyarea {padding: 5px 5px;}
+	.get-directionOne .bodyarea span {font-size: 10px;line-height: 12px;}
+	.get-directionOne .bodyarea span br{display: none;}
+	
+}
+@media screen and (max-width: 479px) {
+	.BannerCaption h1 {font-size: 14px;line-height: 16px;margin-top: 5px;}
+	.BannerCaption {top: 10px;}
+	.BannerCaption p {font-size: 11px;line-height: 14px;}
+	.btn.btn-default.btn-orange {font-size: 10px;margin-right: 5px;}
+	.btn-group.user_menu .btn.btn-default {font-size: 10px;}
+	.hamburger{margin-left: 2px;}
+	.FooterTop p {font-size: 11px;line-height: 14px;margin-bottom: 15px;}
+	.FooterTop form .fieldWrapper {width: 100%;margin-bottom: 15px;}
+	.FooterTop form .btn {width: 100%;margin: 0;}
+	.FooterTop .FooterMenuSection p{padding-right: 0px;}
+	.TopSearchBar ul li {width: 100% !important;}
+	.StaticBanner h1 {font-size: 28px;line-height: 32px;}
+	.StaticBanner {background-size: 100% 100%;}
+	.page-heading {font-size: 16px;line-height: 24px;}
+	.p1 {font-size: 12px;}
+	.PropertyLogo.pull-right {margin-top: -20px;width: 60%;}
+	.FooterContactBar p span {margin-right: 10px;}
+	.FooterContactBar p {line-height: 14px;margin-top: 5px;}
+	.btn-group .hamburger img{width: 100%;}
+	.btn-group .hamburger{width: 20px;padding: 0 0px 0 2px;}
+	.StaticBanner h1{width:100%;}
+	.StaticBanner {padding: 20px 0px;}
+	.tab_container form button[type="submit"] {width: 90px;height: 40px;font-size: 12px;}
+	.tab_container form .checkbox.checkRight label {font-size: 12px;}
+	#KeyPropertyBanner .owl-nav .owl-prev {height: 35px;width: 35px;margin-left: -10px;}
+	#KeyPropertyBanner .owl-nav .owl-next {height: 35px;width: 35px;margin-right: -10px;}
+	.pterm {font-size: 12px;}
+	.aboutMaltaMain p{font-size: 12px;line-height: 20px;}
+	.calendarBox {width: 100px;background: #ebecec url(../images/calendar-icon1.png) no-repeat right 5px center;padding: 10px 5px;font-size: 10px;}
+	.HighlightsHeading h6 {font-size: 10px;line-height: 12px;}
+	.horizontal-images.content li {max-width: 290px;}
+	.tab_container form input, .tab_container form .bootstrap-select .btn{font-size: 12px;}
+	.FormSectionInner label.btn {width: 100%;margin-bottom: 0;}
+	.tab_container form .formRow1 .bootstrap-select{margin-bottom: 12px;}
+
+
+	/*Bharat*/
+	.room-fulldetails h2{font-size: 15px;}
+	.get-directionOne, .get-directionTwo{width: 100%;}
+	.mapAddress {top: 0;position: relative;	left: 0;}
+}
+
+@media screen and (min-width: 1200px) {
+	.BannerCaption{top: 100px;}
+	.row-full {left: 44%;margin-left: -50vw;width: 50vw;}
+	.Loginlayout .container{position: relative;}`
+}
+
+
+
+/*ICOMOON Fonts CSS Styles*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?3e273t');
+  src:  url('../fonts/icomoon.eot?3e273t#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?3e273t') format('truetype'),
+    url('../fonts/icomoon.woff?3e273t') format('woff'),
+    url('../fonts/icomoon.svg?3e273t#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-aboutUs-icon:before {
+  content: "\e904";
+}
+.icon-about-malta:before {
+  content: "\e900";
+}
+.icon-contactus:before {
+  content: "\e901";
+}
+.icon-faq:before {
+  content: "\e902";
+}
+.icon-home:before {
+  content: "\e903";
+}
+

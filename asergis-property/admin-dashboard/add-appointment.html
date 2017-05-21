@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Asergis Property - Admin</title>
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./favicon/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./favicon/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./favicon/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./favicon/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./favicon/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./favicon/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./favicon/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./favicon/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="./favicon/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="./favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="./favicon/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="./favicon/favicon-128.png" sizes="128x128" />
+  <link rel="manifest" href="./manifest.json">
+  <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="./favicon/favicon.ico">
+  <meta name="msapplication-config" content="./browserconfig.xml">
+  <meta name="application-name" content="Asergis Property - Admin" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="./favicon/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="./favicon/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="./favicon/mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="./favicon/mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="./favicon/mstile-310x310.png" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+  <!-- Bootstrap Core CSS -->
+  <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fonts icon -->
+  <link href="./vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- DataTable CSS -->
+  <link href="./css/datatables.min.css" rel="stylesheet">
+  <!-- Bootstrap Select CSS -->
+  <link href="./vendor/bootstrap-select/css/bootstrap-select.css" rel="stylesheet">
+  <!-- date picker tab -->
+  <link href="./vendor/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./vendor/pickmeup/css/jquery.pickmeup.twitter-bootstrap.min.css" type="text/css">
+  <!-- timepicker tab -->
+  <link href="./vendor/clock-picker/css/clockpicker.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="./css/admin.css" rel="stylesheet">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="sidemenu-left">
+  <div id="page-load">
+    <div class="inner">
+      <span class="loading"></span>
+    </div>
+  </div>
+  <!-- Navigation -->
+  <div id="slidemenu" class="navbar-default sidebar sidebar-blue" role="navigation">
+    <div class="sidebar-nav collapse navbar-collapse">
+      <ul class="nav" id="side-menu">
+        <li>
+          <a href="index.html" class="fa-th-large fa-fw"> Dashboard</a>
+        </li>
+        <li>
+          <a href="#" class="fa-home fa-fw"> Property Management
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="add-property.html">Add Property</a>
+            </li>
+            <li>
+              <a href="view-properties.html">View Properties</a>
+            </li>
+            <li>
+              <a href="listing-requests.html">Listing Requests To Rent/For Sale</a>
+            </li>
+            <li>
+              <a href="view-pending-submissions.html">View Pending Submissions</a>
+            </li>
+            <li>
+              <a href="view-approval-requests.html">View Approval Requests</a>
+            </li>
+            <li>
+              <a href="help-us-help-you.html">Help Us Help You</a>
+            </li>
+            <li>
+              <a href="view-edit-amenities-features.html">View/Edit Amenities & Features</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="tables.html" class="fa-user-plus fa-fw"> Contacts Management
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="add-contacts.html">Add Contacts</a>
+            </li>
+            <li>
+              <a href="view-contacts.html">View Contacts</a>
+            </li>
+            <li>
+              <a href="manage-type-of-contacts.html">Manage Type of Contacts</a>
+            </li>
+          </ul>
+        </li>
+        <li class="active">
+          <a href="tables.html" class="fa-calendar fa-fw"> Appointment Management
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li class="active">
+              <a href="add-appointment.html">Add Appointment</a>
+            </li>
+            <li>
+              <a href="view-appointments.html">View Appointments</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="tables.html" class="fa-credit-card fa-fw"> Payment Management
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="transaction-reports.html">Transaction Reports</a>
+            </li>
+            <li>
+              <a href="pricing-comparison.html">Pricing Comparison</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="contents-management.html" class="fa-list-alt  fa-fw"> Contents Management</a>
+        </li>
+        <li>
+          <a href="#" class="fa-bookmark fa-fw"> Bookings Management
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="check-in-out.html">Check In/Check Out</a>
+            </li>
+            <li>
+              <a href="payments-due.html">Payments Due</a>
+            </li>
+            <li>
+              <a href="Contracts.html">Contracts</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="tables.html" class="fa-file-text-o fa-fw"> Reports
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="#">Listings
+                <span class="fa arrow"></span>
+              </a>
+              <ul class="nav nav-third-level">
+                <li>
+                  <a href="">Total Number of days available</a>
+                </li>
+                <li>
+                  <a href="">ROI per property per year</a>
+                </li>
+                <li>
+                  <a href="">Total Listings in Database</a>
+                </li>
+                <li>
+                  <a href="">Average Commission per Short_Long_Sale</a>
+                </li>
+                <li>
+                  <a href="">Properties under Management</a>
+                </li>
+                <li>
+                  <a href="">Total Short Lets in Database</a>
+                </li>
+                <li>
+                  <a href="">Custom Total Listings in Database</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="sales.html">Sales</a>
+            </li>
+            <li>
+              <a href="website.html">Website</a>
+            </li>
+            <li>
+              <a href="top-five-locations.html">Top 5 Most searched Locations</a>
+            </li>
+            <li>
+              <a href="office.html">Office</a>
+            </li>
+            <li>
+              <a href="investment-portfolio.html">Investment Portfolio</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="tables.html" class="fa-cog fa-fw"> Settings
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="view-users.html">View Users</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- /.sidebar-collapse -->
+  </div>
+  <!-- /.navbar-static-side -->
+  <div id="wrapper">
+    <nav class="navbar navbar-plain navbar-static-top" id="slide-nav">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <img src="./images/login-logo.png" alt="Asergis Property">
+        </a>
+      </div>
+      <!-- /.navbar-header -->
+      <ul class="nav navbar-top-links navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle clearfix userLog" data-toggle="dropdown">
+            <img src="./images/face-7.jpg" class="img-circle avatar">
+            <p class="pull-right">
+              <small>Jone William
+                <b class="caret"></b>
+              </small>
+              <br/> Last Login
+              <br/> 20-March-2017 2:15pm
+            </p>
+          </a>
+          <ul class="dropdown-menu dropdown-user">
+            <li>
+              <a href="#">
+                <i class="fa-user fa-fw"></i> User Profile</a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-gear fa-fw"></i> Settings</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="login.html">
+                <i class="fa-sign-out fa-fw"></i> Logout</a>
+            </li>
+          </ul>
+          <!-- /.dropdown-user -->
+        </li>
+        <!-- /.dropdown -->
+      </ul>
+    </nav>
+    <div id="page-wrapper" class="bg-gray-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header border-bottom-none margin-bottom-none">Appointment Management</h1>
+          <div class="breadcrumb-wrap">
+            <ol class="breadcrumb">
+              <li>
+                <a href="javascript:void(0);" class="visited">Home</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">Appointment Management</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);" class="active">Add Appointment</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="content clearfix _add-appointment">
+              <div class="row">
+                <form>
+                  <!-- form-inline-wrapper-starts -->
+                  <div class="form-inline-wrapper clearfix fromSection">
+                    <div class="clearfix">
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="listingID">Listing ID</label>
+                        <input type="text" class="form-control input-field date" id="listingID" placeholder="Listing ID">
+                      </div>
+                      <div class="form-group col-md-2 col-sm-4 col-xs-6">
+                        <label for="">&nbsp;</label>
+                        <div class="search-btn-box">
+                          <button type="button" class="btn btn-blue">Search</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix">
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="listingID">Customer ID</label>
+                        <input type="text" class="form-control input-field date" id="listingID" placeholder="Enter Customer ID">
+                      </div>
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="listingID">Property Type</label>
+                        <input type="text" class="form-control input-field date" id="listingID" placeholder="Types of Properties">
+                      </div>
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="listingID">Property Address</label>
+                        <input type="text" class="form-control input-field date" id="listingID" placeholder="Enter Property Address">
+                      </div>
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="listingID">Postcode</label>
+                        <input type="text" class="form-control input-field date" id="listingID" placeholder="Enter Postcode">
+                      </div>
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="listingID">Locality</label>
+                        <input type="text" class="form-control input-field date" id="listingID" placeholder="Enter Locality">
+                      </div>
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="listingID">Country</label>
+                        <div class="dropdownArea">
+                          <select class="selectpicker">
+                            <option>Select Country</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="listingID">Market Status</label>
+                        <div class="dropdownArea">
+                          <select class="selectpicker">
+                            <option>Recent Reduced</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="listingID">Customer Name & Surename</label>
+                        <input type="text" class="form-control input-field date" id="listingID" placeholder="Enter Customer Name">
+                      </div>
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="listingID">Prospector</label>
+                        <input type="text" class="form-control input-field date" id="listingID" placeholder="Enter Prospector">
+                      </div>
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="listingID">Inspector</label>
+                        <input type="text" class="form-control input-field date" id="listingID" placeholder="Enter Inspector">
+                      </div>
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="listingID">Agent</label>
+                        <input type="text" class="form-control input-field date" id="listingID" placeholder="Enter Agent">
+                      </div>
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="listingID">Price</label>
+                        <input type="text" class="form-control input-field date" id="listingID" placeholder="Enter Price">
+                      </div>
+                      <div class="form-group col-md-6 col-sm-12 col-xs-12">
+                        <label for="listingID">Notes & Comment</label>
+                        <textarea class="form-control" rows="4" placeholder="Enter Notes & Comment"></textarea>
+                      </div>
+                      <div class="form-group col-md-6 col-sm-12 col-xs-12">
+                        <label for="listingID">Remarks</label>
+                        <textarea class="form-control" rows="4" placeholder="Text entered here will show in the remarks section in the viewings tab"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group col-md-12">
+                      <hr/>
+                      <h4>Choose Date</h4>
+                      <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                          <div id="__appointmentCalender"></div>
+                        </div>
+                        <div class="col-md-8 col-sm-6 col-xs-6">
+                          <div class="form-group col-md-3">
+                            <label for="indicatePeriodMonths">Time</label>
+                            <input class="form-control input-field" id="indicatePeriodMonths" placeholder="Enter Time" type="text">
+                          </div>
+                        </div>
+                      </div>
+                      <h4>Client Details</h4>
+                      <div class="row">
+                        <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                          <label for="listingID">Customer ID</label>
+                          <input type="text" class="form-control input-field date" id="listingID" placeholder="Enter Prospector">
+                        </div>
+                        <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                          <label for="listingID">Name & Surename</label>
+                          <input type="text" class="form-control input-field date" id="listingID" placeholder="Enter Name & Surename">
+                        </div>
+                        <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                          <label for="listingID">Contact No</label>
+                          <input type="text" class="form-control input-field date" id="listingID" placeholder="Enter Contact No">
+                        </div>
+                        <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                          <label for="listingID">Purpose</label>
+                          <div class="dropdownArea">
+                            <select class="selectpicker">
+                              <option>Viewing</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                          <label for="listingID">Comments</label>
+                          <textarea class="form-control" rows="4" placeholder="Enter Comments"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <div class="col-md-12">
+                  <div class="view-contact-table-wrap">
+                    <div class="table-responsive">
+                      <table id="DataTables_Table_0" class="table table-custom-bordered table-custom-hover table-custom-striped table-view-contact table-active dt-responsive nowrap" width="100%" cellspacing="0">
+                        <thead>
+                          <tr>
+                            <th>Appointment Date</th>
+                            <th>Listing Id</th>
+                            <th>Appointment Time</th>
+                            <th>Agent</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>APT58493</td>
+                            <td>10-04-2017</td>
+                            <td>17:30</td>
+                            <td>Tom Brady</td>
+                          </tr>
+                          <tr>
+                            <td>APT58493</td>
+                            <td>08-04-2017</td>
+                            <td>14:15</td>
+                            <td>Aaron Rodgers</td>
+                          </tr>
+                          <tr>
+                            <td>APT58490</td>
+                            <td>05-04-2017</td>
+                            <td>12:05</td>
+                            <td>Peyton Manning</td>
+                          </tr>
+                          <tr>
+                            <td>APT58481</td>
+                            <td>31-03-2017</td>
+                            <td>11:45</td>
+                            <td>Frank Gifford</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer clearfix">
+                <div class="btn-wrapper pull-right">
+                  <button type="button" class="btn btn-default edit-rooms-btn" id="_editContact">Edit Appointment</button>
+                  <button type="button" class="btn btn-primary" id="_saveContact">Save Appointment</button>
+                  <button type="button" class="btn btn-pink">Cancel Appointment</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- form-inline-wrapper-starts -->
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /#page-wrapper -->
+  </div>
+  <!-- /#wrapper -->
+  <!-- footer -->
+  <footer class="text-right">© 2017 All rights reserved</footer>
+  <!-- footer -->
+  <!-- jQuery -->
+  <script src="./vendor/jquery/jquery.min.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!-- data table javascript -->
+  <script src="js/dataTables.min.js" type="text/javascript"></script>
+  <!-- Theme JavaScript -->
+  <script src="./js/admin.js"></script>
+  <!-- Bootstrap custom selectbox JavaScript -->
+  <script src="./vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+  <!-- Data picker -->
+  <script src="./vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+  <!-- Scrolling Tabs JavaScript -->
+  <script src="./vendor/scrolling-tabs/jquery.scrolling-tabs.js"></script>
+  <!-- Custom input type File JavaScript -->
+  <script src="./vendor/input-file/custom-file-input.js"></script>
+  <!-- Calender Files -->
+  <script type="text/javascript" src="./vendor/pickmeup/js/jquery.pickmeup.min.js"></script>
+  <script type="text/javascript" src="./vendor/pickmeup/js/jquery.pickmeup.twitter-bootstrap.min.js"></script>
+  <!-- Clock picker -->
+  <script src="./vendor/clock-picker/js/clockpicker.min.js"></script>
+  <script>
+  $('#indicatePeriodMonths').clockpicker({
+    autoclose: true,    // auto close when minute is selected
+    twelvehour: true,    
+  });
+  $(document).ready(function() {
+    $('#__appointmentCalender').pickmeup_twitter_bootstrap({
+      flat: true,
+      class_name: 'pickmeup-bootstrap',
+      first_day: 0,
+      calendars: 1
+    });
+    $('#shortFrom,#shortTo').bootDatepicker({
+      todayBtn: "linked",
+      keyboardNavigation: false,
+      forceParse: false,
+      calendarWeeks: true,
+      autoclose: true
+    });
+    $('#DataTables_Table_0').DataTable({
+      pageLength: 15,
+      responsive: false,
+      "lengthChange": false,
+      "searching": false,
+      "bInfo": false,
+      buttons: [{
+          extend: 'copy'
+        }, {
+          extend: 'csv'
+        }, {
+          extend: 'excel',
+          title: 'ExampleFile'
+        }, {
+          extend: 'pdf',
+          title: 'ExampleFile'
+        },
+
+        {
+          extend: 'print',
+          customize: function(win) {
+            $(win.document.body).addClass('white-bg');
+            $(win.document.body).css('font-size', '10px');
+
+            $(win.document.body).find('table')
+              .addClass('compact')
+              .css('font-size', 'inherit');
+          }
+        }
+      ],
+      language: {
+        paginate: {
+          next: '<i class="fa fa-angle-right"></i>',
+          previous: '<i class="fa fa-angle-left"></i>'
+        }
+      }
+    });
+  });
+  </script>
+</body>
+
+</html>

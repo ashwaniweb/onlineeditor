@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Asergis Property - Admin</title>
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./favicon/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./favicon/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./favicon/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./favicon/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./favicon/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./favicon/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./favicon/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./favicon/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="./favicon/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="./favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="./favicon/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="./favicon/favicon-128.png" sizes="128x128" />
+  <link rel="manifest" href="./manifest.json">
+  <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="./favicon/favicon.ico">
+  <meta name="msapplication-config" content="./browserconfig.xml">
+  <meta name="application-name" content="Asergis Property - Admin" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="./favicon/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="./favicon/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="./favicon/mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="./favicon/mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="./favicon/mstile-310x310.png" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+  <!-- Bootstrap Core CSS -->
+  <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fonts icon -->
+  <link href="./vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Bootstrap Select CSS -->
+  <link href="./vendor/bootstrap-select/css/bootstrap-select.css" rel="stylesheet">
+  <!-- date picker tab -->
+  <link href="./vendor/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
+
+  <link href="./vendor/bootstrap-multiselect/bootstrap-multiselect.css" rel="stylesheet"> 
+  <!-- Scrolling Tabs CSS -->
+  <link href="./vendor/scrolling-tabs/jquery.scrolling-tabs.css" rel="stylesheet">
+  <!-- Custom Scroll CSS -->
+  <link href="./vendor/mScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet">
+  <!-- Jquery UI CSS -->
+  <!--link href="./vendor/jquery-ui-1.12.1/css/jquery-ui.css" rel="stylesheet"-->
+  <link href="./css/jquery-ui.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="./css/admin.css" rel="stylesheet">
+  <link href="./css/dashboard.css" rel="stylesheet">
+  <link href="./css/bharat.css" rel="stylesheet">
+  <link href="./css/tabs-pane.css" rel="stylesheet">
+  <link href="./css/common-ui.css" rel="stylesheet">
+  <link href="./css/fonts.css" rel="stylesheet">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="sidemenu-left">
+  <div id="page-load">
+    <div class="inner">
+      <span class="loading"></span>
+    </div>
+  </div>
+  <!-- Navigation -->
+  <div id="slidemenu" class="navbar-default sidebar sidebar-blue" role="navigation">
+    <div class="sidebar-nav collapse navbar-collapse">
+      <ul class="nav" id="side-menu">
+        <li>
+          <a href="index.html" class="fa-th-large fa-fw"> Dashboard</a>
+        </li>
+        <li>
+          <a href="#" class="fa-home fa-fw"> Property Management
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="add-property.html">Add Property</a>
+            </li>
+            <li>
+              <a href="view-properties.html">View Properties</a>
+            </li>
+            <li>
+              <a href="listing-requests.html">Listing Requests To Rent/For Sale</a>
+            </li>
+            <li>
+              <a href="view-pending-submissions.html">View Pending Submissions</a>
+            </li>
+            <li>
+              <a href="view-approval-requests.html">View Approval Requests</a>
+            </li>
+            <li>
+              <a href="help-us-help-you.html">Help Us Help You</a>
+            </li>
+            <li>
+              <a href="view-edit-amenities-features.html">View/Edit Amenities & Features</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="tables.html" class="fa-user-plus fa-fw"> Contacts Management
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="add-contacts.html">Add Contacts</a>
+            </li>
+            <li>
+              <a href="view-contacts.html">View Contacts</a>
+            </li>
+            <li>
+              <a href="manage-type-of-contacts.html">Manage Type of Contacts</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="tables.html" class="fa-calendar fa-fw"> Appointment Management
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="add-appointment.html">Add Appointment</a>
+            </li>
+            <li>
+              <a href="view-appointments.html">View Appointments</a>
+            </li>
+          </ul>
+        </li>
+        <li class="active">
+          <a href="tables.html" class="fa-credit-card fa-fw"> Payment Management
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="transaction-reports.html">Transaction Reports</a>
+            </li>
+            <li class="active">
+              <a href="pricing-comparison.html">Pricing Comparison</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="contents-management.html" class="fa-list-alt fa-fw"> Contents Management
+          </a>
+        </li>
+        <li>
+          <a href="#" class="fa-bookmark fa-fw"> Bookings Management
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="check-in-out.html">Check In/Check Out</a>
+            </li>
+            <li>
+              <a href="payments-due.html">Payments Due</a>
+            </li>
+            <li>
+              <a href="Contracts.html">Contracts</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="tables.html" class="fa-file-text-o fa-fw"> Reports
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="#">Listings
+                <span class="fa arrow"></span>
+              </a>
+              <ul class="nav nav-third-level">
+                <li>
+                  <a href="">Total Number of days available</a>
+                </li>
+                <li>
+                  <a href="">ROI per property per year</a>
+                </li>
+                <li>
+                  <a href="">Total Listings in Database</a>
+                </li>
+                <li>
+                  <a href="">Average Commission per Short_Long_Sale</a>
+                </li>
+                <li>
+                  <a href="">Properties under Management</a>
+                </li>
+                <li>
+                  <a href="">Total Short Lets in Database</a>
+                </li>
+                <li>
+                  <a href="">Custom Total Listings in Database</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="sales.html">Sales</a>
+            </li>
+            <li>
+              <a href="website.html">Website</a>
+            </li>
+            <li>
+              <a href="top-five-locations.html">Top 5 Most searched Locations</a>
+            </li>
+            <li>
+              <a href="office.html">Office</a>
+            </li>
+            <li>
+              <a href="investment-portfolio.html">Investment Portfolio</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="tables.html" class="fa-cog fa-fw"> Settings
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="view-users.html">View/Edit Users</a>
+            </li>
+            <li>
+              <a href="general-settings.html">General Settings</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- /.sidebar-collapse -->
+  </div>
+  <!-- /.navbar-static-side -->
+  <div id="wrapper">
+      <nav class="navbar navbar-plain navbar-static-top" id="slide-nav">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <img src="./images/login-logo.png" alt="Asergis Property">
+          </a>
+        </div>
+        <!-- /.navbar-header -->
+        <ul class="nav navbar-top-links navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle clearfix userLog" data-toggle="dropdown">
+              <img src="./images/face-7.jpg" class="img-circle avatar">
+              <p class="pull-right">
+                <small>Jone William
+                  <b class="caret"></b>
+                </small>
+                <br/> Last Login
+                <br/> 20-March-2017 2:15pm
+              </p>
+            </a>
+            <ul class="dropdown-menu dropdown-user">
+              <li>
+                <a href="#">
+                  <i class="fa-user fa-fw"></i> User Profile</a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-gear fa-fw"></i> Settings</a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="login.html">
+                  <i class="fa-sign-out fa-fw"></i> Logout</a>
+              </li>
+            </ul>
+            <!-- /.dropdown-user -->
+          </li>
+          <!-- /.dropdown -->
+        </ul>
+      </nav>
+      <div id="page-wrapper" class="bg-gray-wrapper">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1 class="page-header border-bottom-none margin-bottom-none">Payments Management</h1>
+              <div class="breadcrumb-wrap">
+                <ol class="breadcrumb">
+                  <li>
+                    <a href="javascript:void(0);" class="visited">Home</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);">Payment Management</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);" class="active">Pricing Comparison</a>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+                <div class="col-md-12">
+                    <div class="contact-wrapper">
+                      <div class="row">
+                          <h4 class="media-heading">Search By:</h4>
+                          <form>
+                              <!-- form-inline-wrapper-starts -->
+                              <div class="form-inline-wrapper clearfix fromSection">
+                                <div class="form-group col-md-2 col-sm-4 col-xs-6">
+                                  <div class="dropdownArea multiCheck">
+                                    <select id="ddlCars" multiple="multiple">
+                                      <option value="">456987</option>
+                                      <option value="">456987</option>
+                                      <option value="">456987</option>
+                                      <option value="">456987</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="form-group col-md-2 col-sm-4 col-xs-6">
+                                  <div class="dropdownArea">
+                                    <select class="selectpicker">
+                                      <option>Property Type</option>
+                                      <option>Short Let</option>
+                                      <option>Long Let</option>
+                                      <option>For sale</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="form-group col-md-2 col-sm-4 col-xs-6">
+                                  <div class="dropdownArea">
+                                    <select class="selectpicker">
+                                      <option>Location</option>
+                                      <option>Malta</option>
+                                      <option>Malta North</option>
+                                    </select>
+                                  </div>
+                                </div>                                
+                                <div class="form-group col-md-2 col-sm-4 col-xs-6">
+                                  <div class="dropdownArea">
+                                    <select class="selectpicker">
+                                      <option>Year</option>
+                                      <option>2012</option>
+                                      <option>2013</option>
+                                      <option>2014</option>
+                                      <option>2015</option>
+                                      <option>2016</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="form-group col-md-2 col-sm-4 col-xs-6">
+                                  <div class="dropdownArea">
+                                    <select class="selectpicker">
+                                      <option>Period</option>
+                                      <option>Monthly</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="form-group col-md-2 col-sm-4 col-xs-6">
+                                  <div class="search-btn-box">
+                                    <button type="button" class="btn btn-primary">Search</button>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- form-inline-wrapper-starts -->
+                          </form>
+
+                          <div class="col-md-12">
+                            <div id="pricing-tab">
+                              <div class="row">
+                                <div class="col-md-2 proinfo">
+                                  <div class="row">
+                                    <div class="col-md-12">458967</div>
+                                    <div class="col-md-12">Short Let</div>
+                                    <div class="col-md-12">Mellieha , Malta</div>
+                                  </div>
+                                </div>
+                                <div class="col-md-10">
+                                  <h3 class="rentHead">January</h3>
+                                  <div class="table-responsive rentTable customScroll">
+                                    <table class=" table table-bordered">
+                                      <thead>
+                                        <tr>
+                                          <th>1</th>
+                                          <th>2</th>
+                                          <th>3</th>
+                                          <th>4</th>
+                                          <th>5</th>
+                                          <th>6</th>
+                                          <th>7</th>
+                                          <th>8</th>
+                                          <th>9</th>
+                                          <th>10</th>
+                                          <th>11</th>
+                                          <th>12</th>
+                                          <th>13</th>
+                                          <th>14</th>
+                                          <th>15</th>
+                                          <th>16</th>
+                                          <th>17</th>
+                                          <th>18</th>
+                                          <th>19</th>
+                                          <th>20</th>
+                                          <th>21</th>
+                                          <th>22</th>
+                                          <th>23</th>
+                                          <th>24</th>
+                                          <th>25</th>
+                                          <th>26</th>
+                                          <th>27</th>
+                                          <th>28</th>
+                                          <th>29</th>
+                                          <th>30</th>
+                                          <th>31</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="row">
+                                <div class="col-md-2 proinfo">
+                                  <div class="row">
+                                    <div class="col-md-12">458967</div>
+                                    <div class="col-md-12">Long Let</div>
+                                    <div class="col-md-12">Mellieha , Malta</div>
+                                  </div>
+                                </div>
+                                <div class="col-md-10">
+                                  <h3 class="rentHead">January</h3>
+                                  <div class="table-responsive rentTable customScroll">
+                                    <table class=" table table-bordered">
+                                      <thead>
+                                        <tr>
+                                          <th>1</th>
+                                          <th>2</th>
+                                          <th>3</th>
+                                          <th>4</th>
+                                          <th>5</th>
+                                          <th>6</th>
+                                          <th>7</th>
+                                          <th>8</th>
+                                          <th>9</th>
+                                          <th>10</th>
+                                          <th>11</th>
+                                          <th>12</th>
+                                          <th>13</th>
+                                          <th>14</th>
+                                          <th>15</th>
+                                          <th>16</th>
+                                          <th>17</th>
+                                          <th>18</th>
+                                          <th>19</th>
+                                          <th>20</th>
+                                          <th>21</th>
+                                          <th>22</th>
+                                          <th>23</th>
+                                          <th>24</th>
+                                          <th>25</th>
+                                          <th>26</th>
+                                          <th>27</th>
+                                          <th>28</th>
+                                          <th>29</th>
+                                          <th>30</th>
+                                          <th>31</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="row">
+                                <div class="col-md-2 proinfo">
+                                  <div class="row">
+                                    <div class="col-md-12">458967</div>
+                                    <div class="col-md-12">Short Let</div>
+                                    <div class="col-md-12">Mellieha , Malta</div>
+                                  </div>
+                                </div>
+                                <div class="col-md-10">
+                                  <h3 class="rentHead">January</h3>
+                                  <div class="table-responsive rentTable customScroll">
+                                    <table class=" table table-bordered">
+                                      <thead>
+                                        <tr>
+                                          <th>1</th>
+                                          <th>2</th>
+                                          <th>3</th>
+                                          <th>4</th>
+                                          <th>5</th>
+                                          <th>6</th>
+                                          <th>7</th>
+                                          <th>8</th>
+                                          <th>9</th>
+                                          <th>10</th>
+                                          <th>11</th>
+                                          <th>12</th>
+                                          <th>13</th>
+                                          <th>14</th>
+                                          <th>15</th>
+                                          <th>16</th>
+                                          <th>17</th>
+                                          <th>18</th>
+                                          <th>19</th>
+                                          <th>20</th>
+                                          <th>21</th>
+                                          <th>22</th>
+                                          <th>23</th>
+                                          <th>24</th>
+                                          <th>25</th>
+                                          <th>26</th>
+                                          <th>27</th>
+                                          <th>28</th>
+                                          <th>29</th>
+                                          <th>30</th>
+                                          <th>31</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="row">
+                                <div class="col-md-2 proinfo">
+                                  <div class="row">
+                                    <div class="col-md-12">458967</div>
+                                    <div class="col-md-12">Short Let</div>
+                                    <div class="col-md-12">Mellieha , Malta</div>
+                                  </div>
+                                </div>
+                                <div class="col-md-10">
+                                  <h3 class="rentHead">January</h3>
+                                  <div class="table-responsive rentTable customScroll">
+                                    <table class=" table table-bordered">
+                                      <thead>
+                                        <tr>
+                                          <th>1</th>
+                                          <th>2</th>
+                                          <th>3</th>
+                                          <th>4</th>
+                                          <th>5</th>
+                                          <th>6</th>
+                                          <th>7</th>
+                                          <th>8</th>
+                                          <th>9</th>
+                                          <th>10</th>
+                                          <th>11</th>
+                                          <th>12</th>
+                                          <th>13</th>
+                                          <th>14</th>
+                                          <th>15</th>
+                                          <th>16</th>
+                                          <th>17</th>
+                                          <th>18</th>
+                                          <th>19</th>
+                                          <th>20</th>
+                                          <th>21</th>
+                                          <th>22</th>
+                                          <th>23</th>
+                                          <th>24</th>
+                                          <th>25</th>
+                                          <th>26</th>
+                                          <th>27</th>
+                                          <th>28</th>
+                                          <th>29</th>
+                                          <th>30</th>
+                                          <th>31</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                          <td><div class="inner2">€125</div></td>
+                                          <td><div class="inner">€125</div></td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                            </div>
+
+                          </div>
+
+                      </div>
+                    </div>
+                    <!-- form-inline-wrapper-starts -->
+                </div>
+          </div>
+        <!-- /.row -->
+      </div>
+    <!-- /#page-wrapper -->
+  </div>
+  <!-- /#wrapper -->
+  <!-- footer -->
+  <footer class="text-right">© 2017 All rights reserved</footer>
+  <!-- footer -->
+  <!-- jQuery -->
+  <script src="./vendor/jquery/jquery.min.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Theme JavaScript -->
+  <script src="./js/admin.js"></script>
+  <!-- Bootstrap custom selectbox JavaScript -->
+  <script src="./vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+  <!-- Data picker -->
+  <script src="./vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+  <!-- Scrolling Tabs JavaScript -->
+  <script src="./vendor/scrolling-tabs/jquery.scrolling-tabs.js"></script>
+  <script src="./vendor/bootstrap-multiselect/bootstrap-multiselect.js"></script>
+  <!-- Custom Scroll JS -->
+  <script src="./vendor/mScrollbar/jquery.mCustomScrollbar.js"></script>
+  <!-- Jquery UI CSS -->
+  <script src="./vendor/jquery-ui-1.12.1/js/jquery-ui.js"></script>
+  <!-- Custom input type File JavaScript -->
+  <script src="./vendor/input-file/custom-file-input.js"></script>
+  <!-- My Common Component Custom Jquery -->
+  <script src="./js/custom.js"></script>
+  <script>
+   $(document).ready(function() {
+    $('#ddlCars').multiselect({ 
+       numberDisplayed: 1,
+    });
+    $(".customScroll").mCustomScrollbar({
+      theme: "dark-3",
+      axis: "yx",
+      autoHideScrollbar: true
+    });
+
+   });
+
+  </script>
+</body>
+
+</html>

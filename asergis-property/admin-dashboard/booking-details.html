@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Asergis Property - Admin</title>
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./favicon/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./favicon/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./favicon/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./favicon/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./favicon/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./favicon/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./favicon/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./favicon/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="./favicon/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="./favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="./favicon/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="./favicon/favicon-128.png" sizes="128x128" />
+  <link rel="manifest" href="./manifest.json">
+  <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="./favicon/favicon.ico">
+  <meta name="msapplication-config" content="./browserconfig.xml">
+  <meta name="application-name" content="Asergis Property - Admin" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="./favicon/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="./favicon/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="./favicon/mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="./favicon/mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="./favicon/mstile-310x310.png" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+  <!-- Bootstrap Core CSS -->
+  <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom Fonts -->
+  <link href="./vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- dropdown tab -->
+  <link href="./vendor/bootstrap-select/css/bootstrap-select.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="./css/admin.css" rel="stylesheet">
+  <link href="./css/bharat.css" rel="stylesheet">
+  <link href="./css/tabs-pane.css" rel="stylesheet">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="sidemenu-left">
+  <div id="page-load">
+    <div class="inner">
+      <span class="loading"></span>
+    </div>
+  </div>
+  <!-- /.navbar-top-links -->
+  <!-- Navigation -->
+  <div id="slidemenu" class="navbar-default sidebar sidebar-blue" role="navigation">
+    <div class="sidebar-nav collapse navbar-collapse">
+      <ul class="nav" id="side-menu">
+        <li>
+          <a href="index.html" class="fa-th-large fa-fw"> Dashboard</a>
+        </li>
+        <li>
+          <a href="#" class="fa-home fa-fw"> Property Management
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="add-property.html">Add Property</a>
+            </li>
+            <li>
+              <a href="view-properties.html">View Properties</a>
+            </li>
+            <li>
+              <a href="listing-requests.html">Listing Requests To Rent/For Sale</a>
+            </li>
+            <li>
+              <a href="view-pending-submissions.html">View Pending Submissions</a>
+            </li>
+            <li>
+              <a href="view-approval-requests.html">View Approval Requests</a>
+            </li>
+            <li>
+              <a href="help-us-help-you.html">Help Us Help You</a>
+            </li>
+            <li>
+              <a href="view-edit-amenities-features.html">View/Edit Amenities & Features</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="tables.html" class="fa-user-plus fa-fw"> Contacts Management
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="add-contacts.html">Add Contacts</a>
+            </li>
+            <li>
+              <a href="view-contacts.html">View Contacts</a>
+            </li>
+            <li>
+              <a href="manage-type-of-contacts.html">Manage Type of Contacts</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="tables.html" class="fa-calendar fa-fw"> Appointment Management
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="add-appointment.html">Add Appointment</a>
+            </li>
+            <li>
+              <a href="view-appointments.html">View Appointments</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="tables.html" class="fa-credit-card fa-fw"> Payment Management
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="transaction-reports.html">Transaction Reports</a>
+            </li>
+            <li>
+              <a href="pricing-comparison.html">Pricing Comparison</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="contents-management.html" class="fa-list-alt fa-fw"> Contents Management
+          </a>
+        </li>
+        <li class="active">
+          <a href="#" class="fa-bookmark fa-fw"> Bookings Management
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="check-in-out.html">Check In/Check Out</a>
+            </li>
+            <li>
+              <a href="payments-due.html">Payments Due</a>
+            </li>
+            <li>
+              <a href="Contracts.html">Contracts</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="tables.html" class="fa-file-text-o fa-fw"> Reports
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="#">Listings
+                <span class="fa arrow"></span>
+              </a>
+              <ul class="nav nav-third-level">
+                <li>
+                  <a href="">Total Number of days available</a>
+                </li>
+                <li>
+                  <a href="">ROI per property per year</a>
+                </li>
+                <li>
+                  <a href="">Total Listings in Database</a>
+                </li>
+                <li>
+                  <a href="">Average Commission per Short_Long_Sale</a>
+                </li>
+                <li>
+                  <a href="">Properties under Management</a>
+                </li>
+                <li>
+                  <a href="">Total Short Lets in Database</a>
+                </li>
+                <li>
+                  <a href="">Custom Total Listings in Database</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="sales.html">Sales</a>
+            </li>
+            <li>
+              <a href="website.html">Website</a>
+            </li>
+            <li>
+              <a href="top-five-locations.html">Top 5 Most searched Locations</a>
+            </li>
+            <li>
+              <a href="office.html">Office</a>
+            </li>
+            <li>
+              <a href="investment-portfolio.html">Investment Portfolio</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="tables.html" class="fa-cog fa-fw"> Settings
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="view-users.html">View/Edit Users</a>
+            </li>
+            <li>
+              <a href="general-settings.html">General Settings</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- /.sidebar-collapse -->
+  </div>
+  <div id="wrapper">
+    <!-- Navigation -->
+    <nav class="navbar navbar-plain navbar-static-top sidemenu-left" id="slide-nav">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <img src="./images/login-logo.png" alt="Asergis Property">
+        </a>
+      </div>
+      <!-- /.navbar-header -->
+      <ul class="nav navbar-top-links navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle clearfix userLog" data-toggle="dropdown">
+            <img src="./images/face-7.jpg" class="img-circle avatar">
+            <p class="pull-right">
+              <small>Jone William
+                <b class="caret"></b>
+              </small>
+              <br/> Last Login
+              <br/> 20-March-2017 2:15pm
+            </p>
+          </a>
+          <ul class="dropdown-menu dropdown-user">
+            <li>
+              <a href="#">
+                <i class="fa-user fa-fw"></i> User Profile</a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-gear fa-fw"></i> Settings</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="login.html">
+                <i class="fa-sign-out fa-fw"></i> Logout</a>
+            </li>
+          </ul>
+          <!-- /.dropdown-user -->
+        </li>
+        <!-- /.dropdown -->
+      </ul>
+      <!-- /.navbar-top-links -->
+    </nav>
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Bookings Management</h1>
+          <nav class="breadcrumb">
+            <a class="breadcrumb-item" href="#">Home</a>
+            <a class="breadcrumb-item" href="#">Bookings Management</a>
+            <span class="breadcrumb-item active">Booking Details</span>
+          </nav>
+        </div>
+        <!-- /.col-lg-12 -->
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel-body pannel-area fromSection">
+            <!-- Search Area Section -->
+            <div class="row">
+              <div class="col-md-12"><h4 class="media-heading">Customer Details</h4></div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="inputEmail">Customer ID</label>
+                  <input type="email" class="form-control" placeholder="Enter Customer ID">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="inputEmail">Name & Surename</label>
+                  <input type="email" class="form-control" placeholder="Type Name & Surename">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="inputEmail">Contact Number</label>
+                  <input type="email" class="form-control" placeholder="Enter Enter Contact Number">
+                </div>
+              </div>
+            </div>
+            <hr>
+
+            <div class="row">
+              <div class="col-md-12"><h4 class="media-heading">Listing Details</h4></div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="inputEmail">Listing ID</label>
+                  <input type="email" class="form-control" placeholder="Enter Listing ID">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="inputEmail">Address</label>
+                  <input type="email" class="form-control" placeholder="Type Address">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="inputEmail">Location</label>
+                  <input type="email" class="form-control" placeholder="Enter Location">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="inputEmail">Country</label>
+                  <input type="email" class="form-control" placeholder="Enter Country">
+                </div>
+              </div>
+            </div>
+            <hr>
+
+            <div class="row">
+              <div class="col-md-12"><h4 class="media-heading">Booking Details</h4></div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="inputEmail">Booking ID</label>
+                  <input type="email" class="form-control" placeholder="Enter Booking ID">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="inputEmail">Booking Amount</label>
+                  <input type="email" class="form-control" placeholder="Enter Booking Amount">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="inputEmail">Check In Date</label>
+                  <input type="email" class="form-control" placeholder="Enter Check In Date">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="inputEmail">Check In Time</label>
+                  <input type="email" class="form-control" placeholder="Enter Check In Time">
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="inputEmail">Transaction Paid</label>
+                  <input type="email" class="form-control" placeholder="Enter Transaction Paid">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="inputEmail">Security Deposit Amount</label>
+                  <input type="email" class="form-control" placeholder="Enter Security Deposit Amount">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="inputEmail">Check Out Date</label>
+                  <input type="email" class="form-control" placeholder="Enter Check Out Date">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="inputEmail">Check Out Time</label>
+                  <input type="email" class="form-control" placeholder="Enter Check Out Time">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="inputEmail">Notes</label>
+                  <textarea class="form-control" rows="5"></textarea>
+                </div>
+              </div>
+            </div>
+            <hr>
+
+            <div class="row">
+              <div class="col-md-12"><h4 class="media-heading">Agent Details</h4></div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="inputEmail">Agent ID</label>
+                  <input type="email" class="form-control" placeholder="Enter Agent ID">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="inputEmail">Agent Name & Surename</label>
+                  <input type="email" class="form-control" placeholder="Type Agent Name & Surename">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="inputEmail">Agent Contact No</label>
+                  <input type="email" class="form-control" placeholder="Enter Agent Contact No">
+                </div>
+              </div>
+            </div>
+            <hr>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="btn-wrapper text-right">
+                  <button type="button" class="btn btn-pink">Close</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /#page-wrapper -->
+  </div>
+  <!-- /#wrapper -->
+    <!-- footer -->
+  <footer class="text-right">© 2017 All rights reserved</footer>
+  <!-- footer -->
+  <!-- jQuery -->
+  <script src="./vendor/jquery/jquery.min.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!-- dropdown tab -->
+  <script src="./vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+  <!-- Custom Theme JavaScript -->
+  <script src="./js/admin.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $('.selectpicker').selectpicker();
+  });
+  </script>
+</body>
+
+</html>

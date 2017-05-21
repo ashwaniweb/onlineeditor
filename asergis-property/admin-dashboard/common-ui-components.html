@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Asergis Property - Admin</title>
+  <title>Asergis Property - Admin</title>
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./favicon/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./favicon/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./favicon/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./favicon/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./favicon/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./favicon/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./favicon/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./favicon/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="./favicon/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="./favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="./favicon/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="./favicon/favicon-128.png" sizes="128x128" />
+  <link rel="manifest" href="./manifest.json">
+  <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="./favicon/favicon.ico">
+  <meta name="msapplication-config" content="./browserconfig.xml">
+  <meta name="application-name" content="Asergis Property - Admin" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="./favicon/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="./favicon/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="./favicon/mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="./favicon/mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="./favicon/mstile-310x310.png" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+  <!-- Bootstrap Core CSS -->
+  <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fonts icon -->
+  <link href="./vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Bootstrap Select CSS -->
+  <link href="./vendor/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="./css/admin.css" rel="stylesheet">
+  <link href="./css/bharat.css" rel="stylesheet">
+  <link href="./css/common-ui.css" rel="stylesheet">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="sidemenu-left">
+  <div id="page-load">
+    <div class="inner">
+      <span class="loading"></span>
+    </div>
+  </div>
+  <!-- /.navbar-top-links -->
+  <!-- Navigation -->
+  <div id="slidemenu" class="navbar-default sidebar sidebar-blue" role="navigation">
+    <div class="sidebar-nav collapse navbar-collapse">
+      <ul class="nav" id="side-menu">
+        <li>
+          <a href="index.html" class="fa-th-large fa-fw"> Dashboard</a>
+        </li>
+        <li>
+          <a href="#" class="fa-home fa-fw"> Property Management
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="add-property.html">Add Property</a>
+            </li>
+            <li>
+              <a href="view-properties.html">View Properties</a>
+            </li>
+            <li>
+              <a href="listing-requests.html">Listing Requests To Rent/For Sale</a>
+            </li>
+            <li>
+              <a href="view-pending-submissions.html">View Pending Submissions</a>
+            </li>
+            <li>
+              <a href="view-approval-requests.html">View Approval Requests</a>
+            </li>
+            <li>
+              <a href="help-us-help-you.html">Help Us Help You</a>
+            </li>
+            <li>
+              <a href="view-edit-amenities-features.html">View/Edit Amenities & Features</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="tables.html" class="fa-user-plus fa-fw"> Contacts Management
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="add-contacts.html">Add Contacts</a>
+            </li>
+            <li>
+              <a href="view-contacts.html">View Contacts</a>
+            </li>
+            <li>
+              <a href="manage-type-of-contacts.html">Manage Type of Contacts</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="tables.html" class="fa-calendar fa-fw"> Appointment Management
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="add-appointment.html">Add Appointment</a>
+            </li>
+            <li>
+              <a href="view-appointments.html">View Appointments</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="tables.html" class="fa-credit-card fa-fw"> Payment Management
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="transaction-reports.html">Transaction Reports</a>
+            </li>
+            <li>
+              <a href="view-pricing.html">View Pricing</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="contents-management.html" class="fa-list-alt  fa-fw"> Contents Management
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="transaction-reports.html">Transaction Reports</a>
+            </li>
+            <li>
+              <a href="view-pricing.html">View Pricing</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="fa-bookmark fa-fw"> Bookings Management
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="check-in-out.html">Check In/Check Out</a>
+            </li>
+            <li>
+              <a href="payments-due.html">Payments Due</a>
+            </li>
+            <li>
+              <a href="Contracts.html">Contracts</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="tables.html" class="fa-file-text-o fa-fw"> Reports
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="#">Listings
+                <span class="fa arrow"></span>
+              </a>
+              <ul class="nav nav-third-level">
+                <li>
+                  <a href="">Total Number of days available</a>
+                </li>
+                <li>
+                  <a href="">ROI per property per year</a>
+                </li>
+                <li>
+                  <a href="">Total Listings in Database</a>
+                </li>
+                <li>
+                  <a href="">Average Commission per Short_Long_Sale</a>
+                </li>
+                <li>
+                  <a href="">Properties under Management</a>
+                </li>
+                <li>
+                  <a href="">Total Short Lets in Database</a>
+                </li>
+                <li>
+                  <a href="">Custom Total Listings in Database</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="sales.html">Sales</a>
+            </li>
+            <li>
+              <a href="website.html">Website</a>
+            </li>
+            <li>
+              <a href="top-five-locations.html">Top 5 Most searched Locations</a>
+            </li>
+            <li>
+              <a href="office.html">Office</a>
+            </li>
+            <li>
+              <a href="investment-portfolio.html">Investment Portfolio</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="tables.html" class="fa-cog fa-fw"> Settings
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="view-users.html">View Users</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- /.sidebar-collapse -->
+  </div>
+  <!-- /.navbar-static-side -->
+  <div id="wrapper">
+    <nav class="navbar navbar-plain navbar-static-top" id="slide-nav">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <img src="./images/login-logo.png" alt="Asergis Property">
+        </a>
+      </div>
+      <!-- /.navbar-header -->
+      <ul class="nav navbar-top-links navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle clearfix userLog" data-toggle="dropdown">
+            <img src="./images/face-7.jpg" class="img-circle avatar">
+            <p class="pull-right">
+              <small>Jone William
+                <b class="caret"></b>
+              </small>
+              <br/> Last Login
+              <br/> 20-March-2017 2:15pm
+            </p>
+          </a>
+          <ul class="dropdown-menu dropdown-user">
+            <li>
+              <a href="#">
+                <i class="fa-user fa-fw"></i> User Profile</a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-gear fa-fw"></i> Settings</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="login.html">
+                <i class="fa-sign-out fa-fw"></i> Logout</a>
+            </li>
+          </ul>
+          <!-- /.dropdown-user -->
+        </li>
+        <!-- /.dropdown -->
+      </ul>
+    </nav>
+    <div id="page-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Common UI Components</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-lg-12">
+          <h4>Input Box Styles</h4>
+        </div>
+        <div class="col-lg-3">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Input Box</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Input Box</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Input Box</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Input Box</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-lg-12">
+          <h4>Select Box Styles</h4>
+        </div>
+        <div class="col-lg-3">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Select Box</label>
+            <select class="selectpicker">
+              <option>Mustard</option>
+              <option>Ketchup</option>
+              <option>Relish</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Select Box</label>
+            <select class="selectpicker">
+              <option>Mustard</option>
+              <option>Ketchup</option>
+              <option>Relish</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Select Box</label>
+            <select class="selectpicker">
+              <option>Mustard</option>
+              <option>Ketchup</option>
+              <option>Relish</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Select Box</label>
+            <select class="selectpicker">
+              <option>Mustard</option>
+              <option>Ketchup</option>
+              <option>Relish</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-lg-12">
+          <h4>Text Area Styles</h4>
+        </div>
+        <div class="col-md-12">
+          <div class="form-group">
+            <label for="exampleInputEmail1">TextArea</label>
+            <textarea class="form-control" rows="3" placeholder="Write Property Description Here"></textarea>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-lg-12">
+          <h4>Button Styles</h4>
+        </div>
+        <div class="col-md-12">
+          <div class="form-group">
+            <button type="button" class="btn btn-primary">Send For Approval</button>
+            <button type="button" class="btn btn-warning">Save as Pending</button>
+            <button type="button" class="btn btn-danger">Clear All</button>
+            <button type="button" class="btn btn-default">Edit</button>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-lg-12">
+          <h4>File Upload Styles</h4>
+        </div>
+        <div class="col-lg-3">
+          <div class="form-group">
+            <div class="box123">
+              <input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1" data-multiple-caption="{count} files selected" multiple />
+              <label for="file-1">
+                <i class="fa fa-file-image-o" aria-hidden="true"></i>
+                <span>Add Photo</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="form-group">
+            <div class="box123">
+              <input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1" data-multiple-caption="{count} files selected" multiple />
+              <label for="file-1">
+                <i class="fa fa-file-text" aria-hidden="true"></i>
+                <span>Add Documents</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="form-group">
+            <div class="box123 afterupload exl">
+              <label for="file-upload">
+                <i class="fa fa-file-excel-o" aria-hidden="true"></i>
+                <span>abcz-458.xlsx</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="form-group">
+            <div class="box123 afterupload word">
+              <label for="file-upload">
+                <i class="fa fa-file-word-o" aria-hidden="true"></i>
+                <span>ghfmp-789456.docx</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="form-group">
+            <div class="box123 afterupload power">
+              <label for="file-upload">
+                <i class="fa fa-file-powerpoint-o" aria-hidden="true"></i>
+                <span>dpmngs-456789-bn.pptx</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="form-group">
+            <div class="box123 afterupload exl">
+              <label for="file-upload">
+                <i class="fa fa-file-excel-o" aria-hidden="true"></i>
+                <span>abcz-458.xlsx</span>
+              </label>
+              <span class="img-close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="form-group">
+            <div class="box123 afterupload power">
+              <label for="file-upload">
+                <i class="fa fa-file-powerpoint-o" aria-hidden="true"></i>
+                <span>dpmngs-456789-bn.pptx</span>
+              </label>
+              <span class="img-close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="form-group">
+            <div class="box123 afterupload exl">
+              <label for="file-upload">
+                <i class="fa fa-file-excel-o" aria-hidden="true"></i>
+                <span>abcz-458.xlsx</span>
+              </label>
+              <span class="img-close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="form-group">
+            <div class="upload-img-box">
+              <img src="./images/upload-img1.png" alt="Uploaded Image">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="form-group">
+            <div class="upload-img-box">
+              <img src="./images/upload-img1.png" alt="Uploaded Image">
+              <span class="img-close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <h4>Checkbox Switch Styles</h4>
+        </div>
+        <div class="col-lg-12">
+          <!-- List group -->
+          <ul class="list-group">
+            <li class="list-group-item">
+              Asergis Switch Default
+              <div class="material-switch pull-right">
+                <input id="someSwitchOptionDefault" name="someSwitchOption001" type="checkbox" />
+                <label for="someSwitchOptionDefault" class="label-default"></label>
+              </div>
+            </li>
+            <li class="list-group-item">
+              Asergis Switch Primary
+              <div class="material-switch pull-right">
+                <input id="someSwitchOptionPrimary" name="someSwitchOption001" type="checkbox" />
+                <label for="someSwitchOptionPrimary" class="label-primary"></label>
+              </div>
+            </li>
+            <li class="list-group-item">
+              Asergis Switch Success
+              <div class="material-switch pull-right">
+                <input id="someSwitchOptionSuccess" name="someSwitchOption001" type="checkbox" />
+                <label for="someSwitchOptionSuccess" class="label-success"></label>
+              </div>
+            </li>
+            <li class="list-group-item">
+              Asergis Switch Info
+              <div class="material-switch pull-right">
+                <input id="someSwitchOptionInfo" name="someSwitchOption001" type="checkbox" />
+                <label for="someSwitchOptionInfo" class="label-info"></label>
+              </div>
+            </li>
+            <li class="list-group-item">
+              Asergis Switch Warning
+              <div class="material-switch pull-right">
+                <input id="someSwitchOptionWarning" name="someSwitchOption001" type="checkbox" />
+                <label for="someSwitchOptionWarning" class="label-warning"></label>
+              </div>
+            </li>
+            <li class="list-group-item">
+              Asergis Switch Danger
+              <div class="material-switch pull-right">
+                <input id="someSwitchOptionDanger" name="someSwitchOption001" type="checkbox" />
+                <label for="someSwitchOptionDanger" class="label-danger"></label>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <fieldset>
+            <legend>
+              Basic Checkbox Styles
+            </legend>
+            <div class="checkbox">
+              <input id="checkbox1" type="checkbox">
+              <label for="checkbox1">
+                Default
+              </label>
+            </div>
+            <div class="checkbox checkbox-primary">
+              <input id="checkbox2" type="checkbox" checked="">
+              <label for="checkbox2">
+                Primary
+              </label>
+            </div>
+            <div class="checkbox checkbox-success">
+              <input id="checkbox3" type="checkbox">
+              <label for="checkbox3">
+                Success
+              </label>
+            </div>
+            <div class="checkbox checkbox-info">
+              <input id="checkbox4" type="checkbox">
+              <label for="checkbox4">
+                Info
+              </label>
+            </div>
+            <div class="checkbox checkbox-warning">
+              <input id="checkbox5" type="checkbox" checked="">
+              <label for="checkbox5">
+                Warning
+              </label>
+            </div>
+            <div class="checkbox checkbox-danger">
+              <input id="checkbox6" type="checkbox" checked="">
+              <label for="checkbox6">
+                Check me out
+              </label>
+            </div>
+            <p>Inline checkboxes</p>
+            <div class="checkbox checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox1" value="option1">
+              <label for="inlineCheckbox1"> Inline One </label>
+            </div>
+            <div class="checkbox checkbox-success checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox2" value="option1" checked="">
+              <label for="inlineCheckbox2"> Inline Two </label>
+            </div>
+            <div class="checkbox checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox3" value="option1">
+              <label for="inlineCheckbox3"> Inline Three </label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="col-md-4">
+          <fieldset>
+            <legend>
+              Radio Button Styles
+            </legend>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="radio">
+                  <input type="radio" name="radio1" id="radio1" value="option1" checked="">
+                  <label for="radio1">
+                    Small
+                  </label>
+                </div>
+                <div class="radio">
+                  <input type="radio" name="radio1" id="radio2" value="option2">
+                  <label for="radio2">
+                    Big
+                  </label>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="radio radio-danger">
+                  <input type="radio" name="radio2" id="radio3" value="option1">
+                  <label for="radio3">
+                    Next
+                  </label>
+                </div>
+                <div class="radio radio-danger">
+                  <input type="radio" name="radio2" id="radio4" value="option2" checked="">
+                  <label for="radio4">
+                    One
+                  </label>
+                </div>
+              </div>
+            </div>
+            <p>Inline radios</p>
+            <div class="radio radio-info radio-inline">
+              <input type="radio" id="inlineRadio1" value="option1" name="radioInline" checked="">
+              <label for="inlineRadio1"> Inline One </label>
+            </div>
+            <div class="radio radio-inline">
+              <input type="radio" id="inlineRadio2" value="option1" name="radioInline">
+              <label for="inlineRadio2"> Inline Two </label>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+      <footer class="col-sm-12 text-right">©
+        <script>
+        document.write(new Date().getFullYear())
+        </script> All rights reserved</footer>
+    </div>
+    <!-- /#page-wrapper -->
+  </div>
+  <!-- /#wrapper -->
+  <!-- jQuery -->
+  <script src="./vendor/jquery/jquery.min.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Bootstrap custom selectbox JavaScript -->
+  <script src="./vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+  <!-- Custom input type File JavaScript -->
+  <script src="./vendor/input-file/custom-file-input.js"></script>
+  <!-- Theme JavaScript -->
+  <script src="./js/admin.js"></script>
+  <!-- My Common Component Custom Jquery -->
+  <script src="./js/custom.js"></script>
+</body>
+
+</html>

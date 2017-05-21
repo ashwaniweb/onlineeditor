@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Asergis Property</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet"> 
+    <link href="css/bootstrap-multiselect.css" rel="stylesheet"> 
+    
+    <!-- Owl crowsel -->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/datepicker.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-select.css">
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <!-- Our Own Custom Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+    <div id="wrapper">
+    <div class="overlay"></div>
+    <!-- Sidebar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+      <ul class="nav sidebar-nav">
+        <li class="sidebar-brand">
+          <ul>
+            <li>
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <span>Favourites</span>
+            </li>
+            <li>
+              <button class="hamburger innerClose"><img src="images/menu-close.png" alt=""/><!-- <i class="fa fa-close" aria-hidden="true"></i> --></button>
+            </li>
+          </ul>
+          
+        </li>
+        <li> <a href="index.html"><span class="icon-home"></span> Home</a> </li>
+        <li> <a href="about-malta.html"><span class="icon-about-malta"></span> About Malta</a> </li>
+        <li> <a href="about-us.html"><span class="icon-aboutUs-icon"></span> About Us</a> </li>
+        <li> <a href="faq.html"><span class="icon-faq"></span> FAQ</a> </li>
+        <li> <a href="contact-us.html"><span class="icon-contactus"></span> Contact Us</a> </li>
+      </ul>
+    </nav>
+    <!-- /#sidebar-wrapper -->  
+    <!-- Header Section -->
+    <div id="page-content-wrapper">
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3 col-md-3">
+            <a href="index.html" class="logo">
+              <img class="img-responsive" src="images/logo.png" alt=""/>
+            </a>
+          </div>
+          <div class="col-sm-9 col-md-9 pull-right">
+            <ul class="header-contact">
+              <li><span><i class="fa fa-phone" aria-hidden="true"></i> +356 21 252 252 </span></li>
+              <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:support@asergis.com">support@asergis.com</a></li>
+            </ul>
+            <div class="btn-group" role="group" aria-label="...">
+              <a href="list-your-property.html" class="btn btn-default btn-orange">Rent/Sell your property</a>
+              <div class="btn-group user_menu" role="group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Hello Abdur Rehman
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="manage-property.html">Manage My Properties</a></li>
+                    <li><a href="manage-property.html">My Profile</a></li>
+                    <li><a href="login.html">Sign Out</a></li>
+                </ul>
+              </div>
+              <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
+              <img src="images/menu-toggle-icon.png" alt=""/>
+               <!-- <span class="hamb-top"></span> <span class="hamb-middle"></span> <span class="hamb-bottom"></span> --> 
+               </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section End Here -->
+
+    <!-- Listing Page Heading -->
+    <section class="listing-form-heading">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1>Fill in this form to submit your <span>listing request</span></h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="FormTabMain">
+      <div class="FormTabHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <ul class="tabs">
+                <li class="active" rel="tab1">
+                  <p><span class="roundNumber">1</span> <span class="stepText">Step 1</span> <span class="stepSubtext">Basic Details</span></p>
+                </li>
+                <li rel="tab2">
+                  <p><span class="roundNumber">2</span> <span class="stepText">Step 2</span> <span class="stepSubtext">Additional Details</span></p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="FormSectionInner">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="tab_container">
+                <h3 class="d_active tab_drawer_heading" rel="tab1">Step 1</h3>
+                <div id="tab1" class="tab_content">
+                  <form id="contactForm123">
+                    <h4>What would you like to do?</h4>
+                      <div class="btn-group btn-group-horizontal col-md-12" data-toggle="buttons">
+                        <label class="btn active">
+                          <input id="q156" type="radio" name='gender1' checked><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i> <span>  Sell your property</span>
+                        </label>
+                        <label class="btn">
+                          <input id="q157"type="radio" name='gender1'><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> Rent your property</span>
+                        </label>
+                      </div>
+                    <hr>
+                    <div class="forms">
+                    <div id="dv156" class="inactive">
+                    <h4>Personal Details</h4>
+                    <div class="row formRow">
+                      <div class="col-sm-6 col-md-6">
+                        <div class="animatedInputBox">
+                          <label>First Name</label>
+                          <input type="text" name="FirstName" placeholder="First Name" value="Ganga" disabled/>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-6">
+                        <div class="animatedInputBox">
+                          <label>Last Name</label>
+                          <input type="text" name="LastName" placeholder="First Name" value="Singh" disabled/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row formRow">
+                      <div class="col-sm-6 col-md-6">
+                        <div class="animatedInputBox">
+                          <label>Mobile No.</label>
+                          <input type="text" name="FirstName" placeholder="Mobile No." value="8800626665" disabled/>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-6">
+                        <div class="animatedInputBox">
+                          <label>Email Address</label>
+                          <input type="text" name="LastName" placeholder="Mail Id" value="ganga.singh@asergis.in" disabled/>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row formRow1">
+                      <div class="col-sm-12">
+                        <h4>Property Details</h4>
+                      </div>
+                      <div class="col-sm-6 col-md-6">
+                        <select class="selectpicker">
+                          <option>City</option>
+                          <option>City 1</option>
+                          <option>City 2</option>
+                          <option>City 3</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-6 col-md-6">
+                          <input type="text" name="LastName" value="" placeholder="Property Address">
+                      </div>
+                    </div>
+                    <div class="row formRow1">
+                      <div class="col-sm-6 col-md-6">
+                        <input type="text" name="LastName" value="" placeholder="Initial asking price (in €)">
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row formRow">
+                      <div class="col-md-12">
+                        <div class="Listingmap">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3232.00318262797!2d14.482229615211336!3d35.89793772566395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130e5ab2a5f5ae9f%3A0xf6c4926de73f8562!2sAsergis+Malta+Limited!5e0!3m2!1sen!2sin!4v1491290708363" width="100%" height="220" frameborder="0" style="border:0" allowfullscreen></iframe>
+                          <!-- <img src="images/listing-map-img.png" alt="Listing map"> -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row formRow">
+                      <div class="col-md-12">
+                        <div class="ListinNextBtn">
+                          <button type="submit" class="btn pull-right">
+                            Next <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <div id="dv157" class="inactive">
+                      <h4>Personal Details</h4>
+                    <div class="row formRow">
+                      <div class="col-sm-6 col-md-6">
+                        <div class="animatedInputBox">
+                          <label>First Name</label>
+                          <input type="text" name="FirstName" placeholder="First Name" value="Ganga" disabled/>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-6">
+                        <div class="animatedInputBox">
+                          <label>Last Name</label>
+                          <input type="text" name="LastName" placeholder="First Name" value="Singh" disabled/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row formRow">
+                      <div class="col-sm-6 col-md-6">
+                        <div class="animatedInputBox">
+                          <label>Mobile No.</label>
+                          <input type="text" name="FirstName" placeholder="Mobile No." value="8800626665" disabled/>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-6">
+                        <div class="animatedInputBox">
+                          <label>Email Address</label>
+                          <input type="text" name="LastName" placeholder="Mail Id" value="ganga.singh@asergis.in" disabled/>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row formRow1">
+                      <div class="col-sm-12">
+                        <h4>Property Details</h4>
+                      </div>
+                      <div class="col-sm-6 col-md-6">
+                        <select class="selectpicker">
+                          <option>Location</option>
+                          <option>Malta</option>
+                          <option>India</option>
+                          <option>UK</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row formRow1">
+                      <div class="col-sm-6 col-md-6">
+                        <select class="selectpicker">
+                          <option>City</option>
+                          <option>City 1</option>
+                          <option>City 2</option>
+                          <option>City 3</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-6 col-md-6">
+                          <input type="text" name="LastName" value="" placeholder="Property Address">
+                      </div>
+                    </div>
+                    <div class="row formRow1">
+                      <div class="col-sm-6 col-md-6">
+                        <select id="listlongShort" class="selectpicker">
+                          <option value="Expected nightly rates (in €)">Short Let</option>
+                          <option value="Expected monthly rates (in €)">Long Let</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-6 col-md-6">
+                          <input class="shortInput" type="text" name="LastName" value="" placeholder="Expected nightly rates (in €)">
+                          <!-- <input class="longInput" type="text" name="LastName" value="" placeholder="Expected monthly rates (in €)"> -->
+
+                      </div>
+                    </div>
+                    <hr>
+                    <h4>Service Required</h4>
+                    <div class="row formRow">
+                      <div class="col-xs-10 col-sm-6 col-md-6">
+                        <select class="selectpicker">
+                          <option>Property Management</option>
+                          <option>Property Management 1</option>
+                          <option>Property Management 2</option>
+                          <option>Property Management 3</option>
+                        </select>
+                      </div>
+                      <div class="col-xs-2 col-sm-6 col-md-6">
+                        <div class="infoHover">
+                          <i class="fa fa-question-circle" data-toggle="popover" data-placement="top" title="Service Info" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla finibus, sem eu viverra aliquet, justo arcu convallis enim, vitae rutrum felis tortor quis nisl."></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row formRow">
+                      <div class="col-md-12">
+                        <div class="Listingmap">
+                          <img src="images/listing-map-img.png" alt="Listing map">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row formRow">
+                      <div class="col-md-12">
+                        <div class="ListinNextBtn">
+                          <button type="submit" class="btn pull-right">
+                            Next <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    </div>
+                  </form>
+                </div>
+                <h3 class="tab_drawer_heading" rel="tab2">Step 2</h3>
+                <div id="tab2" class="tab_content">
+                  <form>
+                    <h4>Property Area</h4>
+                    <div class="row formRow">
+                      <div class="col-sm-6 col-md-6">
+                        <input type="text" name="" value="" placeholder="In sq. Mtr.">
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row formRow">
+                      <div class="col-md-12">
+                        <div class="box123">
+                          <input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1" data-multiple-caption="{count} files selected" multiple />
+                          <label for="file-1"><img src="images/add-property-icon.png"> <span>Add Property Photo</span></label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-6 col-sm-4 col-md-4">
+                        <div class="uploadImage">
+                          <img src="images/upload-image1.png">
+                        </div>
+                        <div class="UploadCaption text-center">
+                          <h6>Facade</h6>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4">
+                        <div class="uploadImage">
+                          <img src="images/upload-image2.png">
+                        </div>
+                        <div class="UploadCaption text-center">
+                          <h6>Interior 1</h6>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4">
+                        <div class="uploadImage">
+                          <img src="images/upload-image3.png">
+                        </div>
+                        <div class="UploadCaption text-center">
+                          <h6>Interior 2</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <h4>Property Description</h4>
+                    <div class="row formRow">
+                      <div class="col-md-9">
+                        <textarea placeholder="Property Description (Max 100 words)"></textarea>
+                      </div>
+                    </div>
+                    <h4>Property Rules and Policies (Optional) </h4>
+                    <div class="row formRow">
+                      <div class="col-md-9">
+                        <textarea placeholder="Add Property Rules and Policies"></textarea>
+                      </div>
+                    </div>
+                    <div class="row formRow">
+                      <div class="col-md-9">
+                        <div class="checkbox checkRight listingCheck">
+                          <label>
+                            <input type="checkbox" value="">
+                            I am the owner. I have the authority to post this property.
+                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="ListinNextBtn">
+                          <button type="submit" class="btn pull-right">
+                            Submit
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- Footer Main Section -->
+    <footer class="FooterMain">
+      <!-- New Footer Background -->
+      <section class="footerBG">
+        <img src="images/footer-new-bg.png" alt="">
+      </section>
+      <!-- New Footer Background End Here -->
+      <div class="FooterTop">
+        <div class="container FooterMenuSection">
+          <div class="row">
+            <div class="col-sm-5 col-md-5">
+              <a href="index.html" class="FooterLogo">
+                <img src="images/footer-logo.png" alt="Asergis Logo"/>
+              </a>
+              <p>The real estate portal for buyers, sellers, landlords and those who are looking for a holiday rental.</p>
+            </div>
+            <div class="col-sm-4 col-md-4">
+              <h5>Quick Links</h5>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-malta.html">About Malta</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 col-md-3">
+              <h5>Payment by Services</h5>
+              <img src="images/payment-icons.png" alt="Payment"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="FooterContactBar">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-6">
+              <p><span>© 2017 All rights reserved</span> <a href="disclaimer.html">Disclaimer</a> - <a href="privacy-policy.html">Privacy Policy</a> -  <a href="terms-and-conditions.html">Terms & Conditions</a> - <a href="copyright.html">Copyright</a></p>
+            </div>
+            <div class="col-sm-4 col-md-6">
+              <ul>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="FooterTnC">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>Use of this website constitutes an acceptance to our Terms and Conditivons and Privacy Policy. "Asergis Property", asergisproperty.com and the corresponding logo are registered trademarks of Asergis Global Services Limited and cannot be used without permission.</p>
+            </div>              
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Main Section end Here -->
+    </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/bootstrap-slider.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-multiselect.js"></script>
+    <script src="js/custom-file-input.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/google-map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWAoxTVd_zUi11jJe9TEvu6MUoOfzTerE&callback=initMap"></script>
+    <script type="text/javascript">
+        $(function () {
+            ShowActiveTab($('.btn-group .active input[type=radio]')[0].id);
+            $('.btn-group input[type=radio]').bind('change', function () {
+                $('.forms > div').hide();
+                ShowActiveTab($(this)[0].id);
+            });
+        });
+        function ShowActiveTab(id) {
+            var btnId = id;
+            btnId = btnId.replace(/q/g, '');
+            $('#dv' + btnId).show();
+        }       
+    </script>
+  </body>
+</html>

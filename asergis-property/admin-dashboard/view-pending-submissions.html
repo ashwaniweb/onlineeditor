@@ -1,0 +1,3030 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Asergis Property - Admin</title>
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./favicon/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./favicon/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./favicon/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./favicon/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./favicon/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./favicon/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./favicon/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./favicon/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="./favicon/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="./favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="./favicon/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="./favicon/favicon-128.png" sizes="128x128" />
+  <link rel="manifest" href="./manifest.json">
+  <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="./favicon/favicon.ico">
+  <meta name="msapplication-config" content="./browserconfig.xml">
+  <meta name="application-name" content="Asergis Property - Admin" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="./favicon/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="./favicon/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="./favicon/mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="./favicon/mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="./favicon/mstile-310x310.png" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+  <!-- Bootstrap Core CSS -->
+  <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fonts icon -->
+  <link href="./vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- DataTable CSS -->
+  <link href="./css/datatables.min.css" rel="stylesheet">
+  <!-- Bootstrap Select CSS -->
+  <link href="./vendor/bootstrap-select/css/bootstrap-select.css" rel="stylesheet">
+  <!-- Scrolling Tabs CSS -->
+  <link href="./vendor/scrolling-tabs/jquery.scrolling-tabs.css" rel="stylesheet">
+  <!-- Custom Scroll CSS -->
+  <link href="./vendor/mScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet">
+  <!-- Jquery UI CSS -->
+  <link href="./css/jquery-ui.css" rel="stylesheet">
+  <!-- date picker tab -->
+  <link href="./vendor/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./vendor/pickmeup/css/jquery.pickmeup.twitter-bootstrap.min.css" type="text/css" <!-- Owl Carousel -->
+  <link rel="stylesheet" href="./vendor/owl.carousel/dist/assets/owl.carousel.min.css" type="text/css">
+  <link rel="stylesheet" href="./vendor/owl.carousel/dist/assets/owl.theme.default.min.css" type="text/css">
+  <!-- Custom CSS -->
+  <link href="./css/admin.css" rel="stylesheet">
+  <link href="./css/dashboard.css" rel="stylesheet">
+  <link href="./css/bharat.css" rel="stylesheet">
+  <link href="./css/tabs-pane.css" rel="stylesheet">
+  <link href="./css/common-ui.css" rel="stylesheet">
+  <link href="./css/fonts.css" rel="stylesheet">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="sidemenu-left">
+  <div id="page-load">
+    <div class="inner">
+      <span class="loading"></span>
+    </div>
+  </div>
+  <!-- Navigation -->
+  <!-- Navigation -->
+  <div id="slidemenu" class="navbar-default sidebar sidebar-blue" role="navigation">
+    <div class="sidebar-nav collapse navbar-collapse">
+      <ul class="nav" id="side-menu">
+        <li>
+          <a href="index.html" class="fa-th-large fa-fw"> Dashboard</a>
+        </li>
+        <li class="active">
+          <a href="#" class="fa-home fa-fw"> Property Management
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="add-property.html">Add Property</a>
+            </li>
+            <li>
+              <a href="view-properties.html">View Properties</a>
+            </li>
+            <li>
+              <a href="listing-requests.html">Listing Requests To Rent/For Sale</a>
+            </li>
+            <li class="active">
+              <a href="view-pending-submissions.html">View Pending Submissions</a>
+            </li>
+            <li>
+              <a href="view-approval-requests.html">View Approval Requests</a>
+            </li>
+            <li>
+              <a href="help-us-help-you.html">Help Us Help You</a>
+            </li>
+            <li>
+              <a href="view-edit-amenities-features.html">View/Edit Amenities & Features</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="tables.html" class="fa-user-plus fa-fw"> Contacts Management
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="add-contacts.html">Add Contacts</a>
+            </li>
+            <li>
+              <a href="view-contacts.html">View Contacts</a>
+            </li>
+            <li>
+              <a href="manage-type-of-contacts.html">Manage Type of Contacts</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="tables.html" class="fa-calendar fa-fw"> Appointment Management
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="add-appointment.html">Add Appointment</a>
+            </li>
+            <li>
+              <a href="view-appointments.html">View Appointments</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="tables.html" class="fa-credit-card fa-fw"> Payment Management
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="transaction-reports.html">Transaction Reports</a>
+            </li>
+            <li>
+              <a href="pricing-comparison.html">Pricing Comparison</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="contents-management.html" class="fa-list-alt fa-fw"> Contents Management
+          </a>
+        </li>
+        <li>
+          <a href="#" class="fa-bookmark fa-fw"> Bookings Management
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="check-in-out.html">Check In/Check Out</a>
+            </li>
+            <li>
+              <a href="payments-due.html">Payments Due</a>
+            </li>
+            <li>
+              <a href="Contracts.html">Contracts</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="tables.html" class="fa-file-text-o fa-fw"> Reports
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="#">Listings
+                <span class="fa arrow"></span>
+              </a>
+              <ul class="nav nav-third-level">
+                <li>
+                  <a href="">Total Number of days available</a>
+                </li>
+                <li>
+                  <a href="">ROI per property per year</a>
+                </li>
+                <li>
+                  <a href="">Total Listings in Database</a>
+                </li>
+                <li>
+                  <a href="">Average Commission per Short_Long_Sale</a>
+                </li>
+                <li>
+                  <a href="">Properties under Management</a>
+                </li>
+                <li>
+                  <a href="">Total Short Lets in Database</a>
+                </li>
+                <li>
+                  <a href="">Custom Total Listings in Database</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="sales.html">Sales</a>
+            </li>
+            <li>
+              <a href="website.html">Website</a>
+            </li>
+            <li>
+              <a href="top-five-locations.html">Top 5 Most searched Locations</a>
+            </li>
+            <li>
+              <a href="office.html">Office</a>
+            </li>
+            <li>
+              <a href="investment-portfolio.html">Investment Portfolio</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="tables.html" class="fa-cog fa-fw"> Settings
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="view-users.html">View/Edit Users</a>
+            </li>
+            <li>
+              <a href="general-settings.html">General Settings</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- /.sidebar-collapse -->
+  </div>
+  <!-- /.navbar-static-side -->
+  <div id="wrapper">
+    <nav class="navbar navbar-plain navbar-static-top" id="slide-nav">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <img src="./images/login-logo.png" alt="Asergis Property">
+        </a>
+      </div>
+      <!-- /.navbar-header -->
+      <ul class="nav navbar-top-links navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle clearfix userLog" data-toggle="dropdown">
+            <img src="./images/face-7.jpg" class="img-circle avatar">
+            <p class="pull-right">
+              <small>Jone William
+                <b class="caret"></b>
+              </small>
+              <br/> Last Login
+              <br/> 20-March-2017 2:15pm
+            </p>
+          </a>
+          <ul class="dropdown-menu dropdown-user">
+            <li>
+              <a href="#">
+                <i class="fa-user fa-fw"></i> User Profile</a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-gear fa-fw"></i> Settings</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="login.html">
+                <i class="fa-sign-out fa-fw"></i> Logout</a>
+            </li>
+          </ul>
+          <!-- /.dropdown-user -->
+        </li>
+        <!-- /.dropdown -->
+      </ul>
+    </nav>
+    <div id="page-wrapper" class="bg-gray-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header border-bottom-none margin-bottom-none">Property Management</h1>
+          <div class="breadcrumb-wrap">
+            <ol class="breadcrumb">
+              <li>
+                <a href="javascript:void(0);" class="visited">Home</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">Property Management</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);" class="active">View Pending Submission</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <!-- /.col-lg-12 -->
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="help-wrapper">
+            <div class="help-table-wrap table-responsive">
+              <table cellspacing="0" cellpadding="0" width="100%" class="table table-bordered table-custom-hover table-custom-striped table-view-approval-request">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Agent</th>
+                    <th>Property Type</th>
+                    <th>Service</th>
+                    <th>Address</th>
+                  </tr>
+                </thead>
+              </table>
+              <div class="resize-table-wrap">
+                <div class="customScroll resizeTable">
+                  <table cellspacing="0" cellpadding="0" width="100%" class="table table-bordered table-custom-hover table-custom-striped table-view-approval-request table-active">
+                    <tbody>
+                      <tr class="current">
+                        <td>1</td>
+                        <td>Thorne Mangion</td>
+                        <td>Apartment</td>
+                        <td>To Rent</td>
+                        <td>47, main road Qawra</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Abdur Rehman</td>
+                        <td>Apartment</td>
+                        <td>For Sale</td>
+                        <td>58, Pc building Malta</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Francois Ganado</td>
+                        <td>Villa</td>
+                        <td>To Rent</td>
+                        <td>60, main road Malta</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>Daniel Caliste</td>
+                        <td>Flat</td>
+                        <td>To Rent</td>
+                        <td>512, main road Qawra</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>Thorne Mangion</td>
+                        <td>Apartment</td>
+                        <td>To Rent</td>
+                        <td>47, main road Qawra</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="expand-collapsed-wrapper clearfix">
+                  <div class="resizeIconBox pull-right expand-icon">
+                    <img src="./images/expand-icon.png" class="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- tab-structure -->
+          <div class="view-tab-wrapper">
+          <div class="panel-wrapper">
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#property-tab" role="tab" data-toggle="tab">Property</a>
+              </li>
+              <li role="presentation">
+                <a href="#rooms-tab" role="tab" data-toggle="tab">Rooms</a>
+              </li>
+              <li role="presentation">
+                <a href="#address-owner-details-tab" role="tab" data-toggle="tab">Owner Details</a>
+              </li>
+              <li role="presentation">
+                <a href="#media-documentation-tab" role="tab" data-toggle="tab">Media & Documents</a>
+              </li>
+              <li role="presentation">
+                <a href="#viewings-tab" role="tab" data-toggle="tab">Viewings</a>
+              </li>
+              <li role="presentation">
+                <a href="#amenities-feature-tab" role="tab" data-toggle="tab">Amenities & Features</a>
+              </li>
+              <li role="presentation" class="prc_list_tab">
+                <a href="#pricing-tab" role="tab" data-toggle="tab">Pricing</a>
+              </li>
+              <li role="presentation" class="avl_list_tab">
+                <a href="#availability-tab" role="tab" data-toggle="tab">Availability</a>
+              </li>
+              <li role="presentation" class="sale_list_tab">
+                <a href="#saledetails-tab" role="tab" data-toggle="tab">Sale Details</a>
+              </li>
+              <li role="presentation">
+                <a href="#log-history-tab" role="tab" data-toggle="tab">Log History</a>
+              </li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <!-- property-tab-starts -->
+              <div role="tabpanel" class="tab-pane active" id="property-tab">
+                <div class="row">
+                  <form>
+                    <!-- form-inline-wrapper-starts -->
+                    <div class="form-inline-wrapper clearfix fromSection">
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="listingID">Listing ID</label>
+                        <input type="text" class="form-control input-field" id="listingID" placeholder="Enter Listing ID">
+                      </div>
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="inputEmail">Property Type</label>
+                        <div class="dropdownArea">
+                          <select class="selectpicker">
+                            <option>Types of Properties</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="propertyStatus">Property Status</label>
+                        <div class="dropdownArea">
+                          <select class="selectpicker">
+                            <option>Shell</option>
+                            <option>Advanced Shell</option>
+                            <option>Finish</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6 market-status-wrap">
+                        <label for="marketStatus">Market Status</label>
+                        <div class="dropdownArea">
+                          <select class="selectpicker">
+                            <option>Newly Listed</option>
+                            <option>Recently Reduced</option>
+                            <option>Back on Market</option>
+                            <option>On Promise of Sale</option>
+                            <option>Sold</option>
+                            <option>Withdrawn</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="listingType">Listing Type</label>
+                        <div class="dropdownArea">
+                          <select class="selectpicker">
+                            <option>Short Let</option>
+                            <option>For Sale</option>
+                            <option>Long Let</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="askingPrice">Asking Price</label>
+                        <input type="text" class="form-control input-field" id="askingPrice" placeholder="Enter Asking Price">
+                      </div>
+                      <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-divider"></div>
+                      </div>
+                      <div class="form-group col-md-4 col-sm-4 col-xs-6">
+                        <label for="country">Country</label>
+                        <div class="dropdownArea">
+                          <select class="selectpicker">
+                            <option>Select Country</option>
+                            <option>India</option>
+                            <option>China</option>
+                            <option>USA</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group col-md-4 col-sm-4 col-xs-6">
+                        <label for="Locality">Locality</label>
+                        <div class="dropdownArea">
+                          <select class="selectpicker">
+                            <option>Select Locality</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group col-md-4 col-sm-4 col-xs-6">
+                        <label for="address">Post Code</label>
+                        <input type="text" class="form-control input-field" id="yearBuilt" placeholder="Enter Post Code">
+                      </div>
+                      <div class="form-group col-md-6 col-sm-12 col-xs-6">
+                        <label for="totalInsideArea">Address</label>
+                        <textarea class="form-control text-field" id="totalInsideArea" rows="3" placeholder="Enter Address"></textarea>
+                      </div>
+                      <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-divider"></div>
+                      </div>
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="totalRooms">Total Rooms</label>
+                        <input type="text" class="form-control input-field" id="totalRooms" placeholder="Enter Total Rooms">
+                      </div>
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="bathrooms">Bathrooms</label>
+                        <input type="text" class="form-control input-field" id="bathrooms" placeholder="Enter Bathrooms">
+                      </div>
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="bedrooms">Bedrooms</label>
+                        <input type="text" class="form-control input-field" id="bedrooms" placeholder="Enter Bedrooms">
+                      </div>
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="yearBuilt">Year Built</label>
+                        <input type="text" class="form-control input-field" id="yearBuilt" placeholder="Enter Year Built">
+                      </div>
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="totalInsideArea">Total Inside Area</label>
+                        <input type="text" class="form-control input-field" id="totalInsideArea" placeholder="Enter Total Inside Area">
+                      </div>
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="totalOutsideArea">Total Outside Area</label>
+                        <input type="text" class="form-control input-field" id="totalOutsideArea" placeholder="Enter Total Outside Area">
+                      </div>
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="Locality">Groundrent Type</label>
+                        <div class="dropdownArea">
+                          <select class="selectpicker">
+                            <option>Freehold</option>
+                            <option>Perpetual</option>
+                            <option>Perpetual Revisible</option>
+                            <option>Temporary</option>
+                            <option>Temporary Revisible</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group col-md-3 col-sm-8 col-xs-12 amount-form-group">
+                        <div class="row">
+                          <div class="col-md-6 col-sm-6 col-xs-6 col-pad-right">
+                            <label for="Amout">Amout</label>
+                            <input type="text" class="form-control input-field" id="Amout" placeholder="Enter Amout">
+                          </div>
+                          <div class="col-md-6 col-sm-6 col-xs-6 col-pad-left">
+                            <label for="expiryDate">Expiry Date</label>
+                            <input type="text" class="form-control input-field" id="expiryDate" placeholder="Enter Expiry date">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group col-md-12 col-sm-12 col-xs-12 margin-bottom-none">
+                        <label>In Nights</label>
+                      </div>
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="minimumStay">Minimum Stay</label>
+                        <input type="text" class="form-control input-field" id="minimumStay" placeholder="Enter Minimum Stay">
+                      </div>
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="maximumGuests">Maximum Guests</label>
+                        <input type="text" class="form-control input-field" id="maximumGuests" placeholder="Enter Maximum Guests">
+                      </div>
+                      <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-divider"></div>
+                      </div>
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="prospector">Prospector</label>
+                        <div class="dropdownArea">
+                          <select class="selectpicker">
+                            <option>Select Propector</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="inspector">Inspector</label>
+                        <div class="dropdownArea">
+                          <select class="selectpicker">
+                            <option>Select Agent</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="marketedBy">Marketed by</label>
+                        <div class="dropdownArea">
+                          <select class="selectpicker">
+                            <option>Select Agent</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="Locality">Agreement Type</label>
+                        <div class="dropdownArea">
+                          <select class="selectpicker">
+                            <option>Select Agreement Type</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="aggrement">Aggrement</label>
+                        <div class="dropdownArea">
+                          <select class="selectpicker">
+                            <option>Select Aggrement</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="lifestyleDevSDA">Lifestyle Dev. & SDA</label>
+                        <input type="text" class="form-control input-field" id="lifestyleDevSDA" placeholder="Enter Lifestyle Dev. & SDA">
+                      </div>
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="detaultLaunchDate">Detault Launch Date</label>
+                        <input type="text" class="form-control input-field" id="detaultLaunchDate" placeholder="Enter Detault Launch Date">
+                      </div>
+                      <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                        <label for="others">Others</label>
+                        <input type="text" class="form-control input-field" id="others" placeholder="Others">
+                      </div>
+                      <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-divider"></div>
+                      </div>
+                    </div>
+                    <!-- form-inline-wrapper-starts -->
+                    <div class="form-group full-row">
+                      <label for="propertyDescription">Property Description:</label>
+                      <textarea class="form-control text-field" id="propertyDescription" rows="5" placeholder="Write Property Description Here"></textarea>
+                    </div>
+                    <div class="form-group full-row margin-bottom-none">
+                      <label for="notes">Notes:</label>
+                      <textarea class="form-control text-field" id="notes" rows="5" placeholder="Write Message Here"></textarea>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!-- property-tab-starts -->
+              <div role="tabpanel" class="tab-pane" id="rooms-tab">
+                <div class="row">
+                  <div class="rooms-tabs-wrapper clearfix fromSection">
+                    <form>
+                      <div class="form-inline-wrapper clearfix">
+                        <div class="form-group full-row  text-inline">
+                          <div class="dropdownArea">
+                            <select class="selectpicker">
+                              <option>Living Room</option>
+                              <option>Big Bedroom</option>
+                              <option>Bedroom</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                          </div>
+                          <button type="button" class="btn btn-default add-room-btn">Add Room</button>
+                          <!-- <div class="clearfix">
+                            
+                          </div> -->
+                        </div>
+                      </div>
+                    </form>
+                    <div class="col-md-12 col-lg-12 col-xs-12">
+                      <div class="table-responsive">
+                        <table class="table table-custom-bordered table-custom-hover table-custom-striped table-rooms">
+                          <thead>
+                            <tr>
+                              <th>
+                                <div class="custom-dynamic-checkbox">
+                                  <label>
+                                    <input type="checkbox" value="" class="all_check">
+                                    <span class="cr">
+                                      <i class="cr-icon glyphicon glyphicon-ok"></i>
+                                    </span>
+                                  </label>
+                                </div>
+                              </th>
+                              <th>Rooms</th>
+                              <th>Dimensions(m)</th>
+                              <th>Sqm</th>
+                            </tr>
+                          </thead>
+                        </table>
+                        <div class="customScroll table-rooms-wrap">
+                          <table class="table table-custom-bordered table-custom-hover table-custom-striped table-rooms table-active">
+                            <tbody>
+                              <tr class="detail-fields current">
+                                <td>
+                                  <div class="custom-dynamic-checkbox">
+                                    <label>
+                                      <input type="checkbox" value="" class="single_check">
+                                      <span class="cr">
+                                        <i class="cr-icon glyphicon glyphicon-ok"></i>
+                                      </span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td class="detail-label">Living Room</td>
+                                <td class="detail-value">
+                                  <div class="edit-value">
+                                    <input type="text" class="form-control" placeholder="6X7" disabled>
+                                  </div>
+                                </td>
+                                <td class="detail-value">
+                                  <div class="edit-value">
+                                    <input type="text" class="form-control" placeholder="32sqm" disabled>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr class="detail-fields">
+                                <td>
+                                  <div class="custom-dynamic-checkbox">
+                                    <label>
+                                      <input type="checkbox" value="" class="single_check">
+                                      <span class="cr">
+                                        <i class="cr-icon glyphicon glyphicon-ok"></i>
+                                      </span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td class="detail-label">Big Bedroom</td>
+                                <td class="detail-value">
+                                  <div class="edit-value">
+                                    <input type="text" class="form-control" placeholder="4X7" disabled>
+                                  </div>
+                                </td>
+                                <td class="detail-value">
+                                  <div class="edit-value">
+                                    <input type="text" class="form-control" placeholder="38sqm" disabled>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr class="detail-fields">
+                                <td>
+                                  <div class="custom-dynamic-checkbox">
+                                    <label>
+                                      <input type="checkbox" value="" class="single_check">
+                                      <span class="cr">
+                                        <i class="cr-icon glyphicon glyphicon-ok"></i>
+                                      </span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td class="detail-label">Living Room</td>
+                                <td class="detail-value">
+                                  <div class="edit-value">
+                                    <input type="text" class="form-control" placeholder="4X9" disabled>
+                                  </div>
+                                </td>
+                                <td class="detail-value">
+                                  <div class="edit-value">
+                                    <input type="text" class="form-control" placeholder="68sqm" disabled>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr class="detail-fields">
+                                <td>
+                                  <div class="custom-dynamic-checkbox">
+                                    <label>
+                                      <input type="checkbox" value="" class="single_check">
+                                      <span class="cr">
+                                        <i class="cr-icon glyphicon glyphicon-ok"></i>
+                                      </span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td class="detail-label">Living Room</td>
+                                <td class="detail-value">
+                                  <div class="edit-value">
+                                    <input type="text" class="form-control" placeholder="4X8" disabled>
+                                  </div>
+                                </td>
+                                <td class="detail-value">
+                                  <div class="edit-value">
+                                    <input type="text" class="form-control" placeholder="61sqm" disabled>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr class="detail-fields">
+                                <td>
+                                  <div class="custom-dynamic-checkbox">
+                                    <label>
+                                      <input type="checkbox" value="" class="single_check">
+                                      <span class="cr">
+                                        <i class="cr-icon glyphicon glyphicon-ok"></i>
+                                      </span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td class="detail-label">Big Bedroom</td>
+                                <td class="detail-value">
+                                  <div class="edit-value">
+                                    <input type="text" class="form-control" placeholder="4X2" disabled>
+                                  </div>
+                                </td>
+                                <td class="detail-value">
+                                  <div class="edit-value">
+                                    <input type="text" class="form-control" placeholder="48sqm" disabled>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="btn-wrapper pull-left">
+                        <button type="button" class="btn btn-default edit-rooms-btn">Edit</button>
+                        <button type="button" class="btn btn-success save-rooms-btn">Save</button>
+                        <button type="button" class="btn btn-pink remove-rooms-btn">Remove</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="address-owner-details-tab">
+                <div class="row">
+                  <div class="address-owner-tabs-wrapper clearfix fromSection">
+                    <div class="col-md-12 col-lg-12 col-xs-12">
+                      <div class="table-responsive">
+                        <table class="table table-custom-bordered table-custom-hover table-custom-striped table-address-owner table-active" id="exampleadd">
+                          <thead>
+                            <tr>
+                              <th>Name & Surname</th>
+                              <th>ID Card</th>
+                              <th>Country</th>
+                              <th>Locality</th>
+                              <th>Postcode</th>
+                              <th>Residing Address</th>
+                              <th>Contact Number</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="current">
+                              <td class="owner-name">Joen Schembri</td>
+                              <td class="owner-date">10-04-2017</td>
+                              <td class="owner-time">05:15</td>
+                              <td class="owner-remark">Added 4 Photos</td>
+                              <td class="owner-post-code">SWQ456</td>
+                              <td class="owner-reside-address">Plot no.55, main road</td>
+                              <td class="owner-contact">8954612456/+3256478914</td>
+                            </tr>
+                            <tr>
+                              <td class="owner-name">William Schembri</td>
+                              <td class="owner-date">08-04-2017</td>
+                              <td class="owner-time">14:15</td>
+                              <td class="owner-remark">Added 4 Photos</td>
+                              <td class="owner-post-code">MJK456</td>
+                              <td class="owner-reside-address">89, Cpp road</td>
+                              <td class="owner-contact">4959469469</td>
+                            </tr>
+                            <tr>
+                              <td class="owner-name">Aaydan</td>
+                              <td class="owner-date">05-04-2017</td>
+                              <td class="owner-time">12:05</td>
+                              <td class="owner-remark">Create listing 75895</td>
+                              <td class="owner-post-code">RDF456</td>
+                              <td class="owner-reside-address">89, Cp road</td>
+                              <td class="owner-contact">9811256028</td>
+                            </tr>
+                            <tr>
+                              <td class="owner-name">William Schembri</td>
+                              <td class="owner-date">08-04-2017</td>
+                              <td class="owner-time">14:15</td>
+                              <td class="owner-remark">Added 4 Photos</td>
+                              <td class="owner-post-code">PSP456</td>
+                              <td class="owner-reside-address">Plot no.55, main road</td>
+                              <td class="owner-contact">78945164578/+3256478914</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="btn-wrapper pull-left">
+                        <button type="button" class="btn btn-default">Edit</button>
+                        <button type="button" class="btn btn-success">Save</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="media-documentation-tab">
+                <div class="row">
+                  <div class="media-doc-wrapper clearfix">
+                    <h4 class="media-heading">Photos</h4>
+                    <div class="media-list-box">
+                      <!-- media-list-->
+                      <div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="media-list">
+                          <div class="file-upload-panel">
+                            <input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1" data-multiple-caption="{count} files selected" multiple />
+                            <label for="file-1">
+                              <i class="fa fa-file-image-o" aria-hidden="true"></i>
+                              <span>Add Photo</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="media-list">
+                          <div class="upload-img-box">
+                            <img src="./images/upload-img1.png" alt="Uploaded Image Sample">
+                            <span class="img-close">
+                              <img src="./images/close-btn.png" />
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="media-list">
+                          <div class="upload-img-box">
+                            <img src="./images/upload-img2.png" alt="Uploaded Image Sample">
+                            <span class="img-close">
+                              <img src="./images/close-btn.png" />
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="media-list">
+                          <div class="upload-img-box">
+                            <img src="./images/upload-img3.png" alt="Uploaded Image Sample">
+                            <span class="img-close">
+                              <img src="./images/close-btn.png" />
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="media-list">
+                          <div class="upload-img-box">
+                            <img src="./images/upload-img4.png" alt="Uploaded Image Sample">
+                            <span class="img-close">
+                              <img src="./images/close-btn.png" />
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- media-list -->
+                    </div>
+                    <h4 class="media-heading">Documents</h4>
+                    <div class="media-list-box">
+                      <!-- media-list-->
+                      <div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="media-list">
+                          <div class="file-upload-panel">
+                            <input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1" data-multiple-caption="{count} files selected" multiple />
+                            <label for="file-1">
+                              <i class="fa fa-file-text" aria-hidden="true"></i>
+                              <span>Add Documents</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="media-list">
+                          <div class="file-upload-panel afterupload exl">
+                            <label for="file-upload">
+                              <i class="fa fa-file-excel-o" aria-hidden="true"></i>
+                              <span>abcz-458.xlsx</span>
+                            </label>
+                            <span class="img-close">
+                              <img src="./images/close-btn.png" />
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="media-list">
+                          <div class="file-upload-panel afterupload word">
+                            <label for="file-upload">
+                              <i class="fa fa-file-word-o" aria-hidden="true"></i>
+                              <span>ghfmp-789456.docx</span>
+                            </label>
+                            <span class="img-close">
+                              <img src="./images/close-btn.png" />
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="media-list">
+                          <div class="file-upload-panel afterupload power">
+                            <label for="file-upload">
+                              <i class="fa fa-file-powerpoint-o" aria-hidden="true"></i>
+                              <span>dpmngs-456789-bn.pptx</span>
+                            </label>
+                            <span class="img-close">
+                              <img src="./images/close-btn.png" />
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="media-list">
+                          <div class="file-upload-panel afterupload exl">
+                            <label for="file-upload">
+                              <i class="fa fa-file-excel-o" aria-hidden="true"></i>
+                              <span>abcz-458.xlsx</span>
+                            </label>
+                            <span class="img-close">
+                              <img src="./images/close-btn.png" />
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="media-list">
+                          <div class="file-upload-panel afterupload power">
+                            <label for="file-upload">
+                              <i class="fa fa-file-powerpoint-o" aria-hidden="true"></i>
+                              <span>dpmngs-456789-bn.pptx</span>
+                            </label>
+                            <span class="img-close">
+                              <img src="./images/close-btn.png" />
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- media-list -->
+                    </div>
+                    <div class="media-btn-box clearfix">
+                      <div class="btn-wrapper pull-left">
+                        <button type="button" class="btn btn-default edit-media-doc-btn">Edit</button>
+                        <button type="button" class="btn btn-success save-media-doc-btn">Save</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="viewings-tab">
+                <div class="row">
+                  <div class="view-tabs-wrapper clearfix">
+                    <div class="table-responsive">
+                      <table class="table table-custom-bordered table-custom-hover table-custom-striped table-viewing table-active" width="100%" cellspacing="0">
+                        <thead>
+                          <tr>
+                            <th>Viewing By</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Remark</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="current">
+                            <td class="viewer-name">Joen Schembri</td>
+                            <td class="viewer-date">10-04-2017</td>
+                            <td class="viewer-time">05:15</td>
+                            <td class="viewer-remark">Added 4 Photos</td>
+                          </tr>
+                          <tr>
+                            <td class="viewer-name">William Schembri</td>
+                            <td class="viewer-date">08-04-2017</td>
+                            <td class="viewer-time">14:15</td>
+                            <td class="viewer-remark">Added 4 Photos</td>
+                          </tr>
+                          <tr>
+                            <td class="viewer-name">Aaydan</td>
+                            <td class="viewer-date">05-04-2017</td>
+                            <td class="viewer-time">12:05</td>
+                            <td class="viewer-remark">Create listing 75895</td>
+                          </tr>
+                          <tr>
+                            <td class="viewer-name">William Schembri</td>
+                            <td class="viewer-date">08-04-2017</td>
+                            <td class="viewer-time">14:15</td>
+                            <td class="viewer-remark">Added 4 Photos</td>
+                          </tr>
+                          <tr>
+                            <td class="viewer-name">Aaydan</td>
+                            <td class="viewer-date">05-04-2017</td>
+                            <td class="viewer-time">12:05</td>
+                            <td class="viewer-remark">Create listing 75895</td>
+                          </tr>
+                          <tr>
+                            <td class="viewer-name">Joen Schembri</td>
+                            <td class="viewer-date">10-04-2017</td>
+                            <td class="viewer-time">05:15</td>
+                            <td class="viewer-remark">Added 4 Photos</td>
+                          </tr>
+                          <tr>
+                            <td class="viewer-name">William Schembri</td>
+                            <td class="viewer-date">08-04-2017</td>
+                            <td class="viewer-time">14:15</td>
+                            <td class="viewer-remark">Added 4 Photos</td>
+                          </tr>
+                          <tr>
+                            <td class="viewer-name">Joen Schembri</td>
+                            <td class="viewer-date">10-04-2017</td>
+                            <td class="viewer-time">05:15</td>
+                            <td class="viewer-remark">Added 4 Photos</td>
+                          </tr>
+                          <tr>
+                            <td class="viewer-name">Joen Schembri</td>
+                            <td class="viewer-date">10-04-2017</td>
+                            <td class="viewer-time">05:15</td>
+                            <td class="viewer-remark">Added 4 Photos</td>
+                          </tr>
+                          <tr>
+                            <td class="viewer-name">William Schembri</td>
+                            <td class="viewer-date">08-04-2017</td>
+                            <td class="viewer-time">14:15</td>
+                            <td class="viewer-remark">Added 4 Photos</td>
+                          </tr>
+                          <tr>
+                            <td class="viewer-name">Aaydan</td>
+                            <td class="viewer-date">05-04-2017</td>
+                            <td class="viewer-time">12:05</td>
+                            <td class="viewer-remark">Create listing 75895</td>
+                          </tr>
+                          <tr>
+                            <td class="viewer-name">William Schembri</td>
+                            <td class="viewer-date">08-04-2017</td>
+                            <td class="viewer-time">14:15</td>
+                            <td class="viewer-remark">Added 4 Photos</td>
+                          </tr>
+                          <tr>
+                            <td class="viewer-name">Aaydan</td>
+                            <td class="viewer-date">05-04-2017</td>
+                            <td class="viewer-time">12:05</td>
+                            <td class="viewer-remark">Create listing 75895</td>
+                          </tr>
+                          <tr>
+                            <td class="viewer-name">Joen Schembri</td>
+                            <td class="viewer-date">10-04-2017</td>
+                            <td class="viewer-time">05:15</td>
+                            <td class="viewer-remark">Added 4 Photos</td>
+                          </tr>
+                          <tr>
+                            <td class="viewer-name">William Schembri</td>
+                            <td class="viewer-date">08-04-2017</td>
+                            <td class="viewer-time">14:15</td>
+                            <td class="viewer-remark">Added 4 Photos</td>
+                          </tr>
+                          <tr>
+                            <td class="viewer-name">Joen Schembri</td>
+                            <td class="viewer-date">10-04-2017</td>
+                            <td class="viewer-time">05:15</td>
+                            <td class="viewer-remark">Added 4 Photos</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="amenities-feature-tab">
+                <div class="row">
+                  <div class="amenities-tabs-wrapper clearfix">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <div class="table-responsive">
+                        <table class="table table-custom-bordered table-custom-hover table-custom-striped table-amenities table-active">
+                          <thead>
+                            <tr>
+                              <th>Features & Amenities</th>
+                              <th>Remark</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="detail-fields current">
+                              <td class="detail-label">Air Conditioning</td>
+                              <td class="detail-value"></td>
+                            </tr>
+                            <tr class="detail-fields">
+                              <td class="detail-label">Garage</td>
+                              <td class="detail-value">
+                                <span class="view-value">2car</span>
+                                <div class="edit-value hide">
+                                  <input type="text" class="form-control" placeholder="Enter text">
+                                </div>
+                              </td>
+                            </tr>
+                            <tr class="detail-fields">
+                              <td class="detail-label">WIFI</td>
+                              <td class="detail-value"></td>
+                            </tr>
+                            <tr class="detail-fields">
+                              <td class="detail-label">Lift</td>
+                              <td class="detail-value">
+                                <span class="view-value">2car</span>
+                                <div class="edit-value hide">
+                                  <input type="text" class="form-control" placeholder="Enter text">
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="add-feature-box">
+                      <h4 class="media-heading">Add Features & Amenities</h4>
+                      <div class="feature-panel">
+                        <form>
+                          <div class="feature-form-wrapper clearfix">
+                            <div class="form-group col-md-3 col-sm-3 col-xs-6">
+                              <div class="custom-dynamic-checkbox">
+                                <label for="checkboxAir">
+                                  <input id="checkboxAir" type="checkbox" checked="">
+                                  <span class="cr">
+                                    <i class="cr-icon glyphicon glyphicon-ok"></i>
+                                  </span>
+                                  <span class="icon-air-condition"></span>
+                                  Air Conditioning
+                                </label>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-3 col-sm-3 col-xs-6">
+                              <div class="custom-dynamic-checkbox">
+                                <label for="breakfastarea">
+                                  <input id="breakfastarea" type="checkbox">
+                                  <span class="cr">
+                                    <i class="cr-icon glyphicon glyphicon-ok"></i>
+                                  </span>
+                                  <span class="icon-breakfast"></span>
+                                  Breakfast Area
+                                </label>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-3 col-sm-3 col-xs-6">
+                              <div class="custom-dynamic-checkbox">
+                                <label for="dishwasher">
+                                  <input id="dishwasher" type="checkbox">
+                                  <span class="cr">
+                                    <i class="cr-icon glyphicon glyphicon-ok"></i>
+                                  </span>
+                                  <span class="icon-dishwasher"></span>
+                                  Dishwasher
+                                </label>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-3 col-sm-3 col-xs-6">
+                              <div class="custom-dynamic-checkbox">
+                                <label for="fireplace">
+                                  <input id="fireplace" type="checkbox">
+                                  <span class="cr">
+                                    <i class="cr-icon glyphicon glyphicon-ok"></i>
+                                  </span>
+                                  <span class="icon-fireplace"></span>
+                                  Fireplace
+                                </label>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-3 col-sm-3 col-xs-6">
+                              <div class="custom-dynamic-checkbox">
+                                <label for="floorHeating">
+                                  <input id="floorHeating" type="checkbox">
+                                  <span class="cr">
+                                    <i class="cr-icon glyphicon glyphicon-ok"></i>
+                                  </span>
+                                  <span class="icon-floorheating"></span>
+                                  Floor Heating
+                                </label>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-3 col-sm-3 col-xs-6">
+                              <div class="custom-dynamic-checkbox">
+                                <label for="frontPatio">
+                                  <input id="frontPatio" type="checkbox">
+                                  <span class="cr">
+                                    <i class="cr-icon glyphicon glyphicon-ok"></i>
+                                  </span>
+                                  <span class="icon-frontpatio"></span>
+                                  Front Patio
+                                </label>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-3 col-sm-3 col-xs-6">
+                              <div class="custom-dynamic-checkbox">
+                                <label for="garage">
+                                  <input id="garage" type="checkbox" checked>
+                                  <span class="cr">
+                                    <i class="cr-icon glyphicon glyphicon-ok"></i>
+                                  </span>
+                                  <span class="icon-garage"></span>
+                                  Garage
+                                </label>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-3 col-sm-3 col-xs-6">
+                              <div class="custom-dynamic-checkbox">
+                                <label for="intercom">
+                                  <input id="intercom" type="checkbox">
+                                  <span class="cr">
+                                    <i class="cr-icon glyphicon glyphicon-ok"></i>
+                                  </span>
+                                  <span class="icon-intercom">
+                                    <span class="path1"></span>
+                                    <span class="path2"></span>
+                                  </span>
+                                  Intercom
+                                </label>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-3 col-sm-3 col-xs-6">
+                              <div class="custom-dynamic-checkbox">
+                                <label for="ironingBoard">
+                                  <input id="ironingBoard" type="checkbox">
+                                  <span class="cr">
+                                    <i class="cr-icon glyphicon glyphicon-ok"></i>
+                                  </span>
+                                  <span class="icon-ironingboard"></span>
+                                  Ironing Board
+                                </label>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-3 col-sm-3 col-xs-6">
+                              <div class="custom-dynamic-checkbox">
+                                <label for="lift">
+                                  <input id="lift" type="checkbox" checked>
+                                  <span class="cr">
+                                    <i class="cr-icon glyphicon glyphicon-ok"></i>
+                                  </span>
+                                  <span class="icon-lift"></span>
+                                  Lift
+                                </label>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-3 col-sm-3 col-xs-6">
+                              <div class="custom-dynamic-checkbox">
+                                <label for="petFriendly">
+                                  <input id="petFriendly" type="checkbox">
+                                  <span class="cr">
+                                    <i class="cr-icon glyphicon glyphicon-ok"></i>
+                                  </span>
+                                  <span class="icon-petfriendly"></span>
+                                  Pet Friendly
+                                </label>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-3 col-sm-3 col-xs-6">
+                              <div class="custom-dynamic-checkbox">
+                                <label for="securitySystem">
+                                  <input id="securitySystem" type="checkbox">
+                                  <span class="cr">
+                                    <i class="cr-icon glyphicon glyphicon-ok"></i>
+                                  </span>
+                                  <span class="icon-securitysystem"></span>
+                                  Security System
+                                </label>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-3 col-sm-3 col-xs-6">
+                              <div class="custom-dynamic-checkbox">
+                                <label for="TV">
+                                  <input id="TV" type="checkbox">
+                                  <span class="cr">
+                                    <i class="cr-icon glyphicon glyphicon-ok"></i>
+                                  </span>
+                                  <span class="icon-tv"></span>
+                                  TV
+                                </label>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-3 col-sm-3 col-xs-6">
+                              <div class="custom-dynamic-checkbox">
+                                <label for="washingMachine">
+                                  <input id="washingMachine" type="checkbox">
+                                  <span class="cr">
+                                    <i class="cr-icon glyphicon glyphicon-ok"></i>
+                                  </span>
+                                  <span class="icon-washingmachin"></span>
+                                  Washing Machine
+                                </label>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-3 col-sm-3 col-xs-6">
+                              <div class="custom-dynamic-checkbox">
+                                <label for="wheelchairAccessible">
+                                  <input id="wheelchairAccessible" type="checkbox">
+                                  <span class="cr">
+                                    <i class="cr-icon glyphicon glyphicon-ok"></i>
+                                  </span>
+                                  <span class="icon-wheelchair"></span>
+                                  Wheelchair Accessible
+                                </label>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-3 col-sm-3 col-xs-6">
+                              <div class="custom-dynamic-checkbox">
+                                <label for="WIFI">
+                                  <input id="WIFI" type="checkbox" checked>
+                                  <span class="cr">
+                                    <i class="cr-icon glyphicon glyphicon-ok"></i>
+                                  </span>
+                                  <span class="icon-wifi"></span>
+                                  WIFI
+                                </label>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-3 col-sm-3 col-xs-6">
+                              <div class="custom-dynamic-checkbox">
+                                <label for="countryView">
+                                  <input id="countryView" type="checkbox">
+                                  <span class="cr">
+                                    <i class="cr-icon glyphicon glyphicon-ok"></i>
+                                  </span>
+                                  <span class="icon-countryview"></span>
+                                  Country View
+                                </label>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-3 col-sm-3 col-xs-6">
+                              <div class="custom-dynamic-checkbox">
+                                <label for="garden">
+                                  <input id="garden" type="checkbox">
+                                  <span class="cr">
+                                    <i class="cr-icon glyphicon glyphicon-ok"></i>
+                                  </span>
+                                  <span class="icon-garden"></span>
+                                  Garden
+                                </label>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-3 col-sm-3 col-xs-6">
+                              <div class="custom-dynamic-checkbox">
+                                <label for="pool">
+                                  <input id="pool" type="checkbox">
+                                  <span class="cr">
+                                    <i class="cr-icon glyphicon glyphicon-ok"></i>
+                                  </span>
+                                  <span class="icon-seapool"></span>
+                                  Pool
+                                </label>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-3 col-sm-3 col-xs-6">
+                              <div class="custom-dynamic-checkbox">
+                                <label for="seaFront">
+                                  <input id="seaFront" type="checkbox">
+                                  <span class="cr">
+                                    <i class="cr-icon glyphicon glyphicon-ok"></i>
+                                  </span>
+                                  <span class="icon-seafront"></span>
+                                  Sea Front
+                                </label>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-3 col-sm-3 col-xs-6">
+                              <div class="custom-dynamic-checkbox">
+                                <label for="seaViews">
+                                  <input id="seaViews" type="checkbox">
+                                  <span class="cr">
+                                    <i class="cr-icon glyphicon glyphicon-ok"></i>
+                                  </span>
+                                  <span class="icon-seaview"></span>
+                                  Sea Views
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="btn-wrapper pull-left full-row">
+                            <a href="view-edit-amenities-features.html" class="btn btn-default">Edit</a>
+                            <button type="button" class="btn btn-success">Save</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="pricing-tab">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h4 class="short_Let">Short Let</h4>
+                    <hr/>
+                    <div class="row">
+                      <form>
+                        <!-- form-inline-wrapper-starts -->
+                        <div class="form-inline-wrapper clearfix fromSection">
+                          <div class="form-group col-md-3 col-sm-6">
+                            <label for="shortFrom">From</label>
+                            <input type="text" class="form-control input-field date" id="shortFrom" placeholder="From">
+                          </div>
+                          <div class="form-group col-md-3 col-sm-6">
+                            <label for="shortTo">To</label>
+                            <input type="text" class="form-control input-field date" id="shortTo" placeholder="To"> </div>
+                          <div class="form-group col-md-3 col-sm-6">
+                            <label for="shortNightly">Nightly €</label>
+                            <input type="text" class="form-control input-field" id="shortNightly" placeholder="Nightly €"> </div>
+                          <div class="form-group col-md-3 col-sm-6">
+                            <label>&nbsp;</label>
+                            <div class="clearfix">
+                              <input type="button" class="col-sm-8 btn btn-primary btn-custom" value="Submit" style="height: 33px;">
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div data-provide="calendar" class="calendar shortCalendar"></div>
+                    <h3 class="rentHead">January</h3>
+                    <div class="table-responsive rentTable customScroll">
+                      <table class=" table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                            <th>7</th>
+                            <th>8</th>
+                            <th>9</th>
+                            <th>10</th>
+                            <th>11</th>
+                            <th>12</th>
+                            <th>13</th>
+                            <th>14</th>
+                            <th>15</th>
+                            <th>16</th>
+                            <th>17</th>
+                            <th>18</th>
+                            <th>19</th>
+                            <th>20</th>
+                            <th>21</th>
+                            <th>22</th>
+                            <th>23</th>
+                            <th>24</th>
+                            <th>25</th>
+                            <th>26</th>
+                            <th>27</th>
+                            <th>28</th>
+                            <th>29</th>
+                            <th>30</th>
+                            <th>31</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <h3 class="rentHead">April</h3>
+                    <div class="table-responsive rentTable customScroll">
+                      <table class=" table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                            <th>7</th>
+                            <th>8</th>
+                            <th>9</th>
+                            <th>10</th>
+                            <th>11</th>
+                            <th>12</th>
+                            <th>13</th>
+                            <th>14</th>
+                            <th>15</th>
+                            <th>16</th>
+                            <th>17</th>
+                            <th>18</th>
+                            <th>19</th>
+                            <th>20</th>
+                            <th>21</th>
+                            <th>22</th>
+                            <th>23</th>
+                            <th>24</th>
+                            <th>25</th>
+                            <th>26</th>
+                            <th>27</th>
+                            <th>28</th>
+                            <th>29</th>
+                            <th>30</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <h3 class="rentHead">July</h3>
+                    <div class="table-responsive rentTable customScroll">
+                      <table class=" table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                            <th>7</th>
+                            <th>8</th>
+                            <th>9</th>
+                            <th>10</th>
+                            <th>11</th>
+                            <th>12</th>
+                            <th>13</th>
+                            <th>14</th>
+                            <th>15</th>
+                            <th>16</th>
+                            <th>17</th>
+                            <th>18</th>
+                            <th>19</th>
+                            <th>20</th>
+                            <th>21</th>
+                            <th>22</th>
+                            <th>23</th>
+                            <th>24</th>
+                            <th>25</th>
+                            <th>26</th>
+                            <th>27</th>
+                            <th>28</th>
+                            <th>29</th>
+                            <th>30</th>
+                            <th>31</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <h3 class="rentHead">October</h3>
+                    <div class="table-responsive rentTable customScroll">
+                      <table class=" table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                            <th>7</th>
+                            <th>8</th>
+                            <th>9</th>
+                            <th>10</th>
+                            <th>11</th>
+                            <th>12</th>
+                            <th>13</th>
+                            <th>14</th>
+                            <th>15</th>
+                            <th>16</th>
+                            <th>17</th>
+                            <th>18</th>
+                            <th>19</th>
+                            <th>20</th>
+                            <th>21</th>
+                            <th>22</th>
+                            <th>23</th>
+                            <th>24</th>
+                            <th>25</th>
+                            <th>26</th>
+                            <th>27</th>
+                            <th>28</th>
+                            <th>29</th>
+                            <th>30</th>
+                            <th>31</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <hr/>
+                    <h4 class="short_Let">Long Let</h4>
+                    <hr/>
+                    <div class="row">
+                      <form>
+                        <!-- form-inline-wrapper-starts -->
+                        <div class="form-inline-wrapper clearfix fromSection">
+                          <div class="form-group col-md-3 col-sm-3 col-xs-6">
+                            <label for="longFrom">From</label>
+                            <input type="text" class="form-control input-field date" id="longFrom" placeholder="From">
+                          </div>
+                          <div class="form-group col-md-3 col-sm-3 col-xs-6">
+                            <label for="longTo">To</label>
+                            <input type="text" class="form-control input-field date" id="longTo" placeholder="To"> </div>
+                          <div class="form-group col-md-3 col-sm-3 col-xs-6">
+                            <label for="longNightly">Nightly €</label>
+                            <input type="text" class="form-control input-field" id="longNightly" placeholder="Nightly €"> </div>
+                          <div class="form-group col-md-3 col-sm-3 col-xs-6">
+                            <label>&nbsp;</label>
+                            <div class="clearfix">
+                              <input type="button" class="col-sm-8 btn btn-primary btn-custom" value="Submit" style="height: 33px;">
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div data-provide="calendar" class="calendar longCalendar"></div>
+                    <h3 class="rentHead">January</h3>
+                    <div class="table-responsive rentTable customScroll">
+                      <table class=" table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                            <th>7</th>
+                            <th>8</th>
+                            <th>9</th>
+                            <th>10</th>
+                            <th>11</th>
+                            <th>12</th>
+                            <th>13</th>
+                            <th>14</th>
+                            <th>15</th>
+                            <th>16</th>
+                            <th>17</th>
+                            <th>18</th>
+                            <th>19</th>
+                            <th>20</th>
+                            <th>21</th>
+                            <th>22</th>
+                            <th>23</th>
+                            <th>24</th>
+                            <th>25</th>
+                            <th>26</th>
+                            <th>27</th>
+                            <th>28</th>
+                            <th>29</th>
+                            <th>30</th>
+                            <th>31</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <h3 class="rentHead">April</h3>
+                    <div class="table-responsive rentTable customScroll">
+                      <table class=" table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                            <th>7</th>
+                            <th>8</th>
+                            <th>9</th>
+                            <th>10</th>
+                            <th>11</th>
+                            <th>12</th>
+                            <th>13</th>
+                            <th>14</th>
+                            <th>15</th>
+                            <th>16</th>
+                            <th>17</th>
+                            <th>18</th>
+                            <th>19</th>
+                            <th>20</th>
+                            <th>21</th>
+                            <th>22</th>
+                            <th>23</th>
+                            <th>24</th>
+                            <th>25</th>
+                            <th>26</th>
+                            <th>27</th>
+                            <th>28</th>
+                            <th>29</th>
+                            <th>30</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <h3 class="rentHead">July</h3>
+                    <div class="table-responsive rentTable customScroll">
+                      <table class=" table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                            <th>7</th>
+                            <th>8</th>
+                            <th>9</th>
+                            <th>10</th>
+                            <th>11</th>
+                            <th>12</th>
+                            <th>13</th>
+                            <th>14</th>
+                            <th>15</th>
+                            <th>16</th>
+                            <th>17</th>
+                            <th>18</th>
+                            <th>19</th>
+                            <th>20</th>
+                            <th>21</th>
+                            <th>22</th>
+                            <th>23</th>
+                            <th>24</th>
+                            <th>25</th>
+                            <th>26</th>
+                            <th>27</th>
+                            <th>28</th>
+                            <th>29</th>
+                            <th>30</th>
+                            <th>31</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <h3 class="rentHead">October</h3>
+                    <div class="table-responsive rentTable customScroll">
+                      <table class=" table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                            <th>7</th>
+                            <th>8</th>
+                            <th>9</th>
+                            <th>10</th>
+                            <th>11</th>
+                            <th>12</th>
+                            <th>13</th>
+                            <th>14</th>
+                            <th>15</th>
+                            <th>16</th>
+                            <th>17</th>
+                            <th>18</th>
+                            <th>19</th>
+                            <th>20</th>
+                            <th>21</th>
+                            <th>22</th>
+                            <th>23</th>
+                            <th>24</th>
+                            <th>25</th>
+                            <th>26</th>
+                            <th>27</th>
+                            <th>28</th>
+                            <th>29</th>
+                            <th>30</th>
+                            <th>31</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                            <td>
+                              <div class="inner">€125</div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="btn-wrapper pull-left">
+                      <button type="button" class="btn btn-success">Save</button>
+                      <button type="button" class="btn btn-clearall">Clear All</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="availability-tab">
+                <div class="row">
+                  <form>
+                    <!-- form-inline-wrapper-starts -->
+                    <div class="form-inline-wrapper clearfix fromSection">
+                      <div class="form-group col-md-4 col-sm-6 col-xs-6">
+                        <label for="availableFrom">From</label>
+                        <input type="text" class="form-control input-field date" id="availableFrom" placeholder="From">
+                      </div>
+                      <div class="form-group col-md-4 col-sm-6 col-xs-6">
+                        <label for="availableTo">To</label>
+                        <input type="text" class="form-control input-field date" id="availabletTo" placeholder="To">
+                      </div>
+                      <div class="form-group col-md-4 col-sm-6 col-xs-6">
+                        <label for="statusAvailability">Status</label>
+                        <div class="dropdownArea">
+                          <select class="selectpicker">
+                            <option>Status</option>
+                            <option>1</option>
+                            <option>2</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group col-md-4 col-sm-6 col-xs-6">
+                        <label for="reasonUnavailable">Reason For Unvailability</label>
+                        <textarea class="form-control text-field" id="reasonUnavailable" rows="3" placeholder="Reason For Unvailability"></textarea>
+                      </div>
+                      <button type="button" class="btn btn-primary btn-custom">Submit</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="row">
+                  <div data-provide="calendar" class="calendar availability">
+                  </div>
+                  <div class="btn-wrapper pull-left">
+                    <button type="button" class="btn btn-success">Save</button>
+                    <button type="button" class="btn btn-clearall">Clear All</button>
+                  </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="saledetails-tab">
+                <div class="row">
+                  <div class="sales-tabs-wrapper clearfix">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <div class="sales-detailed-box">
+                        <h4 class="media-heading">Promise of Sale Date</h4>
+                        <div class="row">
+                          <div class="col-md-4 col-sm-6 col-xs-6">
+                            <div class="sales-calendar-wrap">
+                              <div data-provide="calendar" class="calendar salesCalendar"></div>
+                            </div>
+                          </div>
+                          <div class="col-md-8 col-sm-6 col-xs-6">
+                            <form>
+                              <div class="form-inline-wrapper clearfix fromSection salesDateForm">
+                                <div class="form-group col-md-12">
+                                  <label for="indicatePeriodMonths">Indicative Period(In Months)</label>
+                                  <input type="text" class="form-control input-field" id="indicatePeriodMonths" placeholder="Indicative Period(In Months)">
+                                </div>
+                                <div class="form-group col-md-12">
+                                  <label for="indicativeContractDate">Indicative Contract Date</label>
+                                  <input type="text" class="form-control input-field date" id="indicativeContractDate" placeholder="dd/mm/yyyy">
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sales-feature-box">
+                      <div class="feature-panel">
+                        <form>
+                          <div class="form-inline-wrapper clearfix fromSection">
+                            <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                              <label for="posValue">POS Value</label>
+                              <input type="text" class="form-control input-field" id="posValue" placeholder="Enter POS Value">
+                            </div>
+                            <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                              <label for="notary">Notary</label>
+                              <input type="text" class="form-control input-field" id="notary" placeholder="Enter Notary">
+                            </div>
+                            <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                              <label for="prospectorSales">Prospector</label>
+                              <div class="dropdownArea">
+                                <select class="selectpicker">
+                                  <option>Commission</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                              <label for="inspectorSales">Inspector</label>
+                              <div class="dropdownArea">
+                                <select class="selectpicker">
+                                  <option>Commission</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                              <label for="sellingAgent">Selling Agent</label>
+                              <div class="dropdownArea">
+                                <select class="selectpicker">
+                                  <option>Commission</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-3 col-sm-4 col-xs-6">
+                              <label for="listingType">Listing Type</label>
+                              <div class="dropdownArea">
+                                <select class="selectpicker">
+                                  <option>Commission</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                              <h4 class="media-heading">Add Promise of SALE</h4>
+                            </div>
+                          </div>
+                          <div class="form-group col-md-2 col-sm-12 col-xs-6 margin-bottom-none">
+                            <div class="media-list add-contact-media">
+                              <div class="file-upload-panel">
+                                <input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1" data-multiple-caption="{count} files selected" multiple="">
+                                <label for="file-1">
+                                  <i class="fa fa-file-text" aria-hidden="true"></i>
+                                  <span>Add Documents</span>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="log-history-tab">
+                <div class="row">
+                  <div class="view-tabs-wrapper clearfix">
+                    <div class="table-responsive">
+                      <table class="table table-custom-bordered table-custom-hover table-custom-striped table-log-history table-active">
+                        <thead>
+                          <tr>
+                            <th>Made By</th>
+                            <th>Date</th>
+                            <th>Change</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="current">
+                            <td class="viewer-name">Joen Schembri</td>
+                            <td class="viewer-date">10-04-2017</td>
+                            <td class="viewer-remark">Added 4 Photos</td>
+                          </tr>
+                          <tr>
+                            <td class="viewer-name">William Schembri</td>
+                            <td class="viewer-date">08-04-2017</td>
+                            <td class="viewer-remark">Added 4 Photos</td>
+                          </tr>
+                          <tr>
+                            <td class="viewer-name">Aaydan</td>
+                            <td class="viewer-date">05-04-2017</td>
+                            <td class="viewer-remark">Create listing 75895</td>
+                          </tr>
+                          <tr>
+                            <td class="viewer-name">William Schembri</td>
+                            <td class="viewer-date">08-04-2017</td>
+                            <td class="viewer-remark">Added 4 Photos</td>
+                          </tr>
+                          <tr>
+                            <td class="viewer-name">Aaydan</td>
+                            <td class="viewer-date">05-04-2017</td>
+                            <td class="viewer-remark">Create listing 75895</td>
+                          </tr>
+                          <tr>
+                            <td class="viewer-name">Joen Schembri</td>
+                            <td class="viewer-date">10-04-2017</td>
+                            <td class="viewer-remark">Added 4 Photos</td>
+                          </tr>
+                          <tr>
+                            <td class="viewer-name">William Schembri</td>
+                            <td class="viewer-date">08-04-2017</td>
+                            <td class="viewer-remark">Added 4 Photos</td>
+                          </tr>
+                          <tr>
+                            <td class="viewer-name">Joen Schembri</td>
+                            <td class="viewer-date">10-04-2017</td>
+                            <td class="viewer-remark">Added 4 Photos</td>
+                          </tr>
+                          <tr>
+                            <td class="viewer-name">Joen Schembri</td>
+                            <td class="viewer-date">10-04-2017</td>
+                            <td class="viewer-remark">Added 4 Photos</td>
+                          </tr>
+                          <tr>
+                            <td class="viewer-name">William Schembri</td>
+                            <td class="viewer-date">08-04-2017</td>
+                            <td class="viewer-remark">Added 4 Photos</td>
+                          </tr>
+                          <tr>
+                            <td class="viewer-name">Aaydan</td>
+                            <td class="viewer-date">05-04-2017</td>
+                            <td class="viewer-remark">Create listing 75895</td>
+                          </tr>
+                          <tr>
+                            <td class="viewer-name">William Schembri</td>
+                            <td class="viewer-date">08-04-2017</td>
+                            <td class="viewer-remark">Added 4 Photos</td>
+                          </tr>
+                          <tr>
+                            <td class="viewer-name">Aaydan</td>
+                            <td class="viewer-date">05-04-2017</td>
+                            <td class="viewer-remark">Create listing 75895</td>
+                          </tr>
+                          <tr>
+                            <td class="viewer-name">Joen Schembri</td>
+                            <td class="viewer-date">10-04-2017</td>
+                            <td class="viewer-remark">Added 4 Photos</td>
+                          </tr>
+                          <tr>
+                            <td class="viewer-name">William Schembri</td>
+                            <td class="viewer-date">08-04-2017</td>
+                            <td class="viewer-remark">Added 4 Photos</td>
+                          </tr>
+                          <tr>
+                            <td class="viewer-name">Joen Schembri</td>
+                            <td class="viewer-date">10-04-2017</td>
+                            <td class="viewer-remark">Added 4 Photos</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <!-- tab-structure -->
+        </div>
+      </div>
+      <!-- /.row -->
+      <!-- row -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="common-btn-wrap clearfix">
+                <div class="btn-panel pull-right">
+                  <button type="button" class="btn btn-success">Save</button>
+                  <button type="button" class="btn btn-warning">Save as Pending</button>
+                  <button type="button" class="btn btn-info">Send for Approval</button>
+                  <button type="button" class="btn btn-danger">Clear All</button>
+                </div>
+          </div>
+        </div>
+      </div>
+      <!-- row -->
+    </div>
+    <!-- /#page-wrapper -->
+  </div>
+  <!-- /#wrapper -->
+  <!-- footer -->
+  <footer class="text-right">© 2017 All rights reserved</footer>
+  <!-- footer -->
+  <!-- jQuery -->
+  <script src="./vendor/jquery/jquery.min.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!-- data table javascript -->
+  <script src="js/dataTables.min.js" type="text/javascript"></script>
+  <!-- Theme JavaScript -->
+  <script src="./js/admin.js"></script>
+  <!-- Bootstrap custom selectbox JavaScript -->
+  <script src="./vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+  <!-- Data picker -->
+  <script src="./vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+  <!-- Scrolling Tabs JavaScript -->
+  <script src="./vendor/scrolling-tabs/jquery.scrolling-tabs.js"></script>
+  <!-- Custom Scroll JS -->
+  <script src="./vendor/mScrollbar/jquery.mCustomScrollbar.js"></script>
+  <!-- Jquery UI CSS -->
+  <!--script src="./vendor/jquery-ui-1.12.1/jquery-ui.js"></script-->
+  <script src="./js/jquery-ui.js"></script>
+  <!-- Custom input type File JavaScript -->
+  <!--script src="./js/custom-file-input.js"></script-->
+  <script src="./vendor/input-file/custom-file-input.js"></script>
+  <!-- Calender Files -->
+  <script type="text/javascript" src="./vendor/pickmeup/js/jquery.pickmeup.min.js"></script>
+  <script type="text/javascript" src="./vendor/pickmeup/js/jquery.pickmeup.twitter-bootstrap.min.js"></script>
+  <script type="text/javascript" src="./vendor/owl.carousel/dist/owl.carousel.min.js"></script>
+  <!-- My Common Component Custom Jquery -->
+  <script src="./js/custom.js"></script>
+  <script src="./js/vaishali.js"></script>
+  <script type="text/javascript">
+  // Pricing Tab Related 
+  $(document).ready(function() {
+    $('#shortFrom,#shortTo, #availableFrom, #availabletTo, #longFrom, #longTo').bootDatepicker({
+      todayBtn: "linked",
+      keyboardNavigation: false,
+      forceParse: false,
+      calendarWeeks: true,
+      autoclose: true
+    });
+  });
+  $(function() {
+    var plus_5_days = new Date;
+    plus_5_days.addDays(5);
+    $('.shortCalendar').pickmeup_twitter_bootstrap({
+      date: new Date,
+      flat: true,
+      first_day: 1,
+      prev: '&#9664;',
+      next: '&#9654;',
+      mode: 'range',
+      select_year: false,
+      select_month: false,
+      select_day: true,
+      view: 'days',
+      calendars: 12,
+      class_name: 'owl-carousel owl-theme',
+      hide_on_select: false,
+      min: '01-01-2016',
+      max: null,
+      date: [
+        new Date,
+        plus_5_days
+      ]
+    });
+    $('.longCalendar').pickmeup_twitter_bootstrap({
+      flat: true,
+      first_day: 0,
+      mode: 'range',
+      calendars: 12,
+      class_name: 'owl-carousel owl-theme',
+    });
+    $('.availability').pickmeup_twitter_bootstrap({
+      flat: true,
+      class_name: 'pickmeup-bootstrap customScroll',
+      first_day: 0,
+      mode: 'range',
+      calendars: 24
+    });
+  });
+  $(document).ready(function() {
+    owl = $(".owl-carousel");
+    owl.owlCarousel({
+      loop: true,
+      margin: 30,
+      nav: true,
+      smartSpeed: 900,
+      dots: false,
+      navText: ["<i class='fa fa-angle-left fa-2x'></i>", "<i class='fa fa-angle-right fa-2x'></i>"],
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: true
+        },
+        600: {
+          items: 2,
+          nav: false
+        },
+        1000: {
+          items: 3.3,
+          nav: true,
+          loop: false
+        }
+      }
+    })
+    setTimeout(function() {
+      //owl.data('owlCarousel').destroy();
+      owl.owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: true
+          },
+          600: {
+            items: 2,
+            nav: false
+          },
+          1000: {
+            items: 4,
+            nav: true,
+            loop: false
+          }
+        }
+      })
+    }, 2000);
+
+    $('.availability .pmu-instance').wrap("<div class='col-sm-3 col-xs-6' />");
+    customScroll();
+  })
+  </script>
+</body>
+
+</html>

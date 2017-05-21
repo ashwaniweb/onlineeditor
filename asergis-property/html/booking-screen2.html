@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Asergis Property</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="css/bootstrap-multiselect.css" rel="stylesheet">  
+    <!-- Owl crowsel -->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/datepicker.css" rel="stylesheet">
+    <link href="css/bootstrap-slider.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-select.css">
+    <!-- Our Own Custom Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bharat.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="wrapper">
+    <div class="overlay"></div>
+    <!-- Sidebar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+      <ul class="nav sidebar-nav">
+        <li class="sidebar-brand">
+          <ul>
+            <li>
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <span>Favourites</span>
+            </li>
+            <li>
+              <button class="hamburger innerClose"><img src="images/menu-close.png" alt=""/><!-- <i class="fa fa-close" aria-hidden="true"></i> --></button>
+            </li>
+          </ul>
+          
+        </li>
+        <li> <a href="index.html"><span class="icon-home"></span> Home</a> </li>
+        <li> <a href="about-malta.html"><span class="icon-about-malta"></span> About Malta</a> </li>
+        <li> <a href="about-us.html"><span class="icon-aboutUs-icon"></span> About Us</a> </li>
+        <li> <a href="faq.html"><span class="icon-faq"></span> FAQ</a> </li>
+        <li> <a href="contact-us.html"><span class="icon-contactus"></span> Contact Us</a> </li>
+      </ul>
+    </nav>
+    <!-- /#sidebar-wrapper --> 
+    <!-- Header Section -->
+    <div id="page-content-wrapper">
+    <header class="innerHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3 col-md-3">
+            <a href="index.html" class="logo">
+              <img class="img-responsive" src="images/logo.png" alt=""/>
+            </a>
+          </div>
+          <div class="col-sm-9 col-md-9 pull-right">
+            <ul class="header-contact">
+              <li><span><i class="fa fa-phone" aria-hidden="true"></i> +356 21 252 252 </span></li>
+              <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:support@asergis.com">support@asergis.com</a></li>
+            </ul>
+            <div class="btn-group" role="group" aria-label="...">
+              <a href="list-your-property.html" class="btn btn-default btn-orange">Rent/Sell your property</a>
+              <div class="btn-group user_menu" role="group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Hello Abdur Rehman
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="manage-property.html">Manage My Properties</a></li>
+                    <li><a href="manage-property.html">My Profile</a></li>
+                    <li><a href="login.html">Sign Out</a></li>
+                </ul>
+              </div>
+              <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
+              <img src="images/menu-toggle-icon.png" alt=""/>
+               <!-- <span class="hamb-top"></span> <span class="hamb-middle"></span> <span class="hamb-bottom"></span> --> 
+               </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section End Here -->
+
+    <!-- Top Search Bar Section -->
+    <section class="TopSearchBar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <form>
+              <div class="ShortLetSelect">
+                <select id="SearchSelectBox" class="selectpicker">
+                  <option value="Shortlet">Short Let</option>
+                  <option value="Longlet">Long Let</option>
+                  <option value="Forsale">For Sale</option>
+                </select>
+              </div>
+              <ul class="MoreFilterSearch1">
+                <li class="LocationSelect">
+                  <select class="selectpicker">
+                    <option>Select Regions</option>
+                    <option>Malta</option>
+                    <option>India</option>
+                  </select>
+                </li>
+                <li class="location">
+                  <input id="name" placeholder="Enter Locality" type="text">
+                </li>
+                <li class="CheckinSelect">
+                  <input class="span2" value="" id="dpd1" type="text" placeholder="Check In" />
+                </li>
+                <li class="CheckinSelect">
+                  <input class="span2" value="" id="dpd2" type="text" placeholder="Check Out" />
+                </li>
+                <li class="MinPriceSelect">
+                  <select class="selectpicker">
+                    <option>Min Price</option>
+                    <option>Malta</option>
+                    <option>India</option>
+                  </select>
+                </li>
+                <li class="MinPriceSelect">
+                  <select class="selectpicker">
+                    <option>Max Price</option>
+                    <option>Malta</option>
+                    <option>India</option>
+                  </select>
+                </li>
+                <li class="MoreFiltersSelect">
+                  <button class="MrFilter moreFilter">More Filters <span class="bs-caret"><span class="caret"></span></span></button>
+                </li>
+                <li class="SearchBtn">
+                  <button type="submit" class="btn">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </li>
+              </ul>
+              <ul class="MoreFilterSearch2">
+                <li class="LocationSelect">
+                  <select class="selectpicker">
+                    <option>Select Regions</option>
+                    <option>Malta</option>
+                    <option>India</option>
+                  </select>
+                </li>
+                <li class="location">
+                  <input id="name" placeholder="Enter Locality" type="text">
+                </li>
+                <li class="showAll">
+                  <select class="home-icon selectpicker">
+                    <option>Show All</option>
+                    <option>Malta</option>
+                    <option>India</option>
+                  </select>
+                </li>
+                <li class="MinPriceSelect">
+                  <select class="selectpicker">
+                    <option>Min Price</option>
+                    <option>Malta</option>
+                    <option>India</option>
+                  </select>
+                </li>
+                <li class="MinPriceSelect">
+                  <select class="selectpicker">
+                    <option>Max Price</option>
+                    <option>Malta</option>
+                    <option>India</option>
+                  </select>
+                </li>
+                <li class="MoreFiltersSelect">
+                  <button class="SaleMoreFilter">More Filters <span class="bs-caret"><span class="caret"></span></span></button>
+                </li>
+                <li class="SearchBtn">
+                  <button type="submit" class="btn">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </li>
+              </ul>
+              <div class="MoreFilterBox">
+                <div class="row">
+                  <div class="col-md-12">
+                    <ul>
+                    <li>
+                    <label>Property Type</label>
+                    <select class="home-icon selectpicker">
+                      <option>Show All</option>
+                      <option>Malta</option>
+                      <option>India</option>
+                    </select>
+                    </li>
+                    <li>
+                    <label>Bedroom</label>
+                    <select class="bed-icon selectpicker">
+                      <option>Min No.</option>
+                      <option>1</option>
+                      <option>2</option>
+                    </select>
+                    </li>
+                    <li>
+                    <label>Adults</label>
+                    <select class="selectpicker">
+                      <option>Select No.</option>
+                      <option>1</option>
+                      <option>2</option>
+                    </select>
+                    </li>
+                    <li>
+                    <label>Children</label>
+                        <select class="selectpicker age1">
+                          <option>Age 4-12</option>
+                          <option>1</option>
+                          <option>2</option>
+                        </select>
+
+
+                        <select class="selectpicker age2">
+                          <option>Age 0-3</option>
+                          <option>1</option>
+                          <option>2</option>
+                        </select>
+                    </li>
+                    <li>
+                    <label>Amenities & Features</label>
+                    <select id="ddlCars" multiple="multiple">
+                      <option value="Air Conditioning">Air Conditioning</option>
+                      <option value="TV">TV</option>
+                      <option value="Fireplace">Fireplace</option>
+                      <option value="Pet Friendly">Pet Friendly</option>
+                      <option value="Security System">Security System</option>
+                      <option value="Intercom">Intercom</option>
+                      <option value="Floor Heating">Floor Heating</option>
+                      <option value="Wifi">Wifi</option>
+                      <option value="Dishwasher">Dishwasher</option>
+                    </select>
+                    </li>
+                    <li>
+                    <label>Listing ID</label>
+                    <input name="" placeholder="Enter Listing ID" type="text">
+                    </li>
+
+                </ul>
+                </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <label>Baby Gear <span>€5 each</span></label>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <ul class="babygear">
+                          <li>
+                            <div class="checkbox checkRight">
+                              <label>
+                                <input type="checkbox" value="">
+                                Play Pen:
+                                <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                              </label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="checkbox checkRight">
+                              <label>
+                                <input type="checkbox" value="">
+                                Cot:
+                                <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                              </label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="checkbox checkRight">
+                              <label>
+                                <input type="checkbox" value="">
+                                Highchair:
+                                <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                              </label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="MoreFilterBox1">
+                <div class="row">
+                  <div class="col-md-12">
+                    <ul class="forsaleMoreFilters">
+                      <li>
+                        <label>Listing ID</label>
+                        <input name="" placeholder="Enter Listing ID" type="text">
+                      </li>
+                      <li>                    
+                        <label>Bedroom</label>
+                        <select class="selectpicker">
+                          <option>Select No.</option>
+                          <option>1</option>
+                          <option>2</option>
+                        </select>
+                      </li>
+                      <li>
+                        <label>Bathroom</label>
+                        <select class="selectpicker">
+                          <option>Select No.</option>
+                          <option>1</option>
+                          <option>2</option>
+                        </select>
+                      </li>
+                      <li>
+                        <label>Market Status</label>
+                        <select class="selectpicker">
+                          <option>Select Market Status</option>
+                          <option>1</option>
+                          <option>2</option>
+                        </select>
+                      </li>
+                      <li>
+                        <label>Property Status</label>
+                        <select class="selectpicker">
+                          <option>Select Property Status</option>
+                          <option>1</option>
+                          <option>2</option>
+                        </select>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <label>Features</label>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <ul class="babygear">
+                        <li>
+                        <div class="checkbox checkRight">
+                          <label>
+                            <input type="checkbox" value="">
+                            Sea Front:
+                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                          </label>
+                        </div>
+                        </li>
+                        <li>
+                        <div class="checkbox checkRight">
+                          <label>
+                            <input type="checkbox" value="">
+                            Sea View:
+                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                          </label>
+                        </div>
+                        </li>
+                        <li>
+                        <div class="checkbox checkRight">
+                          <label>
+                            <input type="checkbox" value="">
+                            Country View:
+                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                          </label>
+                        </div>
+                        </li>
+                        <li>
+                        <div class="checkbox checkRight">
+                          <label>
+                            <input type="checkbox" value="">
+                            Pool:
+                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                          </label>
+                        </div>
+                        </li>
+                        <li>
+                        <div class="checkbox checkRight">
+                          <label>
+                            <input type="checkbox" value="">
+                            Garden:
+                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                          </label>
+                        </div>
+                        </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Top Search Bar section End Here -->
+    <!-- Inner List page section -->
+    <section class="container booking-section">
+      <h1>You are almost ready !</h1>
+      <p class="greentext">Act Fast! Price and Availability may change</p>           
+      
+      <div class="row">
+        <!-- booking tab section -->
+        <div class="col-md-7 booking-left">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Your Information</a>
+                            <i class="greentick"></i>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <h4>Logged In as :</h4>
+                            <p class="email">John.deo@asergis.com</p>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="checkDate">
+                                  <div>First Name</div>
+                                  <b>John</b>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="checkDate">
+                                  <div>Last Name</div>
+                                  <b>Deo</b>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="checkDate">
+                                  <div>Country</div>
+                                  <b>India</b>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="checkDate">
+                                  <div>Mobile no.</div>
+                                  <b>+91 </b>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <h4>Message to Owner</h4>
+                            <p class="email">Want somthing specific in your house to improve your experience or you want to inform us about your pre bookings and plans we are happy to help!!</p>
+
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="checkDate">
+                                  <div>Message to Owner</div>
+                                  <textarea name="" id=""></textarea>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <ul class="bookUi">
+                                  <li>Tell owner about yourself.</li>
+                                  <li>What brings you to the area.</li>
+                                  <li>Who are you travelling with.</li>
+                                </ul>
+                              </div>
+                            </div>
+
+                            <p class="by">By clicking Continue, you agree to our <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy.</a></p>
+                            
+                            <br>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <button type="button" class="btn btn-primary btn-lg">Continue</button>
+                              </div>                              
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Rules and Policies</a>
+                            <i class="greentick"></i>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body rules">
+                            <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                            <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                            <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                            <div class="row">
+                              <hr>
+                              <div class="col-md-12">
+                                <input type="checkbox" name="vehicle" value="Bike"> I have read and agree to comply with all policies and terms. <br><br>
+                                <button type="button" class="btn btn-primary btn-lg">Continue</button>
+                              </div>                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Payment Information</a>
+                            <i class="greentick"></i>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <h4>Logged In as :</h4>
+                            <p class="email">John.deo@asergis.com</p>
+                            
+                            <div class="row">
+                              <div class="col-md-6">
+                                <ul class="bookUipay">
+                                  <li>We use secure transmission</li>
+                                </ul>
+                              </div>
+                              <div class="col-md-6">
+                                <ul class="bookUipay">
+                                  <li>We protect your personal information</li>
+                                </ul>
+                              </div>
+                            </div>
+
+                            <div class="row cardTab">
+                              <div id="credit" class="col-xs-6 tabact">
+                                Credit / Debit Card
+                              </div>
+                              <div id="paypal" class="col-xs-6">
+                                Paypal
+                              </div>
+                            </div>
+                            
+                            <div id="creditDebit">
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <div class="creditcard">
+                                    <input class="form-control" id="" placeholder="Card Number" type="text">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="creditcard">
+                                    <input class="form-control" id="" placeholder="Expiery Date MM/YY" type="text">
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="creditcard">
+                                    <input class="form-control" id="" placeholder="Security Code" type="text">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <input type="checkbox" name="vehicle" value="Bike"> Save this card <br><br>
+                                </div>
+                              </div>
+                              
+
+                              <h4>Billing address</h4>
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="checkDate">
+                                    <div>First Name</div>
+                                    <b>John</b>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="checkDate">
+                                    <div>Last Name</div>
+                                    <b>Deo</b>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="checkDate">
+                                    <div>Country</div>
+                                    <b>United States</b>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="checkDate">
+                                    <div>Street</div>
+                                    <b>&nbsp;</b>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="checkDate">
+                                    <div>City</div>
+                                    <b>&nbsp;</b>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="checkDate">
+                                    <div>State</div>
+                                    <b>&nbsp;</b>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="checkDate">
+                                    <div>Postal code</div>
+                                    <b>&nbsp;</b>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              <p>You are almost done! the owner has 24 hours to confirm your reservation or decline. A temorary hold will be placed on your card to ensure sufficient funds. Your bank's policy determines when this hold is released. </p>
+
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <button type="button" class="btn btn-primary btn-lg">Submit Request</button>
+                                </div>                              
+                              </div>
+                            </div>
+
+                            <div id="paypaltab">
+                              <h4>Paypal</h4>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>          
+        </div>
+
+        <!-- booking right section -->
+        <div class="col-md-5 booking-right">
+          <div class="booking-rightsmallbanner">
+            <img src="images/booking-home1.jpg" alt="">
+            <img src="images/booking-home2.jpg" alt="">
+          </div>
+          <h3>Malta <span>Flat no. 323, Mellieha Cout Road </span></h3>
+          <div class="checkin-details">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="checkDate">
+                    <div class="time">Check-In Time <i class="fa fa-calendar"></i></div>
+                    <b>16 Feb 2017</b>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="checkDate">
+                    <div class="time">Check-Out Time <i class="fa fa-calendar"></i></div>
+                    <b>22 Feb 2017</b>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="checkDate">
+                    <div class="time">Nights </div>
+                    <b>16 Feb 2017</b>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="checkDate">
+                    <div class="time">Guests <i><small>12y+</small></i></div>
+                    <b>3 Adults</b>
+                  </div>
+                </div>
+              </div>
+              <!-- total section -->              
+              <div class="row hr">
+                <hr>
+              </div>
+              <!-- Due now section -->
+              <div class="row duenow">
+                <div class="col-md-8 col-sm-8 col-xs-8">
+                  <div>€60 x 3 nights <i class="fa fa-question-circle" data-toggle="popover" data-placement="top" title="Base Price Breakdown" 
+                  data-content="
+                  <ul class='tooltipPrice'>
+                    <li>02/16/2017 <span>€56</span></li>
+                    <li>02/16/2017 <span>€56</span></li>
+                    <li>02/16/2017 <span>€56</span></li>                    
+                    <li>Extra Guest Fee <span>€12</span></li>
+                    <li class='tiptotal'>Total base price <span>€180</span></li>
+                  </ul>
+                  "></i></div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                  <div class="text-right">€180</div>
+                </div>
+              </div>
+              <div class="row duenow">
+                <div class="col-md-8 col-sm-8 col-xs-8">
+                  <div>Services Fee <i class="fa fa-question-circle" data-toggle="popover" data-placement="top" title="Taxes" 
+                  data-content="
+                  <ul class='tooltipPrice'>
+                    <li>Vat Inc. <span>€10</span></li>
+                    <li>Service Tax <span>€10</span></li>
+                    <li class='tiptotal'>Total Tax <span>€20</span></li>
+                  </ul>
+                  "></i></div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                  <div class="text-right">€20</div>
+                </div>
+              </div>
+              <div class="row estim">
+                <div class="col-md-8 col-sm-8 col-xs-8">
+                  <div>Total</div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                  <div class="text-right">€200</div>
+                </div>
+              </div>
+              <div class="row forbook">
+                <div class="col-md-12">
+                  <p>
+                    <b>For Booking Assistance, <br></b>
+                    Call +44 7700 900077 <br>
+                    House No: +44 7700 900077
+                  </p>
+                </div>
+              </div>
+
+
+              </div>             
+              <div class="clearfix"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <!-- Inner list Page section -->
+
+    <!-- Footer Main Section -->
+    <footer class="FooterMain">
+      <!-- New Footer Background -->
+      <section class="footerBG">
+        <img src="images/footer-new-bg.png" alt="">
+      </section>
+      <!-- New Footer Background End Here -->
+      <div class="FooterTop">
+        <div class="container FooterMenuSection">
+          <div class="row">
+            <div class="col-sm-5 col-md-5">
+              <a href="index.html" class="FooterLogo">
+                <img src="images/footer-logo.png" alt="Asergis Logo"/>
+              </a>
+              <p>The real estate portal for buyers, sellers, landlords and those who are looking for a holiday rental.</p>
+            </div>
+            <div class="col-sm-4 col-md-4">
+              <h5>Quick Links</h5>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-malta.html">About Malta</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 col-md-3">
+              <h5>Payment by Services</h5>
+              <img src="images/payment-icons.png" alt="Payment"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="FooterContactBar">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-6">
+              <p><span>© 2017 All rights reserved</span> <a href="disclaimer.html">Disclaimer</a> - <a href="privacy-policy.html">Privacy Policy</a> -  <a href="terms-and-conditions.html">Terms & Conditions</a> - <a href="copyright.html">Copyright</a></p>
+            </div>
+            <div class="col-sm-4 col-md-6">
+              <ul>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="FooterTnC">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>Use of this website constitutes an acceptance to our Terms and Conditivons and Privacy Policy. "Asergis Property", asergisproperty.com and the corresponding logo are registered trademarks of Asergis Global Services Limited and cannot be used without permission.</p>
+            </div>              
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Main Section end Here -->
+    </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/bootstrap-slider.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-multiselect.js"></script>
+    <script src="js/custom.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,124 @@
+/*Asergis Icon Codes*/
+/*<span class="icon-air-condition"></span>
+<span class="icon-breakfast"></span>
+<span class="icon-countryview"></span>
+<span class="icon-dishwasher"></span>
+<span class="icon-fireplace"></span>
+<span class="icon-floorheating"></span>
+<span class="icon-frontpatio"></span>
+<span class="icon-garage"></span>
+<span class="icon-garden"></span>
+<span class="icon-intercom"><span class="path1"></span><span class="path2"></span></span>
+<span class="icon-ironingboard"></span>
+<span class="icon-lift"></span>
+<span class="icon-petfriendly"></span>
+<span class="icon-seafront"></span>
+<span class="icon-seapool"></span>
+<span class="icon-seaview"></span>
+<span class="icon-securitysystem"></span>
+<span class="icon-tv"></span>
+<span class="icon-washingmachin"></span>
+<span class="icon-wheelchair"></span>
+<span class="icon-wifi"></span>*/
+
+@font-face {
+  font-family: 'asergis';
+  src:  url('../fonts/asergis.eot?8da34u');
+  src:  url('../fonts/asergis.eot?8da34u#iefix') format('embedded-opentype'),
+    url('../fonts/asergis.ttf?8da34u') format('truetype'),
+    url('../fonts/asergis.woff?8da34u') format('woff'),
+    url('../fonts/asergis.svg?8da34u#asergis') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'asergis' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-intercom .path1:before {
+  content: "\e900";
+  color: rgb(67, 67, 67);
+}
+.icon-intercom .path2:before {
+  content: "\e901";
+  margin-left: -0.8427734375em;
+  color: rgb(255, 255, 255);
+}
+.icon-frontpatio:before {
+  content: "\e902";
+}
+.icon-air-condition:before {
+  content: "\e903";
+}
+.icon-breakfast:before {
+  content: "\e904";
+}
+.icon-countryview:before {
+  content: "\e905";
+}
+.icon-dishwasher:before {
+  content: "\e906";
+}
+.icon-fireplace:before {
+  content: "\e907";
+}
+.icon-floorheating:before {
+  content: "\e908";
+}
+.icon-garage:before {
+  content: "\e909";
+}
+.icon-garden:before {
+  content: "\e90a";
+}
+.icon-ironingboard:before {
+  content: "\e90b";
+}
+.icon-lift:before {
+  content: "\e90c";
+}
+.icon-petfriendly:before {
+  content: "\e90d";
+}
+.icon-seafront:before {
+  content: "\e90e";
+}
+.icon-seapool:before {
+  content: "\e90f";
+}
+.icon-seaview:before {
+  content: "\e910";
+}
+.icon-securitysystem:before {
+  content: "\e911";
+}
+.icon-tv:before {
+  content: "\e912";
+}
+.icon-washingmachin:before {
+  content: "\e913";
+}
+.icon-wheelchair:before {
+  content: "\e914";
+}
+.icon-wifi:before {
+  content: "\e915";
+}
+
+
+
+
+
+

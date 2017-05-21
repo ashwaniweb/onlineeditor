@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Asergis Property - Admin</title>
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./favicon/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./favicon/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./favicon/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./favicon/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./favicon/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./favicon/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./favicon/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./favicon/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="./favicon/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="./favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="./favicon/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="./favicon/favicon-128.png" sizes="128x128" />
+  <link rel="manifest" href="./manifest.json">
+  <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="./favicon/favicon.ico">
+  <meta name="msapplication-config" content="./browserconfig.xml">
+  <meta name="application-name" content="Asergis Property - Admin" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="./favicon/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="./favicon/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="./favicon/mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="./favicon/mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="./favicon/mstile-310x310.png" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+  <!-- Bootstrap Core CSS -->
+  <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fonts icon -->
+  <link href="./vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Charts CSS -->
+  <link href="./vendor/chartist/css/chartist.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="./css/admin.css" rel="stylesheet">
+  <link href="./css/dashboard.css" rel="stylesheet">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body class="sidemenu-left">
+  <div id="page-load">
+    <div class="inner">
+      <span class="loading"></span>
+    </div>
+  </div>
+  <!-- /.navbar-top-links -->
+  <div id="slidemenu" class="navbar-default sidebar sidebar-blue" role="navigation">
+    <div class="sidebar-nav collapse navbar-collapse">
+      <ul class="nav" id="side-menu">
+        <li class="active">
+          <a href="index.html" class="fa-th-large fa-fw"> Dashboard</a>
+        </li>
+        <li>
+          <a href="#" class="fa-home fa-fw"> Property Management
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="add-property.html">Add Property</a>
+            </li>
+            <li>
+              <a href="view-properties.html">View Properties</a>
+            </li>
+            <li>
+              <a href="listing-requests.html">Listing Requests To Rent/For Sale</a>
+            </li>
+            <li>
+              <a href="view-pending-submissions.html">View Pending Submissions</a>
+            </li>
+            <li>
+              <a href="view-approval-requests.html">View Approval Requests</a>
+            </li>
+            <li>
+              <a href="help-us-help-you.html">Help Us Help You</a>
+            </li>
+            <li>
+              <a href="view-edit-amenities-features.html">View/Edit Amenities & Features</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="tables.html" class="fa-user-plus fa-fw"> Contacts Management
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="add-contacts.html">Add Contacts</a>
+            </li>
+            <li>
+              <a href="view-contacts.html">View Contacts</a>
+            </li>
+            <li>
+              <a href="manage-type-of-contacts.html">Manage Type of Contacts</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="tables.html" class="fa-calendar fa-fw"> Appointment Management
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="add-appointment.html">Add Appointment</a>
+            </li>
+            <li>
+              <a href="view-appointments.html">View Appointments</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="tables.html" class="fa-credit-card fa-fw"> Payment Management
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="transaction-reports.html">Transaction Reports</a>
+            </li>
+            <li>
+              <a href="pricing-comparison.html">Pricing Comparison</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="contents-management.html" class="fa-list-alt fa-fw"> Contents Management
+          </a>
+        </li>
+        <li>
+          <a href="#" class="fa-bookmark fa-fw"> Bookings Management
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="check-in-out.html">Check In/Check Out</a>
+            </li>
+            <li>
+              <a href="payments-due.html">Payments Due</a>
+            </li>
+            <li>
+              <a href="Contracts.html">Contracts</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="tables.html" class="fa-file-text-o fa-fw"> Reports
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="#">Listings
+                <span class="fa arrow"></span>
+              </a>
+              <ul class="nav nav-third-level">
+                <li>
+                  <a href="">Total Number of days available</a>
+                </li>
+                <li>
+                  <a href="">ROI per property per year</a>
+                </li>
+                <li>
+                  <a href="">Total Listings in Database</a>
+                </li>
+                <li>
+                  <a href="">Average Commission per Short_Long_Sale</a>
+                </li>
+                <li>
+                  <a href="">Properties under Management</a>
+                </li>
+                <li>
+                  <a href="">Total Short Lets in Database</a>
+                </li>
+                <li>
+                  <a href="">Custom Total Listings in Database</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="sales.html">Sales</a>
+            </li>
+            <li>
+              <a href="website.html">Website</a>
+            </li>
+            <li>
+              <a href="top-five-locations.html">Top 5 Most searched Locations</a>
+            </li>
+            <li>
+              <a href="office.html">Office</a>
+            </li>
+            <li>
+              <a href="investment-portfolio.html">Investment Portfolio</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="tables.html" class="fa-cog fa-fw"> Settings
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level">
+            <li>
+              <a href="view-users.html">View/Edit Users</a>
+            </li>
+            <li>
+              <a href="general-settings.html">General Settings</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- /.sidebar-collapse -->
+  </div>
+  <!-- /.navbar-static-side -->
+  <div id="wrapper">
+    <nav class="navbar navbar-plain navbar-static-top" id="slide-nav">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <img src="./images/login-logo.png" alt="Asergis Property">
+        </a>
+      </div>
+      <!-- /.navbar-header -->
+      <ul class="nav navbar-top-links navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle clearfix userLog" data-toggle="dropdown">
+            <img src="./images/face-7.jpg" class="img-circle avatar">
+            <p class="pull-right">
+              <small>Jone William
+                <b class="caret"></b>
+              </small>
+              <br/> Last Login
+              <br/> 20-March-2017 2:15pm
+            </p>
+          </a>
+          <ul class="dropdown-menu dropdown-user">
+            <li>
+              <a href="#">
+                <i class="fa-user fa-fw"></i> User Profile</a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-gear fa-fw"></i> Settings</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="login.html">
+                <i class="fa-sign-out fa-fw"></i> Logout</a>
+            </li>
+          </ul>
+          <!-- /.dropdown-user -->
+        </li>
+        <!-- /.dropdown -->
+      </ul>
+    </nav>
+    <div id="page-wrapper">
+
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header mb-3">Dashboard</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="header">
+              <h4 class="title">Half year revenue margin</h4>
+            </div>
+            <div class="content">
+              <div id="chartHours" class="ct-chart"></div>
+              <div class="footer">
+                <div class="legend">
+                  <i class="fa-circle text-info"></i> Net Revenue
+                  <i class="fa-circle text-danger"></i> Total Revenue
+                </div>
+                <hr>
+                <div class="stats">
+                  <i class="fa-clock-o"></i> Updated 2 days ago
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card ">
+            <div class="header">
+              <h4 class="title">2016 Sales</h4>
+            </div>
+            <div class="content">
+              <div id="chartActivity" class="ct-chart"></div>
+              <div class="footer">
+                <div class="legend">
+                  <i class="fa fa-circle text-info"></i> Net Sale
+                  <i class="fa fa-circle text-danger"></i> Total Sale
+                </div>
+                <hr>
+                <div class="stats">
+                  <i class="fa-clock-o"></i> Updated 5 days ago
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card emailChart">
+            <div class="header">
+              <h4 class="title">Email Statistics</h4>
+            </div>
+            <div class="content">
+              <div class="col-md-6">
+                <div id="emailChart" class="ct-chart ct-perfect-fourth"></div>
+              </div>
+              <div class="col-md-6">
+                <small>Open</small>
+                <div class="progress progress-thin">
+                  <div class="determinate progress-info" style="width: 70%"></div>
+                </div>
+                <small>Bounce</small>
+                <div class="progress progress-thin">
+                  <div class="determinate progress-danger" style="width: 40%"></div>
+                </div>
+                <small>Unsubscribed</small>
+                <div class="progress progress-thin">
+                  <div class="determinate progress-warning" style="width: 50%"></div>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="footer ">
+                <hr>
+                <div class="stats">
+                  <i class="fa fa-clock-o"></i> Updated 2 days ago
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card clearfix">
+            <div class="col-md-4 percText">
+              5%
+            </div>
+            <div class="col-md-8">
+              <div class="row">
+                <div class="header">
+                  <h4 class="title">What is Lorem Ipsum</h4>
+                </div>
+                <div class="content">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 percentageCircle">
+          <div class="row">
+            <div class="col-md-6 text-center">
+              <div class="c100 center p45 asergis green">
+                <span>45%</span>
+                <div class="slice">
+                  <div class="bar"></div>
+                  <div class="fill"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 text-center">
+              <div class="c100 p45 center asergis green">
+                <span>45%</span>
+                <div class="slice">
+                  <div class="bar"></div>
+                  <div class="fill"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card margin-bottom-none">
+            <div class="header">
+              <h4 class="title">What is Lorem Ipsum</h4>
+            </div>
+            <div class="content" id="dataFooter">
+              <div class="row">
+                <div class="col-md-4">
+                  <div id="visiters" class="ct-chart ct-perfect-fourth"></div>
+                  <h4 class="title">65,000 Visitors</h4>
+                </div>
+                <div class="col-md-4">
+                  <div id="pageViews" class="ct-chart ct-perfect-fourth" data-x-axis="Hello"></div>
+                  <h4 class="title">80,000 Page views</h4>
+                </div>
+                <div class="col-md-4">
+                  <div id="pagesVisit" class="ct-chart ct-perfect-fourth"></div>
+                  <h4 class="title">2.3 Pages/visit</h4>
+                </div>
+              </div>
+              <hr/>
+              <div class="row">
+                <div class="col-md-4">
+                  <div id="visiters2" class="ct-chart ct-perfect-fourth"></div>
+                  <h4 class="title">65,000 Visitors</h4>
+                </div>
+                <div class="col-md-4">
+                  <div id="pageViews2" class="ct-chart ct-perfect-fourth"></div>
+                  <h4 class="title">80,000 Page views</h4>
+                </div>
+                <div class="col-md-4">
+                  <div id="pagesVisit2" class="ct-chart ct-perfect-fourth"></div>
+                  <h4 class="title">2.3 Pages/visit</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- /#page-wrapper -->
+  <!-- footer -->
+  <footer class="text-right">
+    ©
+    <script>
+    document.write(new Date().getFullYear())
+    </script> All rights reserved
+  </footer>
+  <!-- footer -->
+  <!-- jQuery -->
+  <script src="./vendor/jquery/jquery.min.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Theme JavaScript -->
+  <script src="./js/admin.js"></script>
+  <!--Dashboard related JavaScript  -->
+  <script src="./vendor/chartist/js/chartist.min.js"></script>
+  <script type="text/javascript">
+  includeJs("./js/dashboard.js");
+  </script>
+</body>
+
+</html>
